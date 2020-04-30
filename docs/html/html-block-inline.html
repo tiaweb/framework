@@ -1,0 +1,148 @@
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="google-site-verification=cGvkgt2oWQ-3kCOOxGHIcygm-J2wZANsFM5Huuw7eeg">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Tiaweb opensource template web html,vuejs,reactjs and angularjs 100% Free... ">
+    <meta name="google-site-verification" content="G3-7l_kYP77sUVyUvr21R7H8Xh_ciQyqZTOklsmecbY" />
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="Tiaweb framework HTml" /> <!-- website name -->
+	<meta property="og:site" content="https://tiaweb.github.io" /> <!-- website link -->
+	<meta property="og:title" content="Tiaweb"/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="Tiaweb Open source template web html,vuejs,reactjs and angularjs 100% Free..." /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="https://tiaweb.github.io/img/opensource.jpg" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="http://tiaweb.github.io" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164531041-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164531041-1');
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T29C6CP');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager -->
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="tia.css">
+<style>
+.tia {
+  background-color: white;
+}
+</style>
+  </head>
+  <body>
+
+
+
+<article class="content">
+        <p>In HTML, you’ll mainly come across 2 types of HTML elements:</p>
+
+<ul>
+  <li>
+    <p><strong>block</strong> elements like:</p>
+
+    <ul>
+      <li>paragraphs <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code></li>
+      <li>lists: unordered (with bullet points) <code class="language-plaintext highlighter-rouge">&lt;ul&gt;</code> or ordered lists (with numbers) <code class="language-plaintext highlighter-rouge">&lt;ol&gt;</code></li>
+      <li>headings: from 1st level <code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code> to 6th level headings <code class="language-plaintext highlighter-rouge">&lt;h6&gt;</code></li>
+      <li>articles <code class="language-plaintext highlighter-rouge">&lt;article&gt;</code></li>
+      <li>sections <code class="language-plaintext highlighter-rouge">&lt;section&gt;</code></li>
+      <li>long quotes <code class="language-plaintext highlighter-rouge">&lt;blockquote&gt;</code></li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>inline</strong> elements like:</p>
+
+    <ul>
+      <li>links <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code></li>
+      <li>emphasised words <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code></li>
+      <li>important words <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code></li>
+      <li>short quotes <code class="language-plaintext highlighter-rouge">&lt;q&gt;</code></li>
+      <li>abbreviations <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Block</strong> elements are meant to <strong>structure</strong> the main parts of your page, by dividing your content in <em>coherent</em> blocks.</p>
+
+<p><strong>Inline</strong> elements are meant to differentiate <em>part</em> of a text, to give it a particular function or meaning. Inline elements usually comprise a single or few words.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;</span>Have you seen this <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://www.youtube.com"</span><span class="nt">&gt;</span>amazing video<span class="nt">&lt;/a&gt;</span> on YouTube?<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+<h3 id="opening-and-closing-tags">Opening and closing tags</h3>
+
+<p><strong>All</strong> block-level elements have an opening and closing tags.</p>
+
+<p>As a result, self-enclosing elements are <strong>inline</strong> elements, simply because their syntax don’t allow them to contain any other HTML element.</p>
+
+<div class="table">
+  <table>
+    <tr>
+      <th class="empty"></th>
+      <th>Have opening and closing tags</th>
+      <th>Self-enclosing</th>
+    </tr>
+    <tr>
+      <th>Block elements</th>
+      <td>
+        <code>&lt;p&gt;</code>
+        <code>&lt;/p&gt;</code>
+        <br />
+        <code>&lt;ul&gt;</code>
+        <code>&lt;/ul&gt;</code>
+        <br />
+        <code>&lt;ol&gt;</code>
+        <code>&lt;/ol&gt;</code>
+      </td>
+      <td>
+        <strong>Impossible</strong>
+      </td>
+    </tr>
+    <tr>
+      <th>Inline elements</th>
+      <td>
+        <code>&lt;a&gt;</code>
+        <code>&lt;/a&gt;</code>
+        <br />
+        <code>&lt;strong&gt;</code>
+        <code>&lt;/strong&gt;</code>
+        <br />
+        <code>&lt;em&gt;</code>
+        <code>&lt;/em&gt;</code>
+      </td>
+      <td>
+        <code>&lt;input&gt;</code>
+        <br />
+        <code>&lt;br&gt;</code>
+        <br />
+        <code>&lt;img&gt;</code>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<h3 id="other-types-of-html-elements">Other types of HTML elements</h3>
+
+<p>There are several exceptions to the block/inline elements, but the ones you will most often encounter are:</p>
+
+<ul>
+  <li><strong>list items</strong> for the <code class="language-plaintext highlighter-rouge">&lt;li&gt;</code></li>
+  <li><strong>table</strong>, <strong>table rows</strong>, <strong>table cells</strong> for <code class="language-plaintext highlighter-rouge">&lt;table&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;tr&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;td&gt;</code> respectively</li>
+</ul>
+
+      </article> </body>
+</html>
+      
+ 
