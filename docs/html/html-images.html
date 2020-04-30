@@ -1,0 +1,122 @@
+<style>
+.tia {
+  background-color: white;
+}
+.tiaku {
+  background-color: white;
+}
+</style>
+
+<header></header>
+
+<div id="google_translate_element"></div>
+<div class="tia">
+<article class="content">
+        <p><strong>Images</strong> are the first non-textual content to have appeared on the Web. Most image formats you can find on your computer can also be displayed in your browser: <code class="language-plaintext highlighter-rouge">.jpg</code>, <code class="language-plaintext highlighter-rouge">.gif</code> (animated or not), <code class="language-plaintext highlighter-rouge">.png</code> (transparent or not), <code class="language-plaintext highlighter-rouge">.bmp</code>…</p>
+
+<h3 id="syntax">Syntax</h3>
+
+<p><strong>Images</strong> use the <code class="language-plaintext highlighter-rouge">&lt;img&gt;</code> element, which is a <strong>self-closing</strong> element (it only has an opening tag).</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">src</code> attribute defines the <strong>location</strong> of the image. As with links, you can either use <em>relative</em> or <em>absolute</em> URLs.</p>
+
+<ul class="files">
+  <li>
+    <i class="fa fa-folder-o"></i>
+    my-first-website
+    <ul>
+      <li>
+        <i class="fa fa-file-code-o"></i>
+        home.html
+      </li>
+      <li>
+        <i class="fa fa-image"></i>
+        soyuz-spacecraft.jpg
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;</span>
+  Look at this spacecraft landing!
+  <span class="nt">&lt;br&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"soyuz-spacecraft.jpg"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+<div class="result">
+  <p>
+    Look at this spacecraft landing!
+    <br />
+    <img src="/images/soyuz-spacecraft.jpg" />
+  </p>
+</div>
+
+<h3 id="dimensions">Dimensions</h3>
+
+<p>Every image has <strong>2 dimensions</strong>: a <strong>width</strong> and a <strong>height</strong>. The previously shown spacecraft image is 394 pixels wide and 284 high.</p>
+
+<p>When inserting an image in HTML, you <strong>don’t need to specify its dimensions</strong>: the browser will automatically display it in <strong>full size</strong>.</p>
+
+<p class="info">If you want to alter the dimensions of an image, although it is possible in HTML, it’s recommended to use CSS, as we’ll see in later chapters.</p>
+
+<h3 id="block-or-inline">Block or inline?</h3>
+
+<p>Although an image has a width and a height, and is visually a big rectangle, an image is <strong>not an HTML block element</strong> but actually an <strong>inline element</strong>.</p>
+
+<p>This is due to the <code class="language-plaintext highlighter-rouge">&lt;img&gt;</code> element being a <strong>self-closing</strong> element: it can’t technically contain any other HTML element, and is thus considered an inline element, like <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code> or <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</p>
+
+<p>This inline behavior can have unexpected results:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;</span>
+  There is a frog
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"frog.jpg"</span><span class="nt">&gt;</span>
+  in the middle of the paragraph!
+<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+<div class="result">
+  <p>
+    There is a frog
+    <img src="/images/frog.jpg" />
+    in the middle of the paragraph!
+  </p>
+</div>
+
+<p>Because in HTML the <strong>content is king</strong>, images will be displayed regardless of the quirky layout it might induce, and thoughtfully so.</p>
+
+      </article>
+
+
+</div>
+
+  <footer></footer>
+
+<script>
+ 
+ fetch("https://tiaweb.github.io/framework/header.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("header").innerHTML = data;
+  });
+
+fetch("https://tiaweb.github.io/framework/footer.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("footer").innerHTML = data;
+  });
+ </script>
+
+
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
