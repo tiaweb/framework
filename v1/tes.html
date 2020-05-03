@@ -35,6 +35,28 @@ Create a list of items that can be shown individually by clicking an item's head
         <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;uk-accordion-content&quot;</span><span class="kw">&gt;&lt;/div&gt;</span>
     <span class="kw">&lt;/li&gt;</span>
 <span class="kw">&lt;/ul&gt;</span></code></pre>
+
+<ul uk-accordion>
+    <li class="uk-open">
+        <a class="uk-accordion-title" href="#">Item 1</a>
+        <div class="uk-accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href="#">Item 2</a>
+        <div class="uk-accordion-content">
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href="#">Item 3</a>
+        <div class="uk-accordion-content">
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+        </div>
+    </li>
+</ul>
+
 <pre class="example"><code>&lt;ul uk-accordion&gt;
     &lt;li class=&quot;uk-open&quot;&gt;
         &lt;a class=&quot;uk-accordion-title&quot; href=&quot;#&quot;&gt;Item 1&lt;/a&gt;
@@ -59,6 +81,27 @@ Create a list of items that can be shown individually by clicking an item's head
 <h2 id="no-collapsing">No collapsing</h2>
 <p>By default, all accordion items can be collapsed. To prevent this behavior and always maintain one open item, add the <code>collapsible: false</code> option to the attribute.</p>
 <pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;ul</span><span class="ot"> uk-accordion=</span><span class="st">&quot;collapsible: false&quot;</span><span class="kw">&gt;</span>...<span class="kw">&lt;/ul&gt;</span></code></pre>
+<ul uk-accordion="collapsible: false">
+    <li>
+        <a class="uk-accordion-title" href="#">Item 1</a>
+        <div class="uk-accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href="#">Item 2</a>
+        <div class="uk-accordion-content">
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href="#">Item 3</a>
+        <div class="uk-accordion-content">
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+        </div>
+    </li>
+</ul>
+
 <pre class="example"><code>&lt;ul uk-accordion=&quot;collapsible: false&quot;&gt;
     &lt;li&gt;
         &lt;a class=&quot;uk-accordion-title&quot; href=&quot;#&quot;&gt;Item 1&lt;/a&gt;
@@ -83,6 +126,28 @@ Create a list of items that can be shown individually by clicking an item's head
 <h2 id="multiple-open-items">Multiple open items</h2>
 <p>To display multiple content sections at the same time without one collapsing when the other one is opened, add the <code>multiple: true</code> option to the <code>uk-accordion</code> attribute.</p>
 <pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;ul</span><span class="ot"> uk-accordion=</span><span class="st">&quot;multiple: true&quot;</span><span class="kw">&gt;</span>...<span class="kw">&lt;/ul&gt;</span></code></pre>
+
+<ul uk-accordion="multiple: true">
+    <li class="uk-open">
+        <a class="uk-accordion-title" href="#">Item 1</a>
+        <div class="uk-accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href="#">Item 2</a>
+        <div class="uk-accordion-content">
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href="#">Item 3</a>
+        <div class="uk-accordion-content">
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+        </div>
+    </li>
+</ul>
+
 <pre class="example"><code>&lt;ul uk-accordion=&quot;multiple: true&quot;&gt;
     &lt;li class=&quot;uk-open&quot;&gt;
         &lt;a class=&quot;uk-accordion-title&quot; href=&quot;#&quot;&gt;Item 1&lt;/a&gt;
@@ -112,6 +177,27 @@ Create a list of items that can be shown individually by clicking an item's head
     <span class="kw">&lt;li</span><span class="ot"> class=</span><span class="st">&quot;uk-open&quot;</span><span class="kw">&gt;&lt;/li&gt;</span>
     <span class="kw">&lt;li&gt;&lt;/li&gt;</span>
 <span class="kw">&lt;/ul&gt;</span></code></pre>
+
+<ul uk-accordion>
+    <li>
+        <a class="uk-accordion-title" href="#">Item 1</a>
+        <div class="uk-accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </li>
+    <li class="uk-open">
+        <a class="uk-accordion-title" href="#">Item 2</a>
+        <div class="uk-accordion-content">
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href="#">Item 3</a>
+        <div class="uk-accordion-content">
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+        </div>
+    </li>
+</ul>
 <pre class="example"><code>&lt;ul uk-accordion&gt;
     &lt;li&gt;
         &lt;a class=&quot;uk-accordion-title&quot; href=&quot;#&quot;&gt;Item 1&lt;/a&gt;
