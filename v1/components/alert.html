@@ -1,0 +1,139 @@
+<h1 id="alert">Alert</h1>
+<p class="uk-text-lead">Display success, warning and error messages.</p>
+
+<h2 id="usage">Usage</h2>
+<p>To apply this component, add the <code>uk-alert</code> attribute to a block element.</p>
+<pre><code class="lang-html"><span class="hljs-section">&lt;div uk-alert&gt;</span><span class="hljs-section">&lt;/div&gt;</span>
+</code></pre>
+<pre><code class="lang-example">&lt;<span class="hljs-keyword">div</span> uk-alert&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <span class="hljs-keyword">do</span> eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+<hr>
+<h2 id="close-button">Close button</h2>
+<p>To create a close button and enable its functionality, add the <code>.uk-alert-close</code> class to a <code>&lt;button&gt;</code> or <code>&lt;a&gt;</code> element inside the alert box. To apply a close icon, add the <code>uk-close</code> attribute from the <a href="close.md">Close component</a>.</p>
+<pre><code class="lang-html">&lt;<span class="hljs-keyword">div</span> uk-alert&gt;
+    &lt;<span class="hljs-keyword">a</span> class=<span class="hljs-string">"uk-alert-close"</span> uk-<span class="hljs-built_in">close</span>&gt;&lt;/<span class="hljs-keyword">a</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+<pre><code class="lang-example"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">uk-alert</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uk-alert-close"</span> <span class="hljs-attr">uk-close</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Notice<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<hr>
+<h2 id="style-modifiers">Style modifiers</h2>
+<p>There are several style modifiers available. Just add one of the following classes to apply a different look.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Class</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>.uk-alert-primary</code></td>
+<td style="text-align:left">Give the message a prominent styling.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>.uk-alert-success</code></td>
+<td style="text-align:left">Indicates success or a positive message.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>.uk-alert-warning</code></td>
+<td style="text-align:left">Indicates a message containing a warning.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>.uk-alert-danger</code></td>
+<td style="text-align:left">Indicates an important or error message.</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-example"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uk-alert-primary"</span> <span class="hljs-attr">uk-alert</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uk-alert-close"</span> <span class="hljs-attr">uk-close</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uk-alert-success"</span> <span class="hljs-attr">uk-alert</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uk-alert-close"</span> <span class="hljs-attr">uk-close</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uk-alert-warning"</span> <span class="hljs-attr">uk-alert</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uk-alert-close"</span> <span class="hljs-attr">uk-close</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uk-alert-danger"</span> <span class="hljs-attr">uk-alert</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uk-alert-close"</span> <span class="hljs-attr">uk-close</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<hr>
+<h2 id="component-options">Component options</h2>
+<p>Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. <a href="javascript.md#component-configuration">Learn more</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Option</th>
+<th style="text-align:left">Value</th>
+<th style="text-align:left">Default</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>animation</code></td>
+<td style="text-align:left">Boolean, String</td>
+<td style="text-align:left"><code>true</code></td>
+<td style="text-align:left">Fade out or use the <a href="animation.md">Animation component</a>.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>duration</code></td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left"><code>150</code></td>
+<td style="text-align:left">Animation duration in milliseconds.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>sel-close</code></td>
+<td style="text-align:left">CSS selector</td>
+<td style="text-align:left"><code>.uk-alert-close</code></td>
+<td style="text-align:left">The close trigger element.</td>
+</tr>
+</tbody>
+</table>
+<p><code>animation</code> is the <em>Primary</em> option and its key may be omitted, if it&#39;s the only option in the attribute value.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">uk-toggle</span>=<span class="hljs-string">".my-class"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+</code></pre>
+<hr>
+<h2 id="javascript">JavaScript</h2>
+<p>Learn more about <a href="javascript.md#programmatic-use">JavaScript components</a>.</p>
+<h3 id="initialization">Initialization</h3>
+<pre><code class="lang-js"><span class="hljs-selector-tag">UIkit</span><span class="hljs-selector-class">.alert</span>(<span class="hljs-selector-tag">element</span>, <span class="hljs-selector-tag">options</span>);
+</code></pre>
+<h3 id="events">Events</h3>
+<p>The following events will be triggered on elements with this component attached:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>beforehide</code></td>
+<td style="text-align:left">Fires before an item is hidden. Can prevent hiding by calling <code>preventDefault()</code> on the event.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>hide</code></td>
+<td style="text-align:left">Fires after an item is hidden.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="methods">Methods</h3>
+<p>The following methods are available for the component:</p>
+<h4 id="close">Close</h4>
+<pre><code class="lang-js"><span class="hljs-selector-tag">UIkit</span><span class="hljs-selector-class">.alert</span>(<span class="hljs-selector-tag">element</span>)<span class="hljs-selector-class">.close</span>();
+</code></pre>
+<p>Closes and removes the Alert.</p>
