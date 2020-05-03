@@ -1,0 +1,298 @@
+<h1 id="animation">Animation</h1>
+<p class="uk-text-lead">A collection of smooth animations to use within your page.</p>
+
+<h2 id="usage">Usage</h2>
+<p>Add one of the <code>.uk-animation-*</code> classes to any element. The animation is shown when the class is added, so usually immediately on page load. To show the animation at another point, for example when the element enters the viewport, you would add the class using JavaScript — with the <a href="scrollspy.md">Scrollspy component</a> for instance. This is what happens in many of UIkit&#39;s components that make use of animations. All animations themselves are implemented with CSS, so they do not require JavaScript to play.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Class</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>.uk-animation-fade</code></td>
+<td style="text-align:left">The element fades in.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>.uk-animation-scale-up</code><br> <code>.uk-animation-scale-down</code></td>
+<td style="text-align:left">The element fades in and scales up or down.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>.uk-animation-slide-top</code><br> <code>.uk-animation-slide-bottom</code>  <code>.uk-animation-slide-left</code><br> <code>.uk-animation-slide-right</code></td>
+<td style="text-align:left">The element fades and slides in from the top, bottom, left or right by its own height or width.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>.uk-animation-slide-top-small</code><br> <code>.uk-animation-slide-bottom-small</code>   <code>.uk-animation-slide-left-small</code><br> <code>.uk-animation-slide-right-small</code></td>
+<td style="text-align:left">The element fades and slides in from the top, bottom, left or right with a smaller distance which is specified by a fixed pixel value.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>.uk-animation-slide-top-medium</code><br> <code>.uk-animation-slide-bottom-medium</code>  <code>.uk-animation-slide-left-medium</code><br> <code>.uk-animation-slide-right-medium</code></td>
+<td style="text-align:left">The element fades and slides in from the top, bottom, left or right with a medium distance which is specified by a fixed pixel value.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>.uk-animation-kenburns</code></td>
+<td style="text-align:left">The element scales very slowly up without fading in.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>.uk-animation-shake</code></td>
+<td style="text-align:left">The element shakes.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>.uk-animation-stroke</code></td>
+<td style="text-align:left">The SVG element strokes are drawn.</td>
+</tr>
+</tbody>
+</table>
+<p>To toggle an animation on hover or focus, add the <code>.uk-animation-toggle</code> class to a parent element. Also add <code>tabindex=&quot;0&quot;</code> to make the animation focusable through keyboard navigation and on touch devices.</p>
+<pre><code class="lang-html">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-fade"</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+<pre><code class="lang-example">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-child-width-1-2 uk-child-width-1-4@s uk-grid-match"</span> uk-grid&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-fade"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Fade&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-scale-up"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Scale Up&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-scale-down"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Scale Down&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-shake"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Shake&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-slide-left"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Left&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-slide-top"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Top&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-slide-bottom"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Bottom&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-slide-right"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Right&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-slide-left-small"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Left Small&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-slide-top-small"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Top Small&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-slide-bottom-small"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Bottom Small&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-slide-right-small"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Right Small&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-slide-left-medium"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Left Medium&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-slide-top-medium"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Top Medium&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-slide-bottom-medium"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Bottom Medium&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-slide-right-medium"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Right Medium&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+<hr>
+<h2 id="reverse-modifier">Reverse modifier</h2>
+<p>By default, all animations are incoming. To reverse any animation, add the <code>.uk-animation-reverse</code> class.</p>
+<pre><code class="lang-html">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"uk-animation-fade uk-animation-reverse"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+</code></pre>
+<pre><code class="lang-example">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-child-width-1-2 uk-child-width-1-4@s uk-grid-match"</span> uk-grid&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-fade uk-animation-reverse"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Fade&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-scale-up uk-animation-reverse"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Scale Up&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-scale-down uk-animation-reverse"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Scale Down&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-shake uk-animation-reverse"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Shake&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-slide-left uk-animation-reverse"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Left&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-slide-top uk-animation-reverse"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Top&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-slide-bottom uk-animation-reverse"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Bottom&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-slide-right uk-animation-reverse"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Right&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-slide-left-small uk-animation-reverse"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Left Small&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-slide-top-small uk-animation-reverse"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Top Small&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-slide-bottom-small uk-animation-reverse"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Bottom Small&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-slide-right-small uk-animation-reverse"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Right Small&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-slide-left-medium uk-animation-reverse"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Left Medium&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-slide-top-medium uk-animation-reverse"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Top Medium&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-slide-bottom-medium uk-animation-reverse"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Bottom Medium&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-slide-right-medium uk-animation-reverse"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Right Medium&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+<hr>
+<h2 id="fast-modifier">Fast modifier</h2>
+<p>To play animations at a faster speed, add the <code>.uk-animation-fast</code> class to the element.</p>
+<pre><code class="lang-html">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"uk-animation-fade uk-animation-fast"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+</code></pre>
+<pre><code class="lang-example">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-width-1-3@s"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-fast uk-animation-fade"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Fade&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+<hr>
+<h2 id="origin-modifiers">Origin modifiers</h2>
+<p>By default, scaling animations originate from the center. To modify this behavior, add one of the <code>.uk-transform-origin-*</code> classes from the <a href="utility.md#transform-origin">Utility component</a>.</p>
+<pre><code class="lang-html">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"uk-animation-scale-up uk-transform-origin-bottom-right"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+</code></pre>
+<pre><code class="lang-example">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-child-width-1-3@s"</span> uk-grid&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-scale-up uk-transform-origin-bottom-right"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Bottom Right&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-scale-up uk-transform-origin-top-center"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Top Center&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-card uk-card-default uk-card-body uk-animation-scale-up uk-transform-origin-bottom-center"</span>&gt;
+            &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-text-center"</span>&gt;Bottom Center&lt;/p&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+<hr>
+<h2 id="ken-burns">Ken Burns</h2>
+<p>To add a simple Ken Burns effect, add the <code>.uk-animation-kenburns</code> class to any image. You can also apply the <code>.uk-animation-reverse</code> or one of the <code>.uk-transform-origin-*</code> classes from the <a href="utility.md#transform-origin">Utility component</a> to modify the effect.</p>
+<pre><code class="lang-html">&lt;img <span class="hljs-keyword">class</span>=<span class="hljs-string">"uk-animation-kenburns"</span> src=<span class="hljs-string">""</span> alt=<span class="hljs-string">""</span>&gt;
+</code></pre>
+<p>By default the animation starts on page load. In this example we used the <a href="scrollspy.md">Scrollspy</a> component, to toggle the effect when the image enters the view.</p>
+<pre><code class="lang-example">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-child-width-1-2@s uk-grid-small"</span> uk-grid&gt;
+    &lt;<span class="hljs-keyword">div</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-overflow-hidden"</span>&gt;
+            &lt;img src=<span class="hljs-string">"images/dark.jpg"</span> alt=<span class="hljs-string">"Example image"</span> uk-scrollspy=<span class="hljs-string">"cls: uk-animation-kenburns; repeat: true"</span>&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-overflow-hidden"</span>&gt;
+            &lt;img src=<span class="hljs-string">"images/dark.jpg"</span> alt=<span class="hljs-string">"Example image"</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"uk-animation-reverse uk-transform-origin-top-right"</span> uk-scrollspy=<span class="hljs-string">"cls: uk-animation-kenburns; repeat: true"</span>&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+<hr>
+<h2 id="svg-strokes">SVG Strokes</h2>
+<p>The Animation component can be used to animate SVG strokes. The effect looks like the SVG strokes are drawn before your eyes. The SVG image has to be injected into the markup as an inline SVG. This can be done manually or using the <a href="svg.md">SVG component</a>.</p>
+<p>The following example shows how to add the inline SVG manually. Since you have to know the exact length of the stroke, UIkit requires you to set the length in the custom property <code>--uk-animation-stroke</code>. In this example the stroke length is <code>46</code>.</p>
+<pre><code class="lang-html">&lt;svg <span class="hljs-keyword">class</span>=<span class="hljs-string">"uk-animation-stroke"</span> style=<span class="hljs-string">"--uk-animation-stroke: 46;"</span> viewBox=<span class="hljs-string">"0 0 20 20"</span> xmlns=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;
+    &lt;path <span class="hljs-built_in">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-built_in">stroke</span>=<span class="hljs-string">"#000"</span> <span class="hljs-built_in">stroke</span>-<span class="hljs-built_in">width</span>=<span class="hljs-string">"1"</span> d=<span class="hljs-string">""</span>/&gt;
+&lt;/svg&gt;
+</code></pre>
+<p>A much easier way is to use the <a href="svg.md">SVG component</a> by adding <code>uk-svg=&quot;stroke-animation: true&quot;</code> to the image element. It will calculate the stroke length and add the <code>--uk-animation-stroke</code> custom property automatically.</p>
+<pre><code class="lang-html">&lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">""</span> uk-svg=<span class="hljs-string">"stroke-animation: true"</span>&gt;
+</code></pre>
+<pre><code class="lang-example">&lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"uk-child-width-1-2@m uk-text-center"</span> uk-grid&gt;
+    &lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-selector-tag">img</span> class=<span class="hljs-string">"uk-animation-stroke"</span> <span class="hljs-attribute">width</span>=<span class="hljs-string">"400"</span> height=<span class="hljs-string">"400"</span> src=<span class="hljs-string">"images/strokes.svg"</span> alt=<span class="hljs-string">""</span> uk-svg=<span class="hljs-string">"stroke-animation: true"</span>&gt;
+    &lt;/div&gt;
+    &lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"uk-animation-toggle"</span> tabindex=<span class="hljs-string">"0"</span>&gt;
+        &lt;<span class="hljs-selector-tag">img</span> class=<span class="hljs-string">"uk-animation-stroke uk-animation-reverse"</span> <span class="hljs-attribute">width</span>=<span class="hljs-string">"400"</span> height=<span class="hljs-string">"400"</span> src=<span class="hljs-string">"images/strokes.svg"</span> alt=<span class="hljs-string">""</span> uk-svg=<span class="hljs-string">"stroke-animation: true"</span>&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
