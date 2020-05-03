@@ -1,0 +1,54 @@
+<h1 id="article">Article</h1>
+<p class="uk-text-lead">Create articles within your page.</p>
+
+<h2 id="usage">Usage</h2>
+<p>The article component consists of the article itself, a title and meta data.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Class</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>.uk-article</code></td>
+<td style="text-align:left">Add this class to define the Article component. Typically you would use an <code>&lt;article&gt;</code> element for this.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>.uk-article-title</code></td>
+<td style="text-align:left">Add this class to a heading to create an article title. Typically you would use a <code>&lt;h1&gt;</code> element for this.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>.uk-article-meta</code></td>
+<td style="text-align:left">Add this class to a paragraph which contains meta data about your article.</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-html">&lt;article <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"uk-article"</span>&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uk-article-title"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span>
+    &lt;p <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"uk-article-meta"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/article&gt;</span>
+</code></pre>
+<p>Use the <code>.uk-text-lead</code> class from the <a href="text.md">Text component</a> to create a leading paragraph.</p>
+<pre><code class="lang-example"><span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uk-article"</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uk-article-title"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uk-link-reset"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span>&gt;</span>Heading<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uk-article-meta"</span>&gt;</span>Written by <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Super User<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> on 12 April 2012. Posted in <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Blog<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uk-text-lead"</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uk-grid-small uk-child-width-auto"</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uk-button uk-button-text"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Read more<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uk-button uk-button-text"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>5 Comments<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+</code></pre>
