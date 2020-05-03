@@ -1,10 +1,13 @@
 <h1 id="alert">Alert</h1>
-<p class="uk-text-lead">Display success, warning and error messages.</p>
+<p class="uk-text-lead">Menampilkan pesan keberhasilan, peringatan, dan kesalahan.</p>
 
-<h2 id="usage">Usage</h2>
-<p>To apply this component, add the <code>uk-alert</code> attribute to a block element.</p>
+<h2 id="usage">Pemakaian</h2>
+<p>Untuk menerapkan komponen ini, tambahkan <code>uk-alert</code> atribut ke elemen blok..</p>
 <pre><code class="lang-html"><span class="hljs-section">&lt;div uk-alert&gt;</span><span class="hljs-section">&lt;/div&gt;</span>
-</code></pre>
+</code></pre><br/>
+<div uk-alert>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+
+<br/>
 <pre><code class="lang-example">&lt;<span class="hljs-keyword">div</span> uk-alert&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <span class="hljs-keyword">do</span> eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/<span class="hljs-keyword">div</span>&gt;
 </code></pre>
 <hr>
@@ -13,7 +16,13 @@
 <pre><code class="lang-html">&lt;<span class="hljs-keyword">div</span> uk-alert&gt;
     &lt;<span class="hljs-keyword">a</span> class=<span class="hljs-string">"uk-alert-close"</span> uk-<span class="hljs-built_in">close</span>&gt;&lt;/<span class="hljs-keyword">a</span>&gt;
 &lt;/<span class="hljs-keyword">div</span>&gt;
-</code></pre>
+</code></pre><br/>
+<div uk-alert>
+    <a class="uk-alert-close" uk-close></a>
+    <h3>Notice</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+<br/>
 <pre><code class="lang-example"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">uk-alert</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uk-alert-close"</span> <span class="hljs-attr">uk-close</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Notice<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
@@ -48,7 +57,27 @@
 <td style="text-align:left">Indicates an important or error message.</td>
 </tr>
 </tbody>
-</table>
+</table><br/>
+<div class="uk-alert-primary" uk-alert>
+    <a class="uk-alert-close" uk-close></a>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+</div>
+
+<div class="uk-alert-success" uk-alert>
+    <a class="uk-alert-close" uk-close></a>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+</div>
+
+<div class="uk-alert-warning" uk-alert>
+    <a class="uk-alert-close" uk-close></a>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+</div>
+
+<div class="uk-alert-danger" uk-alert>
+    <a class="uk-alert-close" uk-close></a>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+</div>
+<br/>
 <pre><code class="lang-example"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uk-alert-primary"</span> <span class="hljs-attr">uk-alert</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uk-alert-close"</span> <span class="hljs-attr">uk-close</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
