@@ -13,19 +13,18 @@
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
 	<meta property="og:site_name" content="Tiaweb" /> <!-- website name -->
-	<meta property="og:site" content="https://tiaweb.github.io" /> <!-- website link -->
-	<meta property="og:title" content="Material Framewok Tiaweb"/> <!-- title shown in the actual shared post -->
+	<meta property="og:site" content="https://tiaweb.github.io/framework/material" /> <!-- website link -->
+	<meta property="og:title" content="Framewor material Tiaweb"/> <!-- title shown in the actual shared post -->
 	<meta property="og:description" content="Tiaweb dibuat untuk mempelajari HTML dan CSS  sederhana untuk semua orang, pemula, desainer dan pengembang." /> <!-- description shown in the actual shared post -->
 	<meta property="og:image" content="https://tiaweb.github.io/img/html.jpg"/> <!-- image link, make sure it's jpg -->
 	<meta property="og:url" content="https://tiaweb.github.io/framework/material" /> <!-- where do you want your post to link to -->
 	<meta property="og:type" content="article" />
 
     <!-- Webpage Title -->
-    <title>Material Framewok Tiaweb</title>
+    <title>Framewor material Tiaweb</title>
     
        <!-- Styles -->
-       
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700&amp;display=swap" rel="stylesheet">
     <link href="https://tiaweb.github.io/css/bootstrap.css" rel="stylesheet">
     <link href="https://tiaweb.github.io/css/fontawesome-all.css" rel="stylesheet">
     <link href="https://tiaweb.github.io/css/swiper.css" rel="stylesheet">
@@ -60,7 +59,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
-       
+        <div class="container">
             <!-- Text Logo - Use this if you don't have a graphic logo -->
             <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Viso</a> -->
 
@@ -122,12 +121,13 @@ https://t.me/tiaweb">Komunitas</a>
     <!-- Header -->
     <header class="header">
 
-
+<div class="container">
 	
-	
+	<div class="row">
+  <div class="col-sm-8">
 		<div class="card">
   <div class="card-body">
-    <tia></tia>
+	  <tia></tia>
   </div>
 </div>
 	<br/>
@@ -152,9 +152,20 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
-  
+	
+		</div>
+  <div class="col-sm-4">
+		<div class="card">
+  <div class="card-body">
+	  <menu></menu>
+  </div>
+</div>
+		
+		</div>
+</div>
+</div>
 </header>
-	<menu></menu>
+       
     <!-- end of header -->
 
     
@@ -256,15 +267,15 @@ fetch("https://tiaweb.github.io/framework/material/docs/menu.html")
   .then(data => {
     document.querySelector("menu").innerHTML = data;
   });
-  
-  fetch("https://tiaweb.github.io/framework/material/docs/button.html")
+fetch("https://tiaweb.github.io/framework/material/docs/button.html")
   .then(response => {
     return response.text()
   })
   .then(data => {
     document.querySelector("tia").innerHTML = data;
   });
-	    </script>
+	
+	</script>
 	    
 	</body>
 </html>
