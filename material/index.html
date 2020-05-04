@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,9 +24,8 @@
     <title>HTML Text-Tiaweb</title>
     
        <!-- Styles -->
-        <link rel="stylesheet" href="https://tiaweb.github.io/framework/material/css/tiaweb.min.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <script src="https://tiaweb.github.io/framework/material/js/tiaweb.min.js"></script>
+        <link rel="stylesheet" href="https://tiaweb.github.io/framework/v1/css/tiaweb.min.css" />
+        <script src="https://tiaweb.github.io/framework/v1/js/tiaweb.min.js"></script>
         <script src="https://tiaweb.github.io/framework/v1/js/tiaweb-icons.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700&amp;display=swap" rel="stylesheet">
     <link href="https://tiaweb.github.io/css/bootstrap.css" rel="stylesheet">
@@ -35,7 +33,6 @@
     <link href="https://tiaweb.github.io/css/swiper.css" rel="stylesheet">
 	<link href="https://tiaweb.github.io/css/magnific-popup.css" rel="stylesheet">
 	<link href="https://tiaweb.github.io/css/styles.css" rel="stylesheet">
-    
 	
 	<!-- Favicon  -->
     <link rel="icon" href="https://tiaweb.github.io/images/favicon.png">
@@ -133,15 +130,7 @@ https://t.me/tiaweb">Komunitas</a>
   <div class="col-sm-8">
 		<div class="card">
   <div class="card-body">
-   
-    <!-- Number badge on icon -->
-<div class="material-icons tiaweb-badge tiaweb-badge--overlap" data-badge="1">account_box</div>
-<!-- Icon badge on icon -->
-<div class="material-icons tiaweb-badge tiaweb-badge--overlap" data-badge="♥">account_box</div>
-    
-    
-    
-    
+    This is some text within a card body.
   </div>
 </div>
 	<br/>
@@ -171,7 +160,7 @@ s.setAttribute('data-timestamp', +new Date());
   <div class="col-sm-4">
 		<div class="card">
   <div class="card-body">
-	  tes2
+	  <menu></menu>
   </div>
 </div>
 		
@@ -270,7 +259,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="https://tiaweb.github.io/js/scripts.js"></script> <!-- Custom scripts -->
 <script id="dsq-count-scr" src="//tiaweb.disqus.com/count.js" async></script>
 	<!-- Place this tag in your head or just before your close body tag. -->
-
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+	    
+	    <script>
+	  
+fetch("https://tiaweb.github.io/framework/v1/menu.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("menu").innerHTML = data;
+  });
+	    </script>
 	    
 	</body>
 </html>
