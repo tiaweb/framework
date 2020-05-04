@@ -1,0 +1,2741 @@
+
+  <link rel="stylesheet" href="https://getmdl.io/assets/main.css">
+ 
+ <link rel="stylesheet" href="https://getmdl.io/assets/prism-default.css">
+ 
+ 
+ <link rel="stylesheet" href="https://tiaweb.github.io/framework/material/css/tiaweb.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="https://tiaweb.github.io/framework/material/js/tiaweb.min.js"></script>
+   
+   
+ 
+<section id="layout-section" class="tiaweb-components__page tiaweb-grid">
+      <div class="tiaweb-cell tiaweb-cell--12-col">
+        <div class="docs-text-styling component-title">
+          <h3>Layout</h3>
+          <p>Building blocks for constructing a page layout.</p>
+        </div>
+
+        
+          <section class="docs-toc docs-text-styling">
+            <nav class="section-content">
+              <ul>
+                
+                  <li><a href="#layout-section/layout">Navigation layouts</a></li>
+                
+                  <li><a href="#layout-section/grid">Grid</a></li>
+                
+                  <li><a href="#layout-section/tabs">Tabs</a></li>
+                
+                  <li><a href="#layout-section/footer">Footer</a></li>
+                
+              </ul>
+            </nav>
+          </section>
+        
+
+        
+
+          
+            <span class="docs-text-styling">
+              <h1 class="tiaweb-components__classname" id="layout-section/layout">Navigation layouts</h1>
+            </span>
+          
+          <!-- Add warning, if the component has one -->
+          
+          <!-- Generating snippets -->
+          
+            
+            
+<div class="snippet-group is-full-width">
+
+  <div class="snippet-header">
+    <div class="snippet-demos">
+      <div class="snippet-demo-padding"></div>
+      
+        
+        
+        
+        <div class="snippet-demo">
+          <div class="snippet-demo-container demo-layout demo-layout__transparent">
+            <style>
+.demo-layout.demo-layout__transparent {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+              0 3px 1px -2px rgba(0, 0, 0, 0.2),
+              0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  width: 100%;
+  position: relative;
+  height: 300px;
+}
+</style>
+
+<!-- Uses a transparent header that draws on top of the layout's background -->
+<style>
+.demo-layout-transparent {
+  background: url('../assets/transparent.jpg') center / cover;
+}
+.demo-layout-transparent .tiaweb-layout__header,
+.demo-layout-transparent .tiaweb-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+</style>
+
+<div class="demo-layout-transparent tiaweb-layout tiaweb-js-layout">
+  <header class="tiaweb-layout__header tiaweb-layout__header--transparent">
+    <div class="tiaweb-layout__header-row">
+      <!-- Title -->
+      <span class="tiaweb-layout-title">Title</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="tiaweb-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="tiaweb-navigation">
+        <a class="tiaweb-navigation__link" href="">Link</a>
+        <a class="tiaweb-navigation__link" href="">Link</a>
+        <a class="tiaweb-navigation__link" href="">Link</a>
+        <a class="tiaweb-navigation__link" href="">Link</a>
+      </nav>
+    </div>
+  </header>
+  <div class="tiaweb-layout__drawer">
+    <span class="tiaweb-layout-title">Title</span>
+    <nav class="tiaweb-navigation">
+      <a class="tiaweb-navigation__link" href="">Link</a>
+      <a class="tiaweb-navigation__link" href="">Link</a>
+      <a class="tiaweb-navigation__link" href="">Link</a>
+      <a class="tiaweb-navigation__link" href="">Link</a>
+    </nav>
+  </div>
+  <main class="tiaweb-layout__content">
+  </main>
+</div>
+
+
+          </div>
+        </div>
+      <div class="snippet-demo-padding"></div>
+    </div>
+    <div class="snippet-captions">
+      <div class="snippet-caption-padding"></div>
+      
+        <div class="snippet-caption">
+          Transparent header
+        </div>
+      <div class="snippet-caption-padding"></div>
+    </div>
+  </div>
+  <div class="snippet-code">
+    <pre class="language-markup codepen-button-enabled"><code id="layout/transparent.html">&lt;!-- Uses a transparent header that draws on top of the layout&#39;s background --&gt;
+&lt;style&gt;
+.demo-layout-transparent {
+  background: url(&#39;../assets/demos/transparent.jpg&#39;) center / cover;
+}
+.demo-layout-transparent .tiaweb-layout__header,
+.demo-layout-transparent .tiaweb-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;demo-layout-transparent tiaweb-layout tiaweb-js-layout&quot;&gt;
+  &lt;header class=&quot;tiaweb-layout__header tiaweb-layout__header--transparent&quot;&gt;
+    &lt;div class=&quot;tiaweb-layout__header-row&quot;&gt;
+      &lt;!-- Title --&gt;
+      &lt;span class=&quot;tiaweb-layout-title&quot;&gt;Title&lt;/span&gt;
+      &lt;!-- Add spacer, to align navigation to the right --&gt;
+      &lt;div class=&quot;tiaweb-layout-spacer&quot;&gt;&lt;/div&gt;
+      &lt;!-- Navigation --&gt;
+      &lt;nav class=&quot;tiaweb-navigation&quot;&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+      &lt;/nav&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;tiaweb-layout__drawer&quot;&gt;
+    &lt;span class=&quot;tiaweb-layout-title&quot;&gt;Title&lt;/span&gt;
+    &lt;nav class=&quot;tiaweb-navigation&quot;&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+  &lt;main class=&quot;tiaweb-layout__content&quot;&gt;
+  &lt;/main&gt;
+&lt;/div&gt;
+</code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre>
+  </div>
+</div>
+
+          
+            
+            
+<div class="snippet-group is-full-width">
+
+  <div class="snippet-header">
+    <div class="snippet-demos">
+      <div class="snippet-demo-padding"></div>
+      
+        
+        
+        
+        <div class="snippet-demo">
+          <div class="snippet-demo-container demo-layout demo-layout__fixed-drawer">
+            <style>
+.demo-layout.demo-layout__fixed-drawer {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+              0 3px 1px -2px rgba(0, 0, 0, 0.2),
+              0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  width: 100%;
+  position: relative;
+  height: 300px;
+}
+.demo-layout.demo-layout__fixed-drawer .tiaweb-layout__content {
+  background: white;
+}
+</style>
+
+<!-- No header, and the drawer stays open on larger screens (fixed drawer). -->
+<div class="tiaweb-layout tiaweb-js-layout tiaweb-layout--fixed-drawer">
+  <div class="tiaweb-layout__drawer">
+    <span class="tiaweb-layout-title">Title</span>
+    <nav class="tiaweb-navigation">
+      <a class="tiaweb-navigation__link" href="">Link</a>
+      <a class="tiaweb-navigation__link" href="">Link</a>
+      <a class="tiaweb-navigation__link" href="">Link</a>
+      <a class="tiaweb-navigation__link" href="">Link</a>
+    </nav>
+  </div>
+  <main class="tiaweb-layout__content">
+    <div class="page-content"><!-- Your content goes here --></div>
+  </main>
+</div>
+
+
+          </div>
+        </div>
+      <div class="snippet-demo-padding"></div>
+    </div>
+    <div class="snippet-captions">
+      <div class="snippet-caption-padding"></div>
+      
+        <div class="snippet-caption">
+          Fixed drawer, no header
+        </div>
+      <div class="snippet-caption-padding"></div>
+    </div>
+  </div>
+  <div class="snippet-code">
+    <pre class="language-markup codepen-button-enabled"><code id="layout/fixed-drawer.html">&lt;!-- No header, and the drawer stays open on larger screens (fixed drawer). --&gt;
+&lt;div class=&quot;tiaweb-layout tiaweb-js-layout tiaweb-layout--fixed-drawer&quot;&gt;
+  &lt;div class=&quot;tiaweb-layout__drawer&quot;&gt;
+    &lt;span class=&quot;tiaweb-layout-title&quot;&gt;Title&lt;/span&gt;
+    &lt;nav class=&quot;tiaweb-navigation&quot;&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+  &lt;main class=&quot;tiaweb-layout__content&quot;&gt;
+    &lt;div class=&quot;page-content&quot;&gt;&lt;!-- Your content goes here --&gt;&lt;/div&gt;
+  &lt;/main&gt;
+&lt;/div&gt;
+</code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre>
+  </div>
+</div>
+
+          
+            
+            
+<div class="snippet-group is-full-width">
+
+  <div class="snippet-header">
+    <div class="snippet-demos">
+      <div class="snippet-demo-padding"></div>
+      
+        
+        
+        
+        <div class="snippet-demo">
+          <div class="snippet-demo-container demo-layout demo-layout__fixed-header">
+            <style>
+.demo-layout.demo-layout__fixed-header {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+              0 3px 1px -2px rgba(0, 0, 0, 0.2),
+              0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  width: 100%;
+  position: relative;
+  height: 300px;
+}
+.demo-layout.demo-layout__fixed-header .tiaweb-layout__content {
+  background: white;
+}
+</style>
+
+<!-- Always shows a header, even in smaller screens. -->
+<div class="tiaweb-layout tiaweb-js-layout tiaweb-layout--fixed-header">
+  <header class="tiaweb-layout__header">
+    <div class="tiaweb-layout__header-row">
+      <!-- Title -->
+      <span class="tiaweb-layout-title">Title</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="tiaweb-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="tiaweb-navigation tiaweb-layout--large-screen-only">
+        <a class="tiaweb-navigation__link" href="">Link</a>
+        <a class="tiaweb-navigation__link" href="">Link</a>
+        <a class="tiaweb-navigation__link" href="">Link</a>
+        <a class="tiaweb-navigation__link" href="">Link</a>
+      </nav>
+    </div>
+  </header>
+  <div class="tiaweb-layout__drawer">
+    <span class="tiaweb-layout-title">Title</span>
+    <nav class="tiaweb-navigation">
+      <a class="tiaweb-navigation__link" href="">Link</a>
+      <a class="tiaweb-navigation__link" href="">Link</a>
+      <a class="tiaweb-navigation__link" href="">Link</a>
+      <a class="tiaweb-navigation__link" href="">Link</a>
+    </nav>
+  </div>
+  <main class="tiaweb-layout__content">
+    <div class="page-content"><!-- Your content goes here --></div>
+  </main>
+</div>
+
+
+          </div>
+        </div>
+      <div class="snippet-demo-padding"></div>
+    </div>
+    <div class="snippet-captions">
+      <div class="snippet-caption-padding"></div>
+      
+        <div class="snippet-caption">
+          Fixed header
+        </div>
+      <div class="snippet-caption-padding"></div>
+    </div>
+  </div>
+  <div class="snippet-code">
+    <pre class="language-markup codepen-button-enabled"><code id="layout/fixed-header.html">&lt;!-- Always shows a header, even in smaller screens. --&gt;
+&lt;div class=&quot;tiaweb-layout tiaweb-js-layout tiaweb-layout--fixed-header&quot;&gt;
+  &lt;header class=&quot;tiaweb-layout__header&quot;&gt;
+    &lt;div class=&quot;tiaweb-layout__header-row&quot;&gt;
+      &lt;!-- Title --&gt;
+      &lt;span class=&quot;tiaweb-layout-title&quot;&gt;Title&lt;/span&gt;
+      &lt;!-- Add spacer, to align navigation to the right --&gt;
+      &lt;div class=&quot;tiaweb-layout-spacer&quot;&gt;&lt;/div&gt;
+      &lt;!-- Navigation. We hide it in small screens. --&gt;
+      &lt;nav class=&quot;tiaweb-navigation tiaweb-layout--large-screen-only&quot;&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+      &lt;/nav&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;tiaweb-layout__drawer&quot;&gt;
+    &lt;span class=&quot;tiaweb-layout-title&quot;&gt;Title&lt;/span&gt;
+    &lt;nav class=&quot;tiaweb-navigation&quot;&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+  &lt;main class=&quot;tiaweb-layout__content&quot;&gt;
+    &lt;div class=&quot;page-content&quot;&gt;&lt;!-- Your content goes here --&gt;&lt;/div&gt;
+  &lt;/main&gt;
+&lt;/div&gt;
+</code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre>
+  </div>
+</div>
+
+          
+            
+            
+<div class="snippet-group is-full-width">
+
+  <div class="snippet-header">
+    <div class="snippet-demos">
+      <div class="snippet-demo-padding"></div>
+      
+        
+        
+        
+        <div class="snippet-demo">
+          <div class="snippet-demo-container demo-layout demo-layout__fixed-header-drawer">
+            <style>
+.demo-layout.demo-layout__fixed-header-drawer {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+              0 3px 1px -2px rgba(0, 0, 0, 0.2),
+              0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  width: 100%;
+  position: relative;
+  height: 300px;
+}
+.demo-layout.demo-layout__fixed-header-drawer.tiaweb-layout__content {
+  background: white;
+}
+</style>
+
+<!-- The drawer is always open in large screens. The header is always shown,
+  even in small screens. -->
+<div class="tiaweb-layout tiaweb-js-layout tiaweb-layout--fixed-drawer
+            tiaweb-layout--fixed-header">
+  <header class="tiaweb-layout__header">
+    <div class="tiaweb-layout__header-row">
+      <div class="tiaweb-layout-spacer"></div>
+      <div class="tiaweb-textfield tiaweb-js-textfield tiaweb-textfield--expandable
+                  tiaweb-textfield--floating-label tiaweb-textfield--align-right">
+        <label class="tiaweb-button tiaweb-js-button tiaweb-button--icon"
+               for="fixed-header-drawer-exp">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="tiaweb-textfield__expandable-holder">
+          <input class="tiaweb-textfield__input" type="text" name="sample"
+                 id="fixed-header-drawer-exp">
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="tiaweb-layout__drawer">
+    <span class="tiaweb-layout-title">Title</span>
+    <nav class="tiaweb-navigation">
+      <a class="tiaweb-navigation__link" href="">Link</a>
+      <a class="tiaweb-navigation__link" href="">Link</a>
+      <a class="tiaweb-navigation__link" href="">Link</a>
+      <a class="tiaweb-navigation__link" href="">Link</a>
+    </nav>
+  </div>
+  <main class="tiaweb-layout__content">
+    <div class="page-content"><!-- Your content goes here --></div>
+  </main>
+</div>
+
+
+          </div>
+        </div>
+      <div class="snippet-demo-padding"></div>
+    </div>
+    <div class="snippet-captions">
+      <div class="snippet-caption-padding"></div>
+      
+        <div class="snippet-caption">
+          Fixed header and drawer
+        </div>
+      <div class="snippet-caption-padding"></div>
+    </div>
+  </div>
+  <div class="snippet-code">
+    <pre class="language-markup codepen-button-enabled"><code id="layout/fixed-header-drawer.html">&lt;!-- The drawer is always open in large screens. The header is always shown,
+  even in small screens. --&gt;
+&lt;div class=&quot;tiaweb-layout tiaweb-js-layout tiaweb-layout--fixed-drawer
+            tiaweb-layout--fixed-header&quot;&gt;
+  &lt;header class=&quot;tiaweb-layout__header&quot;&gt;
+    &lt;div class=&quot;tiaweb-layout__header-row&quot;&gt;
+      &lt;div class=&quot;tiaweb-layout-spacer&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;tiaweb-textfield tiaweb-js-textfield tiaweb-textfield--expandable
+                  tiaweb-textfield--floating-label tiaweb-textfield--align-right&quot;&gt;
+        &lt;label class=&quot;tiaweb-button tiaweb-js-button tiaweb-button--icon&quot;
+               for=&quot;fixed-header-drawer-exp&quot;&gt;
+          &lt;i class=&quot;material-icons&quot;&gt;search&lt;/i&gt;
+        &lt;/label&gt;
+        &lt;div class=&quot;tiaweb-textfield__expandable-holder&quot;&gt;
+          &lt;input class=&quot;tiaweb-textfield__input&quot; type=&quot;text&quot; name=&quot;sample&quot;
+                 id=&quot;fixed-header-drawer-exp&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;tiaweb-layout__drawer&quot;&gt;
+    &lt;span class=&quot;tiaweb-layout-title&quot;&gt;Title&lt;/span&gt;
+    &lt;nav class=&quot;tiaweb-navigation&quot;&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+  &lt;main class=&quot;tiaweb-layout__content&quot;&gt;
+    &lt;div class=&quot;page-content&quot;&gt;&lt;!-- Your content goes here --&gt;&lt;/div&gt;
+  &lt;/main&gt;
+&lt;/div&gt;
+</code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre>
+  </div>
+</div>
+
+          
+            
+            
+<div class="snippet-group is-full-width">
+
+  <div class="snippet-header">
+    <div class="snippet-demos">
+      <div class="snippet-demo-padding"></div>
+      
+        
+        
+        
+        <div class="snippet-demo">
+          <div class="snippet-demo-container demo-layout demo-layout__scrolling-header">
+            <style>
+.demo-layout.demo-layout__scrolling-header {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+              0 3px 1px -2px rgba(0, 0, 0, 0.2),
+              0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  width: 100%;
+  position: relative;
+  height: 300px;
+}
+.demo-layout.demo-layout__scrolling-header .page-content {
+  height: 600px;
+  background: white;
+}
+</style>
+
+<!-- Uses a header that scrolls with the text, rather than staying
+  locked at the top -->
+<div class="tiaweb-layout tiaweb-js-layout">
+  <header class="tiaweb-layout__header tiaweb-layout__header--scroll">
+    <div class="tiaweb-layout__header-row">
+      <!-- Title -->
+      <span class="tiaweb-layout-title">Title</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="tiaweb-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="tiaweb-navigation">
+        <a class="tiaweb-navigation__link" href="">Link</a>
+        <a class="tiaweb-navigation__link" href="">Link</a>
+        <a class="tiaweb-navigation__link" href="">Link</a>
+        <a class="tiaweb-navigation__link" href="">Link</a>
+      </nav>
+    </div>
+  </header>
+  <div class="tiaweb-layout__drawer">
+    <span class="tiaweb-layout-title">Title</span>
+    <nav class="tiaweb-navigation">
+      <a class="tiaweb-navigation__link" href="">Link</a>
+      <a class="tiaweb-navigation__link" href="">Link</a>
+      <a class="tiaweb-navigation__link" href="">Link</a>
+      <a class="tiaweb-navigation__link" href="">Link</a>
+    </nav>
+  </div>
+  <main class="tiaweb-layout__content">
+    <div class="page-content"><!-- Your content goes here --></div>
+  </main>
+</div>
+
+
+          </div>
+        </div>
+      <div class="snippet-demo-padding"></div>
+    </div>
+    <div class="snippet-captions">
+      <div class="snippet-caption-padding"></div>
+      
+        <div class="snippet-caption">
+          Scrolling header
+        </div>
+      <div class="snippet-caption-padding"></div>
+    </div>
+  </div>
+  <div class="snippet-code">
+    <pre class="language-markup codepen-button-enabled"><code id="layout/scrolling-header.html">&lt;!-- Uses a header that scrolls with the text, rather than staying
+  locked at the top --&gt;
+&lt;div class=&quot;tiaweb-layout tiaweb-js-layout&quot;&gt;
+  &lt;header class=&quot;tiaweb-layout__header tiaweb-layout__header--scroll&quot;&gt;
+    &lt;div class=&quot;tiaweb-layout__header-row&quot;&gt;
+      &lt;!-- Title --&gt;
+      &lt;span class=&quot;tiaweb-layout-title&quot;&gt;Title&lt;/span&gt;
+      &lt;!-- Add spacer, to align navigation to the right --&gt;
+      &lt;div class=&quot;tiaweb-layout-spacer&quot;&gt;&lt;/div&gt;
+      &lt;!-- Navigation --&gt;
+      &lt;nav class=&quot;tiaweb-navigation&quot;&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+      &lt;/nav&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;tiaweb-layout__drawer&quot;&gt;
+    &lt;span class=&quot;tiaweb-layout-title&quot;&gt;Title&lt;/span&gt;
+    &lt;nav class=&quot;tiaweb-navigation&quot;&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+  &lt;main class=&quot;tiaweb-layout__content&quot;&gt;
+    &lt;div class=&quot;page-content&quot;&gt;&lt;!-- Your content goes here --&gt;&lt;/div&gt;
+  &lt;/main&gt;
+&lt;/div&gt;
+</code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre>
+  </div>
+</div>
+
+          
+            
+            
+<div class="snippet-group is-full-width">
+
+  <div class="snippet-header">
+    <div class="snippet-demos">
+      <div class="snippet-demo-padding"></div>
+      
+        
+        
+        
+        <div class="snippet-demo">
+          <div class="snippet-demo-container demo-layout demo-layout__waterfall-header">
+            <style>
+.demo-layout.demo-layout__waterfall-header {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+              0 3px 1px -2px rgba(0, 0, 0, 0.2),
+              0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  width: 100%;
+  position: relative;
+  height: 300px;
+}
+.demo-layout.demo-layout__waterfall-header .page-content {
+  height: 600px;
+  background: white;
+}
+</style>
+
+<!-- Uses a header that contracts as the page scrolls down. -->
+<style>
+.demo-layout-waterfall .tiaweb-layout__header-row .tiaweb-navigation__link:last-of-type  {
+  padding-right: 0;
+}
+</style>
+
+<div class="demo-layout-waterfall tiaweb-layout tiaweb-js-layout">
+  <header class="tiaweb-layout__header tiaweb-layout__header--waterfall">
+    <!-- Top row, always visible -->
+    <div class="tiaweb-layout__header-row">
+      <!-- Title -->
+      <span class="tiaweb-layout-title">Title</span>
+      <div class="tiaweb-layout-spacer"></div>
+      <div class="tiaweb-textfield tiaweb-js-textfield tiaweb-textfield--expandable
+                  tiaweb-textfield--floating-label tiaweb-textfield--align-right">
+        <label class="tiaweb-button tiaweb-js-button tiaweb-button--icon"
+               for="waterfall-exp">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="tiaweb-textfield__expandable-holder">
+          <input class="tiaweb-textfield__input" type="text" name="sample"
+                 id="waterfall-exp">
+        </div>
+      </div>
+    </div>
+    <!-- Bottom row, not visible on scroll -->
+    <div class="tiaweb-layout__header-row">
+      <div class="tiaweb-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="tiaweb-navigation">
+        <a class="tiaweb-navigation__link" href="">Link</a>
+        <a class="tiaweb-navigation__link" href="">Link</a>
+        <a class="tiaweb-navigation__link" href="">Link</a>
+        <a class="tiaweb-navigation__link" href="">Link</a>
+      </nav>
+    </div>
+  </header>
+  <div class="tiaweb-layout__drawer">
+    <span class="tiaweb-layout-title">Title</span>
+    <nav class="tiaweb-navigation">
+      <a class="tiaweb-navigation__link" href="">Link</a>
+      <a class="tiaweb-navigation__link" href="">Link</a>
+      <a class="tiaweb-navigation__link" href="">Link</a>
+      <a class="tiaweb-navigation__link" href="">Link</a>
+    </nav>
+  </div>
+  <main class="tiaweb-layout__content">
+    <div class="page-content"><!-- Your content goes here --></div>
+  </main>
+</div>
+
+
+          </div>
+        </div>
+      <div class="snippet-demo-padding"></div>
+    </div>
+    <div class="snippet-captions">
+      <div class="snippet-caption-padding"></div>
+      
+        <div class="snippet-caption">
+          Waterfall header
+        </div>
+      <div class="snippet-caption-padding"></div>
+    </div>
+  </div>
+  <div class="snippet-code">
+    <pre class="language-markup codepen-button-enabled"><code id="layout/waterfall-header.html">&lt;!-- Uses a header that contracts as the page scrolls down. --&gt;
+&lt;style&gt;
+.demo-layout-waterfall .tiaweb-layout__header-row .tiaweb-navigation__link:last-of-type  {
+  padding-right: 0;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;demo-layout-waterfall tiaweb-layout tiaweb-js-layout&quot;&gt;
+  &lt;header class=&quot;tiaweb-layout__header tiaweb-layout__header--waterfall&quot;&gt;
+    &lt;!-- Top row, always visible --&gt;
+    &lt;div class=&quot;tiaweb-layout__header-row&quot;&gt;
+      &lt;!-- Title --&gt;
+      &lt;span class=&quot;tiaweb-layout-title&quot;&gt;Title&lt;/span&gt;
+      &lt;div class=&quot;tiaweb-layout-spacer&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;tiaweb-textfield tiaweb-js-textfield tiaweb-textfield--expandable
+                  tiaweb-textfield--floating-label tiaweb-textfield--align-right&quot;&gt;
+        &lt;label class=&quot;tiaweb-button tiaweb-js-button tiaweb-button--icon&quot;
+               for=&quot;waterfall-exp&quot;&gt;
+          &lt;i class=&quot;material-icons&quot;&gt;search&lt;/i&gt;
+        &lt;/label&gt;
+        &lt;div class=&quot;tiaweb-textfield__expandable-holder&quot;&gt;
+          &lt;input class=&quot;tiaweb-textfield__input&quot; type=&quot;text&quot; name=&quot;sample&quot;
+                 id=&quot;waterfall-exp&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- Bottom row, not visible on scroll --&gt;
+    &lt;div class=&quot;tiaweb-layout__header-row&quot;&gt;
+      &lt;div class=&quot;tiaweb-layout-spacer&quot;&gt;&lt;/div&gt;
+      &lt;!-- Navigation --&gt;
+      &lt;nav class=&quot;tiaweb-navigation&quot;&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+      &lt;/nav&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;tiaweb-layout__drawer&quot;&gt;
+    &lt;span class=&quot;tiaweb-layout-title&quot;&gt;Title&lt;/span&gt;
+    &lt;nav class=&quot;tiaweb-navigation&quot;&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+  &lt;main class=&quot;tiaweb-layout__content&quot;&gt;
+    &lt;div class=&quot;page-content&quot;&gt;&lt;!-- Your content goes here --&gt;&lt;/div&gt;
+  &lt;/main&gt;
+&lt;/div&gt;
+</code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre>
+  </div>
+</div>
+
+          
+            
+            
+<div class="snippet-group is-full-width">
+
+  <div class="snippet-header">
+    <div class="snippet-demos">
+      <div class="snippet-demo-padding"></div>
+      
+        
+        
+        
+        <div class="snippet-demo">
+          <div class="snippet-demo-container demo-layout demo-layout__scrollable-tabs">
+            <style>
+.demo-layout.demo-layout__scrollable-tabs {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+              0 3px 1px -2px rgba(0, 0, 0, 0.2),
+              0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  width: 100%;
+  position: relative;
+  height: 300px;
+}
+.demo-layout.demo-layout__scrollable-tabs .tiaweb-layout__content {
+  background: white;
+}
+</style>
+
+<!-- Simple header with scrollable tabs. -->
+<div class="tiaweb-layout tiaweb-js-layout tiaweb-layout--fixed-header">
+  <header class="tiaweb-layout__header">
+    <div class="tiaweb-layout__header-row">
+      <!-- Title -->
+      <span class="tiaweb-layout-title">Title</span>
+    </div>
+    <!-- Tabs -->
+    <div class="tiaweb-layout__tab-bar tiaweb-js-ripple-effect">
+      <a href="#scroll-tab-1" class="tiaweb-layout__tab is-active">Tab 1</a>
+      <a href="#scroll-tab-2" class="tiaweb-layout__tab">Tab 2</a>
+      <a href="#scroll-tab-3" class="tiaweb-layout__tab">Tab 3</a>
+      <a href="#scroll-tab-4" class="tiaweb-layout__tab">Tab 4</a>
+      <a href="#scroll-tab-5" class="tiaweb-layout__tab">Tab 5</a>
+      <a href="#scroll-tab-6" class="tiaweb-layout__tab">Tab 6</a>
+    </div>
+  </header>
+  <div class="tiaweb-layout__drawer">
+    <span class="tiaweb-layout-title">Title</span>
+  </div>
+  <main class="tiaweb-layout__content">
+    <section class="tiaweb-layout__tab-panel is-active" id="scroll-tab-1">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </section>
+    <section class="tiaweb-layout__tab-panel" id="scroll-tab-2">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </section>
+    <section class="tiaweb-layout__tab-panel" id="scroll-tab-3">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </section>
+    <section class="tiaweb-layout__tab-panel" id="scroll-tab-4">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </section>
+    <section class="tiaweb-layout__tab-panel" id="scroll-tab-5">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </section>
+    <section class="tiaweb-layout__tab-panel" id="scroll-tab-6">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </section>
+  </main>
+</div>
+
+
+          </div>
+        </div>
+      <div class="snippet-demo-padding"></div>
+    </div>
+    <div class="snippet-captions">
+      <div class="snippet-caption-padding"></div>
+      
+        <div class="snippet-caption">
+          Scrollable tabs
+        </div>
+      <div class="snippet-caption-padding"></div>
+    </div>
+  </div>
+  <div class="snippet-code">
+    <pre class="language-markup codepen-button-enabled"><code id="layout/scrollable-tabs.html">&lt;!-- Simple header with scrollable tabs. --&gt;
+&lt;div class=&quot;tiaweb-layout tiaweb-js-layout tiaweb-layout--fixed-header&quot;&gt;
+  &lt;header class=&quot;tiaweb-layout__header&quot;&gt;
+    &lt;div class=&quot;tiaweb-layout__header-row&quot;&gt;
+      &lt;!-- Title --&gt;
+      &lt;span class=&quot;tiaweb-layout-title&quot;&gt;Title&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;!-- Tabs --&gt;
+    &lt;div class=&quot;tiaweb-layout__tab-bar tiaweb-js-ripple-effect&quot;&gt;
+      &lt;a href=&quot;#scroll-tab-1&quot; class=&quot;tiaweb-layout__tab is-active&quot;&gt;Tab 1&lt;/a&gt;
+      &lt;a href=&quot;#scroll-tab-2&quot; class=&quot;tiaweb-layout__tab&quot;&gt;Tab 2&lt;/a&gt;
+      &lt;a href=&quot;#scroll-tab-3&quot; class=&quot;tiaweb-layout__tab&quot;&gt;Tab 3&lt;/a&gt;
+      &lt;a href=&quot;#scroll-tab-4&quot; class=&quot;tiaweb-layout__tab&quot;&gt;Tab 4&lt;/a&gt;
+      &lt;a href=&quot;#scroll-tab-5&quot; class=&quot;tiaweb-layout__tab&quot;&gt;Tab 5&lt;/a&gt;
+      &lt;a href=&quot;#scroll-tab-6&quot; class=&quot;tiaweb-layout__tab&quot;&gt;Tab 6&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;tiaweb-layout__drawer&quot;&gt;
+    &lt;span class=&quot;tiaweb-layout-title&quot;&gt;Title&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;main class=&quot;tiaweb-layout__content&quot;&gt;
+    &lt;section class=&quot;tiaweb-layout__tab-panel is-active&quot; id=&quot;scroll-tab-1&quot;&gt;
+      &lt;div class=&quot;page-content&quot;&gt;&lt;!-- Your content goes here --&gt;&lt;/div&gt;
+    &lt;/section&gt;
+    &lt;section class=&quot;tiaweb-layout__tab-panel&quot; id=&quot;scroll-tab-2&quot;&gt;
+      &lt;div class=&quot;page-content&quot;&gt;&lt;!-- Your content goes here --&gt;&lt;/div&gt;
+    &lt;/section&gt;
+    &lt;section class=&quot;tiaweb-layout__tab-panel&quot; id=&quot;scroll-tab-3&quot;&gt;
+      &lt;div class=&quot;page-content&quot;&gt;&lt;!-- Your content goes here --&gt;&lt;/div&gt;
+    &lt;/section&gt;
+    &lt;section class=&quot;tiaweb-layout__tab-panel&quot; id=&quot;scroll-tab-4&quot;&gt;
+      &lt;div class=&quot;page-content&quot;&gt;&lt;!-- Your content goes here --&gt;&lt;/div&gt;
+    &lt;/section&gt;
+    &lt;section class=&quot;tiaweb-layout__tab-panel&quot; id=&quot;scroll-tab-5&quot;&gt;
+      &lt;div class=&quot;page-content&quot;&gt;&lt;!-- Your content goes here --&gt;&lt;/div&gt;
+    &lt;/section&gt;
+    &lt;section class=&quot;tiaweb-layout__tab-panel&quot; id=&quot;scroll-tab-6&quot;&gt;
+      &lt;div class=&quot;page-content&quot;&gt;&lt;!-- Your content goes here --&gt;&lt;/div&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+&lt;/div&gt;
+</code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre>
+  </div>
+</div>
+
+          
+            
+            
+<div class="snippet-group is-full-width">
+
+  <div class="snippet-header">
+    <div class="snippet-demos">
+      <div class="snippet-demo-padding"></div>
+      
+        
+        
+        
+        <div class="snippet-demo">
+          <div class="snippet-demo-container demo-layout demo-layout__fixed-tabs">
+            <style>
+.demo-layout.demo-layout__fixed-tabs {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+              0 3px 1px -2px rgba(0, 0, 0, 0.2),
+              0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  width: 100%;
+  position: relative;
+  height: 300px;
+}
+.demo-layout.demo-layout__fixed-tabs .tiaweb-layout__content {
+  background: white;
+}
+</style>
+
+<!-- Simple header with fixed tabs. -->
+<div class="tiaweb-layout tiaweb-js-layout tiaweb-layout--fixed-header
+            tiaweb-layout--fixed-tabs">
+  <header class="tiaweb-layout__header">
+    <div class="tiaweb-layout__header-row">
+      <!-- Title -->
+      <span class="tiaweb-layout-title">Title</span>
+    </div>
+    <!-- Tabs -->
+    <div class="tiaweb-layout__tab-bar tiaweb-js-ripple-effect">
+      <a href="#fixed-tab-1" class="tiaweb-layout__tab is-active">Tab 1</a>
+      <a href="#fixed-tab-2" class="tiaweb-layout__tab">Tab 2</a>
+      <a href="#fixed-tab-3" class="tiaweb-layout__tab">Tab 3</a>
+    </div>
+  </header>
+  <div class="tiaweb-layout__drawer">
+    <span class="tiaweb-layout-title">Title</span>
+  </div>
+  <main class="tiaweb-layout__content">
+    <section class="tiaweb-layout__tab-panel is-active" id="fixed-tab-1">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </section>
+    <section class="tiaweb-layout__tab-panel" id="fixed-tab-2">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </section>
+    <section class="tiaweb-layout__tab-panel" id="fixed-tab-3">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </section>
+  </main>
+</div>
+
+
+          </div>
+        </div>
+      <div class="snippet-demo-padding"></div>
+    </div>
+    <div class="snippet-captions">
+      <div class="snippet-caption-padding"></div>
+      
+        <div class="snippet-caption">
+          Fixed tabs
+        </div>
+      <div class="snippet-caption-padding"></div>
+    </div>
+  </div>
+  <div class="snippet-code">
+    <pre class="language-markup codepen-button-enabled"><code id="layout/fixed-tabs.html">&lt;!-- Simple header with fixed tabs. --&gt;
+&lt;div class=&quot;tiaweb-layout tiaweb-js-layout tiaweb-layout--fixed-header
+            tiaweb-layout--fixed-tabs&quot;&gt;
+  &lt;header class=&quot;tiaweb-layout__header&quot;&gt;
+    &lt;div class=&quot;tiaweb-layout__header-row&quot;&gt;
+      &lt;!-- Title --&gt;
+      &lt;span class=&quot;tiaweb-layout-title&quot;&gt;Title&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;!-- Tabs --&gt;
+    &lt;div class=&quot;tiaweb-layout__tab-bar tiaweb-js-ripple-effect&quot;&gt;
+      &lt;a href=&quot;#fixed-tab-1&quot; class=&quot;tiaweb-layout__tab is-active&quot;&gt;Tab 1&lt;/a&gt;
+      &lt;a href=&quot;#fixed-tab-2&quot; class=&quot;tiaweb-layout__tab&quot;&gt;Tab 2&lt;/a&gt;
+      &lt;a href=&quot;#fixed-tab-3&quot; class=&quot;tiaweb-layout__tab&quot;&gt;Tab 3&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;tiaweb-layout__drawer&quot;&gt;
+    &lt;span class=&quot;tiaweb-layout-title&quot;&gt;Title&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;main class=&quot;tiaweb-layout__content&quot;&gt;
+    &lt;section class=&quot;tiaweb-layout__tab-panel is-active&quot; id=&quot;fixed-tab-1&quot;&gt;
+      &lt;div class=&quot;page-content&quot;&gt;&lt;!-- Your content goes here --&gt;&lt;/div&gt;
+    &lt;/section&gt;
+    &lt;section class=&quot;tiaweb-layout__tab-panel&quot; id=&quot;fixed-tab-2&quot;&gt;
+      &lt;div class=&quot;page-content&quot;&gt;&lt;!-- Your content goes here --&gt;&lt;/div&gt;
+    &lt;/section&gt;
+    &lt;section class=&quot;tiaweb-layout__tab-panel&quot; id=&quot;fixed-tab-3&quot;&gt;
+      &lt;div class=&quot;page-content&quot;&gt;&lt;!-- Your content goes here --&gt;&lt;/div&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+&lt;/div&gt;
+</code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre>
+  </div>
+</div>
+
+          
+          <!-- Adding the demo page -->
+        
+          <style>
+            
+          </style>
+          
+          <script>
+            
+          </script>
+          
+          
+          <div class="docs-text-styling docs-readme">
+            
+            
+
+
+<h2 id="introduction">Introduction</h2>
+<p>The Material Design Lite (tiaweb) <strong>layout</strong> component is a comprehensive approach to page layout that uses tiaweb development tenets, allows for efficient use of tiaweb components, and automatically adapts to different browsers, screen sizes, and devices.</p>
+<p>Appropriate and accessible layout is a critical feature of all user interfaces, regardless of a site&#39;s content or function. Page design and presentation is therefore an important factor in the overall user experience. See the layout component&#39;s <a href="http://www.google.com/design/spec/layout/principles.html">Material Design specifications page</a> for details.</p>
+<p>Use of tiaweb layout principles simplifies the creation of scalable pages by providing reusable components and encourages consistency across environments by establishing recognizable visual elements, adhering to logical structural grids, and maintaining appropriate spacing across multiple platforms and screen sizes. tiaweb layout is extremely powerful and dynamic, allowing for great consistency in outward appearance and behavior while maintaining development flexibility and ease of use.</p>
+<h3 id="to-include-a-basic-tiaweb-layout-component-">To include a basic tiaweb <strong>layout</strong> component:</h3>
+<p>&nbsp;1. Code a <code>&lt;div&gt;</code> element. This is the &quot;outer&quot; div that holds the entire layout.</p>
+<pre><code class="language-markup">&lt;div&gt;
+&lt;/div&gt;
+</code></pre>
+<blockquote>
+<p><strong>Note:</strong> The layout cannot be applied directly on the <code>&lt;body&gt;</code> element. Always create a nested <code>&lt;div&gt;</code> element.</p>
+</blockquote>
+<p>&nbsp;2. Add tiaweb classes as indicated, separated by spaces, to the div using the <code>class</code> attribute.</p>
+<pre><code class="language-markup">&lt;div class=&quot;tiaweb-layout tiaweb-js-layout&quot;&gt;
+&lt;/div&gt;
+</code></pre>
+<p>&nbsp;3. Inside the div, code a <code>&lt;header&gt;</code> element. This holds the header row with navigation links that is displayed on large screens, and the menu icon that opens the navigation drawer for smaller screens. Add the tiaweb class to the header using the <code>class</code> attribute.</p>
+<pre><code class="language-markup">&lt;div class=&quot;tiaweb-layout tiaweb-js-layout&quot;&gt;
+  &lt;header class=&quot;tiaweb-layout__header&quot;&gt;
+  &lt;/header&gt;
+&lt;/div&gt;
+</code></pre>
+<p>&nbsp;4. Inside the header, add a <code>&lt;div&gt;</code> to produce the menu icon, and include the tiaweb class as indicated. The div has no content of its own.</p>
+<pre><code class="language-markup">&lt;div class=&quot;tiaweb-layout tiaweb-js-layout&quot;&gt;
+  &lt;header class=&quot;tiaweb-layout__header&quot;&gt;
+    &lt;div class=&quot;tiaweb-layout-icon&quot;&gt;&lt;/div&gt;
+  &lt;/header&gt;
+&lt;/div&gt;
+</code></pre>
+<p>&nbsp;5. Still inside the header, add another <code>&lt;div&gt;</code> to hold the header row&#39;s content, and include the tiaweb class as indicated.</p>
+<pre><code class="language-markup">&lt;div class=&quot;tiaweb-layout tiaweb-js-layout&quot;&gt;
+  &lt;header class=&quot;tiaweb-layout__header&quot;&gt;
+    &lt;div class=&quot;tiaweb-layout-icon&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;tiaweb-layout__header-row&quot;&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+&lt;/div&gt;
+</code></pre>
+<p>&nbsp;6. Inside the header row div, add a span containing the layout title, and include the tiaweb class as indicated.</p>
+<pre><code class="language-markup">&lt;div class=&quot;tiaweb-layout tiaweb-js-layout&quot;&gt;
+  &lt;header class=&quot;tiaweb-layout__header&quot;&gt;
+    &lt;div class=&quot;tiaweb-layout-icon&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;tiaweb-layout__header-row&quot;&gt;
+      &lt;span class=&quot;tiaweb-layout__title&quot;&gt;Simple Layout&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+&lt;/div&gt;
+</code></pre>
+<p>&nbsp;7. Following the span, add a <code>&lt;div&gt;</code> to align the header&#39;s navigation links to the right, and include the tiaweb class as indicated.</p>
+<pre><code class="language-markup">&lt;div class=&quot;tiaweb-layout tiaweb-js-layout&quot;&gt;
+  &lt;header class=&quot;tiaweb-layout__header&quot;&gt;
+    &lt;div class=&quot;tiaweb-layout-icon&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;tiaweb-layout__header-row&quot;&gt;
+      &lt;span class=&quot;tiaweb-layout__title&quot;&gt;Simple Layout&lt;/span&gt;
+      &lt;div class=&quot;tiaweb-layout-spacer&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+&lt;/div&gt;
+</code></pre>
+<p>&nbsp;8. Following the spacer div, add a <code>&lt;nav&gt;</code> element to contain the header&#39;s navigation links, and include the tiaweb class as indicated. Inside the nav, add one anchor <code>&lt;a&gt;</code> element for each header link, and include the tiaweb class as indicated. This completes the layout&#39;s header.</p>
+<pre><code class="language-markup">&lt;div class=&quot;tiaweb-layout tiaweb-js-layout&quot;&gt;
+  &lt;header class=&quot;tiaweb-layout__header&quot;&gt;
+    &lt;div class=&quot;tiaweb-layout-icon&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;tiaweb-layout__header-row&quot;&gt;
+      &lt;span class=&quot;tiaweb-layout__title&quot;&gt;Simple Layout&lt;/span&gt;
+      &lt;div class=&quot;tiaweb-layout-spacer&quot;&gt;&lt;/div&gt;
+      &lt;nav class=&quot;tiaweb-navigation&quot;&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Nav link 1&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Nav link 2&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Nav link 3&lt;/a&gt;
+      &lt;/nav&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+&lt;/div&gt;
+</code></pre>
+<p>&nbsp;9. Following the header, add a <code>&lt;div&gt;</code> element to hold the slide-out drawer&#39;s content, and add the tiaweb class as indicated. The drawer appears automatically on smaller screens, and may be opened with the menu icon on any screen size.</p>
+<pre><code class="language-markup">&lt;div class=&quot;tiaweb-layout tiaweb-js-layout&quot;&gt;
+  &lt;header class=&quot;tiaweb-layout__header&quot;&gt;
+    &lt;div class=&quot;tiaweb-layout-icon&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;tiaweb-layout__header-row&quot;&gt;
+      &lt;span class=&quot;tiaweb-layout__title&quot;&gt;Simple Layout&lt;/span&gt;
+      &lt;div class=&quot;tiaweb-layout-spacer&quot;&gt;&lt;/div&gt;
+      &lt;nav class=&quot;tiaweb-navigation&quot;&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Nav link 1&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Nav link 2&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Nav link 3&lt;/a&gt;
+      &lt;/nav&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;tiaweb-layout__drawer&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>&nbsp;10. Inside the drawer div, add a span containing the layout title (this should match the title in step 5), and include the tiaweb class as indicated.</p>
+<pre><code class="language-markup">&lt;div class=&quot;tiaweb-layout tiaweb-js-layout&quot;&gt;
+  &lt;header class=&quot;tiaweb-layout__header&quot;&gt;
+    &lt;div class=&quot;tiaweb-layout-icon&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;tiaweb-layout__header-row&quot;&gt;
+      &lt;span class=&quot;tiaweb-layout__title&quot;&gt;Simple Layout&lt;/span&gt;
+      &lt;div class=&quot;tiaweb-layout-spacer&quot;&gt;&lt;/div&gt;
+      &lt;nav class=&quot;tiaweb-navigation&quot;&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Nav link 1&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Nav link 2&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Nav link 3&lt;/a&gt;
+      &lt;/nav&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;tiaweb-layout__drawer&quot;&gt;
+    &lt;span class=&quot;tiaweb-layout__title&quot;&gt;Simple Layout&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>&nbsp;11. Following the span, add a <code>&lt;nav&gt;</code> element to contain the drawer&#39;s navigation links, and one anchor <code>&lt;a&gt;</code> element for each drawer link (these should match the links in step 7), and include the tiaweb classes as indicated. This completes the layout&#39;s drawer.</p>
+<pre><code class="language-markup">&lt;div class=&quot;tiaweb-layout tiaweb-js-layout&quot;&gt;
+  &lt;header class=&quot;tiaweb-layout__header&quot;&gt;
+    &lt;div class=&quot;tiaweb-layout-icon&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;tiaweb-layout__header-row&quot;&gt;
+      &lt;span class=&quot;tiaweb-layout__title&quot;&gt;Simple Layout&lt;/span&gt;
+      &lt;div class=&quot;tiaweb-layout-spacer&quot;&gt;&lt;/div&gt;
+      &lt;nav class=&quot;tiaweb-navigation&quot;&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Nav link 1&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Nav link 2&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Nav link 3&lt;/a&gt;
+      &lt;/nav&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;tiaweb-layout__drawer&quot;&gt;
+    &lt;span class=&quot;tiaweb-layout__title&quot;&gt;Simple Layout&lt;/span&gt;
+    &lt;nav class=&quot;tiaweb-navigation&quot;&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Nav link 1&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Nav link 2&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Nav link 3&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>&nbsp;12. Finally, following the drawer div, add a <code>&lt;main&gt;</code> element to hold the layout&#39;s primary content, and include the tiaweb class as indicated. Inside that element, add your desired content.</p>
+<pre><code class="language-markup">&lt;div class=&quot;tiaweb-layout tiaweb-js-layout&quot;&gt;
+  &lt;header class=&quot;tiaweb-layout__header&quot;&gt;
+    &lt;div class=&quot;tiaweb-layout-icon&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;tiaweb-layout__header-row&quot;&gt;
+      &lt;span class=&quot;tiaweb-layout__title&quot;&gt;Simple Layout&lt;/span&gt;
+      &lt;div class=&quot;tiaweb-layout-spacer&quot;&gt;&lt;/div&gt;
+      &lt;nav class=&quot;tiaweb-navigation&quot;&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Nav link 1&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Nav link 2&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Nav link 3&lt;/a&gt;
+      &lt;/nav&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;tiaweb-layout__drawer&quot;&gt;
+    &lt;span class=&quot;tiaweb-layout__title&quot;&gt;Simple Layout&lt;/span&gt;
+    &lt;nav class=&quot;tiaweb-navigation&quot;&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Nav link 1&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Nav link 2&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Nav link 3&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+  &lt;main class=&quot;tiaweb-layout__content&quot;&gt;
+    &lt;p&gt;Content&lt;/p&gt;
+    &lt;p&gt;Goes&lt;/p&gt;
+    &lt;p&gt;Here&lt;/p&gt;
+  &lt;/main&gt;
+&lt;/div&gt;
+</code></pre>
+<p>The layout component is ready for use.</p>
+<h4 id="examples">Examples</h4>
+<p>A layout with a fixed header for larger screens and a collapsible drawer for smaller screens.</p>
+<pre><code class="language-markup">&lt;div class=&quot;tiaweb-layout tiaweb-js-layout&quot;&gt;
+  &lt;header class=&quot;tiaweb-layout__header&quot;&gt;
+    &lt;div class=&quot;tiaweb-layout-icon&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;tiaweb-layout__header-row&quot;&gt;
+      &lt;span class=&quot;tiaweb-layout__title&quot;&gt;Material Design Lite&lt;/span&gt;
+      &lt;div class=&quot;tiaweb-layout-spacer&quot;&gt;&lt;/div&gt;
+      &lt;nav class=&quot;tiaweb-navigation&quot;&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Hello&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;World.&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;How&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Are&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;You?&lt;/a&gt;
+      &lt;/nav&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;tiaweb-layout__drawer&quot;&gt;
+    &lt;span class=&quot;tiaweb-layout__title&quot;&gt;Material Design Lite&lt;/span&gt;
+    &lt;nav class=&quot;tiaweb-navigation&quot;&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Hello&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;World.&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;How&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Are&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;You?&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+  &lt;main class=&quot;tiaweb-layout__content&quot;&gt;
+    &lt;div&gt;Content&lt;/div&gt;
+  &lt;/main&gt;
+&lt;/div&gt;
+</code></pre>
+<p>The same layout with a non-fixed header that scrolls with the content.</p>
+<pre><code class="language-markup">&lt;div class=&quot;tiaweb-layout tiaweb-js-layout&quot;&gt;
+  &lt;header class=&quot;tiaweb-layout__header tiaweb-layout__header--scroll&quot;&gt;
+    &lt;img class=&quot;tiaweb-layout-icon&quot;&gt;&lt;/img&gt;
+    &lt;div class=&quot;tiaweb-layout__header-row&quot;&gt;
+      &lt;span class=&quot;tiaweb-layout__title&quot;&gt;Material Design Lite&lt;/span&gt;
+      &lt;div class=&quot;tiaweb-layout-spacer&quot;&gt;&lt;/div&gt;
+      &lt;nav class=&quot;tiaweb-navigation&quot;&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Hello&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;World.&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;How&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Are&lt;/a&gt;
+        &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;You?&lt;/a&gt;
+      &lt;/nav&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;tiaweb-layout__drawer&quot;&gt;
+    &lt;span class=&quot;tiaweb-layout__title&quot;&gt;Material Design Lite&lt;/span&gt;
+    &lt;nav class=&quot;tiaweb-navigation&quot;&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Hello&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;World.&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;How&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Are&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;You?&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+  &lt;main class=&quot;tiaweb-layout__content&quot;&gt;
+    &lt;div&gt;Content&lt;/div&gt;
+  &lt;/main&gt;
+&lt;/div&gt;
+</code></pre>
+<p>A layout with a fixed drawer that serves as sidebar navigation on larger screens. The drawer collapses and the menu icon is displayed on smaller screens.</p>
+<pre><code class="language-markup">&lt;div class=&quot;tiaweb-layout tiaweb-js-layout tiaweb-layout--fixed-drawer&quot;&gt;
+  &lt;header class=&quot;tiaweb-layout__header&quot;&gt;
+    &lt;div class=&quot;tiaweb-layout__header-row&quot;&gt;
+      &lt;span class=&quot;tiaweb-layout__title&quot;&gt;Fixed drawer layout demo&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;tiaweb-layout__drawer&quot;&gt;
+    &lt;span class=&quot;tiaweb-layout__title&quot;&gt;Material Design Lite&lt;/span&gt;
+    &lt;nav class=&quot;tiaweb-navigation&quot;&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Hello&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;World.&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;How&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Are&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;You?&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+  &lt;main class=&quot;tiaweb-layout__content&quot;&gt;
+    &lt;div&gt;Content&lt;/div&gt;
+  &lt;/main&gt;
+&lt;/div&gt;
+</code></pre>
+<p>A layout with a fixed drawer but no header.</p>
+<pre><code class="language-markup">&lt;div class=&quot;tiaweb-layout tiaweb-js-layout tiaweb-layout--fixed-drawer&quot;&gt;
+  &lt;div class=&quot;tiaweb-layout__drawer&quot;&gt;
+    &lt;span class=&quot;tiaweb-layout__title&quot;&gt;Material Design Lite&lt;/span&gt;
+    &lt;nav class=&quot;tiaweb-navigation&quot;&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Hello&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;World.&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;How&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;Are&lt;/a&gt;
+      &lt;a class=&quot;tiaweb-navigation__link&quot; href=&quot;#&quot;&gt;You?&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+  &lt;main class=&quot;tiaweb-layout__content&quot;&gt;
+    &lt;div&gt;Content&lt;/div&gt;
+  &lt;/main&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 id="configuration-options">Configuration options</h2>
+<p>The tiaweb CSS classes apply various predefined visual and behavioral enhancements to the layout. The table below lists the available classes and their effects.</p>
+<table>
+<thead>
+<tr>
+<th>tiaweb class</th>
+<th>Effect</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>tiaweb-layout</code></td>
+<td>Defines container as an tiaweb component</td>
+<td>Required on outer div element</td>
+</tr>
+<tr>
+<td><code>tiaweb-js-layout</code></td>
+<td>Assigns basic tiaweb behavior to layout</td>
+<td>Required on outer div element</td>
+</tr>
+<tr>
+<td><code>tiaweb-layout__header</code></td>
+<td>Defines container as an tiaweb component</td>
+<td>Required on header element</td>
+</tr>
+<tr>
+<td><code>tiaweb-layout-icon</code></td>
+<td>Used for adding an application icon. Gets concealed by menu icon if both are visible.</td>
+<td>Goes on optional icon element</td>
+</tr>
+<tr>
+<td><code>tiaweb-layout__header-row</code></td>
+<td>Defines container as tiaweb header row</td>
+<td>Required on header content div</td>
+</tr>
+<tr>
+<td><code>tiaweb-layout__title</code></td>
+<td>Defines layout title text</td>
+<td>Required on layout title span</td>
+</tr>
+<tr>
+<td><code>tiaweb-layout-spacer</code></td>
+<td>Used to align elements inside a header or drawer, by growing to fill remaining space. Commonly used for aligning elements to the right.</td>
+<td>Goes on optional div following layout title</td>
+</tr>
+<tr>
+<td><code>tiaweb-navigation</code></td>
+<td>Defines container as tiaweb navigation group</td>
+<td>Required on nav element</td>
+</tr>
+<tr>
+<td><code>tiaweb-navigation__link</code></td>
+<td>Defines anchor as tiaweb navigation link</td>
+<td>Required on header and/or drawer anchor elements</td>
+</tr>
+<tr>
+<td><code>tiaweb-layout__drawer</code></td>
+<td>Defines container as tiaweb layout drawer</td>
+<td>Required on drawer div element</td>
+</tr>
+<tr>
+<td><code>tiaweb-layout__content</code></td>
+<td>Defines container as tiaweb layout content</td>
+<td>Required on main element</td>
+</tr>
+<tr>
+<td><code>tiaweb-layout__header--scroll</code></td>
+<td>Makes the header scroll with the content</td>
+<td>Optional; goes on header element</td>
+</tr>
+<tr>
+<td><code>tiaweb-layout--fixed-drawer</code></td>
+<td>Makes the drawer always visible and open in larger screens</td>
+<td>Optional; goes on outer div element (not drawer div element)</td>
+</tr>
+<tr>
+<td><code>tiaweb-layout--fixed-header</code></td>
+<td>Makes the header always visible, even in small screens</td>
+<td>Optional; goes on outer div element</td>
+</tr>
+<tr>
+<td><code>tiaweb-layout--no-drawer-button</code></td>
+<td>Does not display a drawer button</td>
+<td>Optional; goes on <code>tiaweb-layout</code> element</td>
+</tr>
+<tr>
+<td><code>tiaweb-layout--no-desktop-drawer-button</code></td>
+<td>Does not display a drawer button in desktop mode</td>
+<td>Optional; goes on <code>tiaweb-layout</code> element</td>
+</tr>
+<tr>
+<td><code>tiaweb-layout--large-screen-only</code></td>
+<td>Hides an element on smaller screens</td>
+<td>Optional; goes on any descendant of <code>tiaweb-layout</code></td>
+</tr>
+<tr>
+<td><code>tiaweb-layout--small-screen-only</code></td>
+<td>Hides an element on larger screens</td>
+<td>Optional; goes on any descendant of <code>tiaweb-layout</code></td>
+</tr>
+<tr>
+<td><code>tiaweb-layout__header--waterfall</code></td>
+<td>Allows a &quot;waterfall&quot; effect with multiple header lines</td>
+<td>Optional; goes on header element</td>
+</tr>
+<tr>
+<td><code>tiaweb-layout__header--waterfall-hide-top</code></td>
+<td>Hides the top rather than the bottom rows on a waterfall header</td>
+<td>Optional; goes on header element. Requires <code>tiaweb-layout__header--waterfall</code></td>
+</tr>
+<tr>
+<td><code>tiaweb-layout__header--transparent</code></td>
+<td>Makes header transparent (draws on top of layout background)</td>
+<td>Optional; goes on header element</td>
+</tr>
+<tr>
+<td><code>tiaweb-layout__header--seamed</code></td>
+<td>Uses a header without a shadow</td>
+<td>Optional; goes on header element</td>
+</tr>
+<tr>
+<td><code>tiaweb-layout__tab-bar</code></td>
+<td>Defines container as an tiaweb tab bar</td>
+<td>Required on div element inside header (tabbed layout)</td>
+</tr>
+<tr>
+<td><code>tiaweb-layout__tab</code></td>
+<td>Defines anchor as tiaweb tab link</td>
+<td>Required on tab bar anchor elements</td>
+</tr>
+<tr>
+<td><code>is-active</code></td>
+<td>Defines tab as default active tab</td>
+<td>Optional; goes on tab bar anchor element and associated tab section element</td>
+</tr>
+<tr>
+<td><code>tiaweb-layout__tab-panel</code></td>
+<td>Defines container as tab content panel</td>
+<td>Required on tab section elements</td>
+</tr>
+<tr>
+<td><code>tiaweb-layout__tab-manual-switch</code></td>
+<td>Disables tab switching when clicking on tab separators. Useful for disabling default behavior and setting up your own event listeners.</td>
+<td>Optional; goes on tab bar element</td>
+</tr>
+<tr>
+<td><code>tiaweb-layout--fixed-tabs</code></td>
+<td>Uses fixed tabs instead of the default scrollable tabs</td>
+<td>Optional; goes on outer div element (not div inside header)</td>
+</tr>
+</tbody>
+</table>
+
+
+
+          </div>
+        
+
+          
+            <span class="docs-text-styling">
+              <h1 class="tiaweb-components__classname" id="layout-section/grid">Grid</h1>
+            </span>
+          
+          <!-- Add warning, if the component has one -->
+          
+          <!-- Generating snippets -->
+          
+            
+            
+<div class="snippet-group is-full-width">
+
+  <div class="snippet-header">
+    <div class="snippet-demos">
+      <div class="snippet-demo-padding"></div>
+      
+        
+        
+        
+        <div class="snippet-demo">
+          <div class="snippet-demo-container demo-grid demo-grid__grid">
+            <style>
+.demo-grid .tiaweb-cell {
+  box-sizing: border-box;
+  background-color: #BDBDBD;
+  height: 200px;
+  padding-left: 8px;
+  padding-top: 4px;
+  color: white;
+}
+.demo-grid .tiaweb-grid:first-of-type .tiaweb-cell {
+  height: 50px;
+}
+</style>
+
+<div class="tiaweb-grid">
+  <div class="tiaweb-cell tiaweb-cell--1-col">1</div>
+  <div class="tiaweb-cell tiaweb-cell--1-col">1</div>
+  <div class="tiaweb-cell tiaweb-cell--1-col">1</div>
+  <div class="tiaweb-cell tiaweb-cell--1-col">1</div>
+  <div class="tiaweb-cell tiaweb-cell--1-col">1</div>
+  <div class="tiaweb-cell tiaweb-cell--1-col">1</div>
+  <div class="tiaweb-cell tiaweb-cell--1-col">1</div>
+  <div class="tiaweb-cell tiaweb-cell--1-col">1</div>
+  <div class="tiaweb-cell tiaweb-cell--1-col">1</div>
+  <div class="tiaweb-cell tiaweb-cell--1-col">1</div>
+  <div class="tiaweb-cell tiaweb-cell--1-col">1</div>
+  <div class="tiaweb-cell tiaweb-cell--1-col">1</div>
+</div>
+<div class="tiaweb-grid">
+  <div class="tiaweb-cell tiaweb-cell--4-col">4</div>
+  <div class="tiaweb-cell tiaweb-cell--4-col">4</div>
+  <div class="tiaweb-cell tiaweb-cell--4-col">4</div>
+</div>
+<div class="tiaweb-grid">
+  <div class="tiaweb-cell tiaweb-cell--6-col">6</div>
+  <div class="tiaweb-cell tiaweb-cell--4-col">4</div>
+  <div class="tiaweb-cell tiaweb-cell--2-col">2</div>
+</div>
+<div class="tiaweb-grid">
+  <div class="tiaweb-cell tiaweb-cell--6-col tiaweb-cell--8-col-tablet">6 (8 tablet)</div>
+  <div class="tiaweb-cell tiaweb-cell--4-col tiaweb-cell--6-col-tablet">4 (6 tablet)</div>
+  <div class="tiaweb-cell tiaweb-cell--2-col tiaweb-cell--4-col-phone">2 (4 phone)</div>
+</div>
+
+
+          </div>
+        </div>
+      <div class="snippet-demo-padding"></div>
+    </div>
+    <div class="snippet-captions">
+      <div class="snippet-caption-padding"></div>
+      
+        <div class="snippet-caption">
+          Responsive grid
+        </div>
+      <div class="snippet-caption-padding"></div>
+    </div>
+  </div>
+  <div class="snippet-code">
+    <pre class="language-markup codepen-button-enabled"><code id="grid/grid.html">&lt;div class=&quot;tiaweb-grid&quot;&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--1-col&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--1-col&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--1-col&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--1-col&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--1-col&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--1-col&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--1-col&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--1-col&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--1-col&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--1-col&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--1-col&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--1-col&quot;&gt;1&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;tiaweb-grid&quot;&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--4-col&quot;&gt;4&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--4-col&quot;&gt;4&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--4-col&quot;&gt;4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;tiaweb-grid&quot;&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--6-col&quot;&gt;6&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--4-col&quot;&gt;4&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--2-col&quot;&gt;2&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;tiaweb-grid&quot;&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--6-col tiaweb-cell--8-col-tablet&quot;&gt;6 (8 tablet)&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--4-col tiaweb-cell--6-col-tablet&quot;&gt;4 (6 tablet)&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--2-col tiaweb-cell--4-col-phone&quot;&gt;2 (4 phone)&lt;/div&gt;
+&lt;/div&gt;
+</code><div class="codepen-extra-css">&lt;style&gt;.tiaweb-cell {
+  box-sizing: border-box;
+  background-color: #BDBDBD;
+  height: 200px;
+  padding-left: 8px;
+  padding-top: 4px;
+  color: white;
+}
+.tiaweb-grid:first-of-type .tiaweb-cell {
+  height: 50px;
+}
+&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre>
+  </div>
+</div>
+
+          
+          <!-- Adding the demo page -->
+        
+          <style>
+            
+          </style>
+          
+          <script>
+            
+          </script>
+          
+          
+          <div class="docs-text-styling docs-readme">
+            
+            
+
+
+<h2 id="introduction">Introduction</h2>
+<p>The Material Design Lite (tiaweb) <strong>grid</strong> component is a simplified method for laying out content for multiple screen sizes. It reduces the usual coding burden required to correctly display blocks of content in a variety of display conditions.</p>
+<p>The tiaweb grid is defined and enclosed by a container element. A grid has 12 columns in the desktop screen size, 8 in the tablet size, and 4 in the phone size, each size having predefined margins and gutters. Cells are laid out sequentially in a row, in the order they are defined, with some exceptions:</p>
+<ul>
+<li>If a cell doesn&#39;t fit in the row in one of the screen sizes, it flows into the following line.</li>
+<li>If a cell has a specified column size equal to or larger than the number of columns for the current screen size, it takes up the entirety of its row.</li>
+</ul>
+<p>You can set a maximum grid width, after which the grid stays centered with padding on either side, by setting its <code>max-width</code> CSS property.</p>
+<p>Grids are a fairly new and non-standardized feature in most user interfaces, and provide users with a way to view content in an organized manner that might otherwise be difficult to understand or retain. Their design and use is an important factor in the overall user experience.</p>
+<h3 id="to-include-an-tiaweb-grid-component-">To include an tiaweb <strong>grid</strong> component:</h3>
+<p>&nbsp;1. Code a <code>&lt;div&gt;</code> element; this is the &quot;outer&quot; container, intended to hold all of the grid&#39;s cells. Style the div as desired (colors, font size, etc.).</p>
+<pre><code class="language-markup">&lt;div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>&nbsp;2. Add the <code>tiaweb-grid</code> tiaweb class to the div using the <code>class</code> attribute.</p>
+<pre><code>&lt;div class=&quot;tiaweb-grid&quot;&gt;
+&lt;/div&gt;
+</code></pre><p>&nbsp;3. For each cell, code one &quot;inner&quot; div, including the text to be displayed.</p>
+<pre><code class="language-markup">&lt;div class=&quot;tiaweb-grid&quot;&gt;
+  &lt;div&gt;Content&lt;/div&gt;
+  &lt;div&gt;goes&lt;/div&gt;
+  &lt;div&gt;here&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>&nbsp;4. Add the <code>tiaweb-cell</code> class and an <code>tiaweb-cell--COLUMN-col</code> class, where COLUMN specifies the column size for the cell, to the &quot;inner&quot; divs using the <code>class</code> attribute.</p>
+<pre><code class="language-markup">&lt;div class=&quot;tiaweb-grid&quot;&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--4-col&quot;&gt;Content&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--4-col&quot;&gt;goes&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--4-col&quot;&gt;here&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>&nbsp;5. Optionally add an <code>tiaweb-cell--COLUMN-col-DEVICE</code> class, where COLUMN specifies the column size for the cell on a specific device, and DEVICE specifies the device type.</p>
+<pre><code class="language-markup">&lt;div class=&quot;tiaweb-grid&quot;&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--4-col tiaweb-cell--8-col-tablet&quot;&gt;Content&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--4-col tiaweb-cell--8-col-tablet&quot;&gt;goes&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--4-col tiaweb-cell--8-col-tablet&quot;&gt;here&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>The grid component is ready for use.</p>
+<h4 id="examples">Examples</h4>
+<p>A grid with five cells of column size 1.</p>
+<pre><code class="language-markup">&lt;div class=&quot;tiaweb-grid&quot;&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--1-col&quot;&gt;CS 1&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--1-col&quot;&gt;CS 1&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--1-col&quot;&gt;CS 1&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--1-col&quot;&gt;CS 1&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--1-col&quot;&gt;CS 1&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>A grid with three cells, one of column size 6, one of column size 4, and one of column size 2.</p>
+<pre><code class="language-markup">&lt;div class=&quot;tiaweb-grid&quot;&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--6-col&quot;&gt;CS 6&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--4-col&quot;&gt;CS 4&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--2-col&quot;&gt;CS 2&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>A grid with three cells of column size 6 that will display as column size 8 on a tablet device.</p>
+<pre><code class="language-markup">&lt;div class=&quot;tiaweb-grid&quot;&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--6-col tiaweb-cell--8-col-tablet&quot;&gt;CS 6 (8 on tablet)&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--6-col tiaweb-cell--8-col-tablet&quot;&gt;CS 6 (8 on tablet)&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--6-col tiaweb-cell--8-col-tablet&quot;&gt;CS 6 (8 on tablet)&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>A grid with four cells of column size 2 that will display as column size 4 on a phone device.</p>
+<pre><code class="language-markup">&lt;div class=&quot;tiaweb-grid&quot;&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--2-col tiaweb-cell--4-col-phone&quot;&gt;CS 2 (4 on phone)&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--2-col tiaweb-cell--4-col-phone&quot;&gt;CS 2 (4 on phone)&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--2-col tiaweb-cell--4-col-phone&quot;&gt;CS 2 (4 on phone)&lt;/div&gt;
+  &lt;div class=&quot;tiaweb-cell tiaweb-cell--2-col tiaweb-cell--4-col-phone&quot;&gt;CS 2 (4 on phone)&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 id="configuration-options">Configuration options</h2>
+<p>The tiaweb CSS classes apply various predefined visual enhancements and behavioral effects to the grid. The table below lists the available classes and their effects.</p>
+<table>
+<thead>
+<tr>
+<th>tiaweb class</th>
+<th>Effect</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>tiaweb-grid</code></td>
+<td>Defines a container as an tiaweb grid component</td>
+<td>Required on &quot;outer&quot; div element</td>
+</tr>
+<tr>
+<td><code>tiaweb-cell</code></td>
+<td>Defines a container as an tiaweb cell</td>
+<td>Required on &quot;inner&quot; div elements</td>
+</tr>
+<tr>
+<td><code>tiaweb-grid--no-spacing</code></td>
+<td>Modifies the grid cells to have no margin between them.</td>
+<td>Optional on grid container.</td>
+</tr>
+<tr>
+<td><code>tiaweb-cell--N-col</code></td>
+<td>Sets the column size for the cell to N</td>
+<td>N is 1-12 inclusive, defaults to 4; optional on &quot;inner&quot; div elements</td>
+</tr>
+<tr>
+<td><code>tiaweb-cell--N-col-desktop</code></td>
+<td>Sets the column size for the cell to N in desktop mode only</td>
+<td>N is 1-12 inclusive; optional on &quot;inner&quot; div elements</td>
+</tr>
+<tr>
+<td><code>tiaweb-cell--N-col-tablet</code></td>
+<td>Sets the column size for the cell to N in tablet mode only</td>
+<td>N is 1-8 inclusive; optional on &quot;inner&quot; div elements</td>
+</tr>
+<tr>
+<td><code>tiaweb-cell--N-col-phone</code></td>
+<td>Sets the column size for the cell to N in phone mode only</td>
+<td>N is 1-4 inclusive; optional on &quot;inner&quot; div elements</td>
+</tr>
+<tr>
+<td><code>tiaweb-cell--N-offset</code></td>
+<td>Adds N columns of whitespace before the cell</td>
+<td>N is 1-11 inclusive; optional on &quot;inner&quot; div elements</td>
+</tr>
+<tr>
+<td><code>tiaweb-cell--N-offset-desktop</code></td>
+<td>Adds N columns of whitespace before the cell in desktop mode</td>
+<td>N is 1-11 inclusive; optional on &quot;inner&quot; div elements</td>
+</tr>
+<tr>
+<td><code>tiaweb-cell--N-offset-tablet</code></td>
+<td>Adds N columns of whitespace before the cell in tablet mode</td>
+<td>N is 1-7 inclusive; optional on &quot;inner&quot; div elements</td>
+</tr>
+<tr>
+<td><code>tiaweb-cell--N-offset-phone</code></td>
+<td>Adds N columns of whitespace before the cell in phone mode</td>
+<td>N is 1-3 inclusive; optional on &quot;inner&quot; div elements</td>
+</tr>
+<tr>
+<td><code>tiaweb-cell--order-N</code></td>
+<td>Reorders cell to position N</td>
+<td>N is 1-12 inclusive; optional on &quot;inner&quot; div elements</td>
+</tr>
+<tr>
+<td><code>tiaweb-cell--order-N-desktop</code></td>
+<td>Reorders cell to position N when in desktop mode</td>
+<td>N is 1-12 inclusive; optional on &quot;inner&quot; div elements</td>
+</tr>
+<tr>
+<td><code>tiaweb-cell--order-N-tablet</code></td>
+<td>Reorders cell to position N when in tablet mode</td>
+<td>N is 1-12 inclusive; optional on &quot;inner&quot; div elements</td>
+</tr>
+<tr>
+<td><code>tiaweb-cell--order-N-phone</code></td>
+<td>Reorders cell to position N when in phone mode</td>
+<td>N is 1-12 inclusive; optional on &quot;inner&quot; div elements</td>
+</tr>
+<tr>
+<td><code>tiaweb-cell--hide-desktop</code></td>
+<td>Hides the cell when in desktop mode</td>
+<td>Optional on &quot;inner&quot; div elements</td>
+</tr>
+<tr>
+<td><code>tiaweb-cell--hide-tablet</code></td>
+<td>Hides the cell when in tablet mode</td>
+<td>Optional on &quot;inner&quot; div elements</td>
+</tr>
+<tr>
+<td><code>tiaweb-cell--hide-phone</code></td>
+<td>Hides the cell when in phone mode</td>
+<td>Optional on &quot;inner&quot; div elements</td>
+</tr>
+<tr>
+<td><code>tiaweb-cell--stretch</code></td>
+<td>Stretches the cell vertically to fill the parent</td>
+<td>Default; optional on &quot;inner&quot; div elements</td>
+</tr>
+<tr>
+<td><code>tiaweb-cell--top</code></td>
+<td>Aligns the cell to the top of the parent</td>
+<td>Optional on &quot;inner&quot; div elements</td>
+</tr>
+<tr>
+<td><code>tiaweb-cell--middle</code></td>
+<td>Aligns the cell to the middle of the parent</td>
+<td>Optional on &quot;inner&quot; div elements</td>
+</tr>
+<tr>
+<td><code>tiaweb-cell--bottom</code></td>
+<td>Aligns the cell to the bottom of the parent</td>
+<td>Optional on &quot;inner&quot; div elements</td>
+</tr>
+</tbody>
+</table>
+
+
+
+          </div>
+        
+
+          
+            <span class="docs-text-styling">
+              <h1 class="tiaweb-components__classname" id="layout-section/tabs">Tabs</h1>
+            </span>
+          
+          <!-- Add warning, if the component has one -->
+          
+          <!-- Generating snippets -->
+          
+            
+            
+<div class="snippet-group">
+
+  <div class="snippet-header">
+    <div class="snippet-demos">
+      <div class="snippet-demo-padding"></div>
+      
+        
+        
+        
+        <div class="snippet-demo">
+          <div class="snippet-demo-container demo-tabs demo-tabs__tabs">
+            <div class="tiaweb-tabs tiaweb-js-tabs tiaweb-js-ripple-effect">
+  <div class="tiaweb-tabs__tab-bar">
+      <a href="#starks-panel" class="tiaweb-tabs__tab is-active">Starks</a>
+      <a href="#lannisters-panel" class="tiaweb-tabs__tab">Lannisters</a>
+      <a href="#targaryens-panel" class="tiaweb-tabs__tab">Targaryens</a>
+  </div>
+
+  <div class="tiaweb-tabs__panel is-active" id="starks-panel">
+    <ul>
+      <li>Eddard</li>
+      <li>Catelyn</li>
+      <li>Robb</li>
+      <li>Sansa</li>
+      <li>Brandon</li>
+      <li>Arya</li>
+      <li>Rickon</li>
+    </ul>
+  </div>
+  <div class="tiaweb-tabs__panel" id="lannisters-panel">
+    <ul>
+      <li>Tywin</li>
+      <li>Cersei</li>
+      <li>Jamie</li>
+      <li>Tyrion</li>
+    </ul>
+  </div>
+  <div class="tiaweb-tabs__panel" id="targaryens-panel">
+    <ul>
+      <li>Viserys</li>
+      <li>Daenerys</li>
+    </ul>
+  </div>
+</div>
+
+          </div>
+        </div>
+      <div class="snippet-demo-padding"></div>
+    </div>
+    <div class="snippet-captions">
+      <div class="snippet-caption-padding"></div>
+      
+        <div class="snippet-caption">
+          Content tabs
+        </div>
+      <div class="snippet-caption-padding"></div>
+    </div>
+  </div>
+  <div class="snippet-code">
+    <pre class="language-markup codepen-button-enabled"><code id="tabs/tabs.html">&lt;div class=&quot;tiaweb-tabs tiaweb-js-tabs tiaweb-js-ripple-effect&quot;&gt;
+  &lt;div class=&quot;tiaweb-tabs__tab-bar&quot;&gt;
+      &lt;a href=&quot;#starks-panel&quot; class=&quot;tiaweb-tabs__tab is-active&quot;&gt;Starks&lt;/a&gt;
+      &lt;a href=&quot;#lannisters-panel&quot; class=&quot;tiaweb-tabs__tab&quot;&gt;Lannisters&lt;/a&gt;
+      &lt;a href=&quot;#targaryens-panel&quot; class=&quot;tiaweb-tabs__tab&quot;&gt;Targaryens&lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;tiaweb-tabs__panel is-active&quot; id=&quot;starks-panel&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Eddard&lt;/li&gt;
+      &lt;li&gt;Catelyn&lt;/li&gt;
+      &lt;li&gt;Robb&lt;/li&gt;
+      &lt;li&gt;Sansa&lt;/li&gt;
+      &lt;li&gt;Brandon&lt;/li&gt;
+      &lt;li&gt;Arya&lt;/li&gt;
+      &lt;li&gt;Rickon&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-tabs__panel&quot; id=&quot;lannisters-panel&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Tywin&lt;/li&gt;
+      &lt;li&gt;Cersei&lt;/li&gt;
+      &lt;li&gt;Jamie&lt;/li&gt;
+      &lt;li&gt;Tyrion&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-tabs__panel&quot; id=&quot;targaryens-panel&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Viserys&lt;/li&gt;
+      &lt;li&gt;Daenerys&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><div class="codepen-extra-css">&lt;style&gt;
+body {
+  padding: 20px;
+  background: #fafafa;
+  position: relative;
+}
+&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre>
+  </div>
+</div>
+
+          
+          <!-- Adding the demo page -->
+        
+          <style>
+            
+          </style>
+          
+          <script>
+            
+          </script>
+          
+          
+          <div class="docs-text-styling docs-readme">
+            
+            
+
+
+<h2 id="introduction">Introduction</h2>
+<p>The Material Design Lite (tiaweb) <strong>tab</strong> component is a user interface element that allows different content blocks to share the same screen space in a mutually exclusive manner. Tabs are always presented in sets of two or more, and they make it easy to explore and switch among different views or functional aspects of an app, or to browse categorized data sets individually. Tabs serve as &quot;headings&quot; for their respective content; the <em>active</em> tab &mdash; the one whose content is currently displayed &mdash; is always visually distinguished from the others so the user knows which heading the current content belongs to.</p>
+<p>Tabs are an established but non-standardized feature in user interfaces, and allow users to view different, but often related, blocks of content (often called <em>panels</em>). Tabs save screen real estate and provide intuitive and logical access to data while reducing navigation and associated user confusion. Their design and use is an important factor in the overall user experience. See the tab component&#39;s <a href="http://www.google.com/design/spec/components/tabs.html">Material Design specifications page</a> for details.</p>
+<h3 id="to-include-a-set-of-tiaweb-tab-components-">To include a set of tiaweb <strong>tab</strong> components:</h3>
+<p>&nbsp;1. Code a <code>&lt;div&gt;</code> element; this is the &quot;outer&quot; div, intended to contain all of the tabs and their content.</p>
+<pre><code class="language-markup">&lt;div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>&nbsp;2. Inside the &quot;outer&quot; div, code one &quot;inner&quot; div for the tabs themselves, and one for each tab&#39;s content, all siblings. That is, for three content tabs, you would code four &quot;inner&quot; divs.</p>
+<pre><code class="language-markup">&lt;div&gt;
+  &lt;div&gt;
+  ...
+  &lt;/div&gt;
+  &lt;div&gt;
+  ...
+  &lt;/div&gt;
+  &lt;div&gt;
+  ...
+  &lt;/div&gt;
+  &lt;div&gt;
+  ...
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>&nbsp;3. Inside the first &quot;inner&quot; div (the tabs), code one anchor <code>&lt;a&gt;</code> (link) tag for each tab. Include <code>href</code> attributes with values to match the tabs&#39; <code>id</code> attribute values, and some brief link text. On the remaining &quot;inner&quot; divs (the content), code <code>id</code> attributes whose values match the links&#39; <code>href</code>s.</p>
+<pre><code class="language-markup">&lt;div&gt;
+  &lt;div&gt;
+    &lt;a href=&quot;#tab1&quot;&gt;Tab One&lt;/a&gt;
+    &lt;a href=&quot;#tab2&quot;&gt;Tab Two&lt;/a&gt;
+    &lt;a href=&quot;#tab3&quot;&gt;Tab Three&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div id=&quot;tab1&quot;&gt;
+  ...
+  &lt;/div&gt;
+  &lt;div id=&quot;tab2&quot;&gt;
+  ...
+  &lt;/div&gt;
+  &lt;div id=&quot;tab3&quot;&gt;
+  ...
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>&nbsp;4. Inside the remaining &quot;inner&quot; divs, code the content you intend to display in each panel; use standard HTML tags to structure the content as desired.</p>
+<pre><code class="language-markup">&lt;div&gt;
+  &lt;div&gt;
+    &lt;a href=&quot;#tab1&quot;&gt;Tab One&lt;/a&gt;
+    &lt;a href=&quot;#tab2&quot;&gt;Tab Two&lt;/a&gt;
+    &lt;a href=&quot;#tab3&quot;&gt;Tab Three&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div id=&quot;tab1&quot;&gt;
+    &lt;p&gt;First tab&#39;s content.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div id=&quot;tab2&quot;&gt;
+    &lt;p&gt;Second tab&#39;s content.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div id=&quot;tab3&quot;&gt;
+    &lt;p&gt;Third tab&#39;s content.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>&nbsp;5. Add one or more tiaweb classes, separated by spaces, to the &quot;outer&quot; and &quot;inner&quot; divs using the <code>class</code> attribute; be sure to include the <code>is-active</code> class on the tab you want to be displayed by default.</p>
+<pre><code class="language-markup">&lt;div class=&quot;tiaweb-tabs tiaweb-js-tabs&quot;&gt;
+  &lt;div class=&quot;tiaweb-tabs__tab-bar&quot;&gt;
+    &lt;a href=&quot;#tab1&quot; class=&quot;tiaweb-tabs__tab&quot;&gt;Tab One&lt;/a&gt;
+    &lt;a href=&quot;#tab2&quot; class=&quot;tiaweb-tabs__tab&quot;&gt;Tab Two&lt;/a&gt;
+    &lt;a href=&quot;#tab3&quot; class=&quot;tiaweb-tabs__tab&quot;&gt;Tab Three&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-tabs__panel is-active&quot; id=&quot;tab1&quot;&gt;
+    &lt;p&gt;First tab&#39;s content.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-tabs__panel&quot; id=&quot;tab2&quot;&gt;
+    &lt;p&gt;Second tab&#39;s content.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-tabs__panel&quot; id=&quot;tab3&quot;&gt;
+    &lt;p&gt;Third tab&#39;s content.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>The tab components are ready for use.</p>
+<h4 id="example">Example</h4>
+<p>Three tabs, with ripple effect on tab links.</p>
+<pre><code class="language-markup">&lt;div class=&quot;tiaweb-tabs tiaweb-js-tabs tiaweb-js-ripple-effect&quot;&gt;
+  &lt;div class=&quot;tiaweb-tabs__tab-bar&quot;&gt;
+    &lt;a href=&quot;#about-panel&quot; class=&quot;tiaweb-tabs__tab is-active&quot;&gt;About the Beatles&lt;/a&gt;
+    &lt;a href=&quot;#members-panel&quot; class=&quot;tiaweb-tabs__tab&quot;&gt;Members&lt;/a&gt;
+    &lt;a href=&quot;#albums-panel&quot; class=&quot;tiaweb-tabs__tab&quot;&gt;Discography&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-tabs__panel is-active&quot; id=&quot;about-panel&quot;&gt;
+    &lt;p&gt;&lt;b&gt;The Beatles&lt;/b&gt; were a four-piece musical group from Liverpool, England.
+    Formed in 1960, their career spanned just over a decade, yet they are widely
+    regarded as the most influential band in history.&lt;/p&gt;
+    &lt;p&gt;Their songs are among the best-loved music of all time. It is said that every
+    minute of every day, a radio station somewhere is playing a Beatles song.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-tabs__panel&quot; id=&quot;members-panel&quot;&gt;
+    &lt;p&gt;The Beatles&#39; members were:&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;John Lennon (1940-1980)&lt;/li&gt;
+      &lt;li&gt;Paul McCartney (1942-)&lt;/li&gt;
+      &lt;li&gt;George Harrison (1943-2001)&lt;/li&gt;
+      &lt;li&gt;Ringo Starr (1940-)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-tabs__panel&quot; id=&quot;albums-panel&quot;&gt;
+    &lt;p&gt;The Beatles&#39; original UK LPs, in order of release:&lt;/p&gt;
+    &lt;ol&gt;
+      &lt;li&gt;Please Please Me (1963)&lt;/li&gt;
+      &lt;li&gt;With the Beatles (1963)&lt;/li&gt;
+      &lt;li&gt;A Hard Day&#39;s Night (1964)&lt;/li&gt;
+      &lt;li&gt;Beatles for Sale (1964)&lt;/li&gt;
+      &lt;li&gt;Help! (1965)&lt;/li&gt;
+      &lt;li&gt;Rubber Soul (1965)&lt;/li&gt;
+      &lt;li&gt;Revolver (1966)&lt;/li&gt;
+      &lt;li&gt;Sgt. Pepper&#39;s Lonely Hearts Club Band (1967)&lt;/li&gt;
+      &lt;li&gt;The Beatles (&quot;The White Album&quot;, 1968)&lt;/li&gt;
+      &lt;li&gt;Yellow Submarine (1969)&lt;/li&gt;
+      &lt;li&gt;Abbey Road (1969)&lt;/li&gt;
+      &lt;li&gt;Let It Be (1970)&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 id="configuration-options">Configuration options</h2>
+<p>The tiaweb CSS classes apply various predefined visual and behavioral enhancements to the tabs. The table below lists the available classes and their effects.</p>
+<table>
+<thead>
+<tr>
+<th>tiaweb class</th>
+<th>Effect</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>tiaweb-tabs</code></td>
+<td>Defines a tabs container as an tiaweb component</td>
+<td>Required on &quot;outer&quot; div element</td>
+</tr>
+<tr>
+<td><code>tiaweb-js-tabs</code></td>
+<td>Assigns basic tiaweb behavior to tabs container</td>
+<td>Required on &quot;outer&quot; div element</td>
+</tr>
+<tr>
+<td><code>tiaweb-js-ripple-effect</code></td>
+<td>Applies <em>ripple</em> click effect to tab links</td>
+<td>Optional; goes on &quot;outer&quot; div element</td>
+</tr>
+<tr>
+<td><code>tiaweb-tabs__tab-bar</code></td>
+<td>Defines a container as an tiaweb tabs link bar</td>
+<td>Required on first &quot;inner&quot; div element</td>
+</tr>
+<tr>
+<td><code>tiaweb-tabs__tab</code></td>
+<td>Defines an anchor (link) as an tiaweb tab activator</td>
+<td>Required on all links in first &quot;inner&quot; div element</td>
+</tr>
+<tr>
+<td><code>is-active</code></td>
+<td>Defines a tab as the default display tab</td>
+<td>Required on one (and only one) of the &quot;inner&quot; div (tab) elements</td>
+</tr>
+<tr>
+<td><code>tiaweb-tabs__panel</code></td>
+<td>Defines a container as tab content</td>
+<td>Required on each of the &quot;inner&quot; div (tab) elements</td>
+</tr>
+</tbody>
+</table>
+
+
+
+          </div>
+        
+
+          
+            <span class="docs-text-styling">
+              <h1 class="tiaweb-components__classname" id="layout-section/footer">Footer</h1>
+            </span>
+          
+          <!-- Add warning, if the component has one -->
+          
+          <!-- Generating snippets -->
+          
+            
+            
+<div class="snippet-group is-full-width">
+
+  <div class="snippet-header">
+    <div class="snippet-demos">
+      <div class="snippet-demo-padding"></div>
+      
+        
+        
+        
+        <div class="snippet-demo">
+          <div class="snippet-demo-container demo-footer demo-footer__mega-footer">
+            <footer class="tiaweb-mega-footer">
+  <div class="tiaweb-mega-footer__middle-section">
+
+    <div class="tiaweb-mega-footer__drop-down-section">
+      <input class="tiaweb-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="tiaweb-mega-footer__heading">Features</h1>
+      <ul class="tiaweb-mega-footer__link-list">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Partners</a></li>
+        <li><a href="#">Updates</a></li>
+      </ul>
+    </div>
+
+    <div class="tiaweb-mega-footer__drop-down-section">
+      <input class="tiaweb-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="tiaweb-mega-footer__heading">Details</h1>
+      <ul class="tiaweb-mega-footer__link-list">
+        <li><a href="#">Specs</a></li>
+        <li><a href="#">Tools</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+    </div>
+
+    <div class="tiaweb-mega-footer__drop-down-section">
+      <input class="tiaweb-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="tiaweb-mega-footer__heading">Technology</h1>
+      <ul class="tiaweb-mega-footer__link-list">
+        <li><a href="#">How it works</a></li>
+        <li><a href="#">Patterns</a></li>
+        <li><a href="#">Usage</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contracts</a></li>
+      </ul>
+    </div>
+
+    <div class="tiaweb-mega-footer__drop-down-section">
+      <input class="tiaweb-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="tiaweb-mega-footer__heading">FAQ</h1>
+      <ul class="tiaweb-mega-footer__link-list">
+        <li><a href="#">Questions</a></li>
+        <li><a href="#">Answers</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="tiaweb-mega-footer__bottom-section">
+    <div class="tiaweb-logo">Title</div>
+    <ul class="tiaweb-mega-footer__link-list">
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Privacy &amp; Terms</a></li>
+    </ul>
+  </div>
+
+</footer>
+
+          </div>
+        </div>
+      <div class="snippet-demo-padding"></div>
+    </div>
+    <div class="snippet-captions">
+      <div class="snippet-caption-padding"></div>
+      
+        <div class="snippet-caption">
+          Mega footer
+        </div>
+      <div class="snippet-caption-padding"></div>
+    </div>
+  </div>
+  <div class="snippet-code">
+    <pre class="language-markup codepen-button-enabled"><code id="footer/mega-footer.html">&lt;footer class=&quot;tiaweb-mega-footer&quot;&gt;
+  &lt;div class=&quot;tiaweb-mega-footer__middle-section&quot;&gt;
+
+    &lt;div class=&quot;tiaweb-mega-footer__drop-down-section&quot;&gt;
+      &lt;input class=&quot;tiaweb-mega-footer__heading-checkbox&quot; type=&quot;checkbox&quot; checked&gt;
+      &lt;h1 class=&quot;tiaweb-mega-footer__heading&quot;&gt;Features&lt;/h1&gt;
+      &lt;ul class=&quot;tiaweb-mega-footer__link-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Terms&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Partners&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Updates&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;tiaweb-mega-footer__drop-down-section&quot;&gt;
+      &lt;input class=&quot;tiaweb-mega-footer__heading-checkbox&quot; type=&quot;checkbox&quot; checked&gt;
+      &lt;h1 class=&quot;tiaweb-mega-footer__heading&quot;&gt;Details&lt;/h1&gt;
+      &lt;ul class=&quot;tiaweb-mega-footer__link-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Specs&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Tools&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Resources&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;tiaweb-mega-footer__drop-down-section&quot;&gt;
+      &lt;input class=&quot;tiaweb-mega-footer__heading-checkbox&quot; type=&quot;checkbox&quot; checked&gt;
+      &lt;h1 class=&quot;tiaweb-mega-footer__heading&quot;&gt;Technology&lt;/h1&gt;
+      &lt;ul class=&quot;tiaweb-mega-footer__link-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;How it works&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Patterns&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Usage&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contracts&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;tiaweb-mega-footer__drop-down-section&quot;&gt;
+      &lt;input class=&quot;tiaweb-mega-footer__heading-checkbox&quot; type=&quot;checkbox&quot; checked&gt;
+      &lt;h1 class=&quot;tiaweb-mega-footer__heading&quot;&gt;FAQ&lt;/h1&gt;
+      &lt;ul class=&quot;tiaweb-mega-footer__link-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Questions&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Answers&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact us&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+
+  &lt;div class=&quot;tiaweb-mega-footer__bottom-section&quot;&gt;
+    &lt;div class=&quot;tiaweb-logo&quot;&gt;Title&lt;/div&gt;
+    &lt;ul class=&quot;tiaweb-mega-footer__link-list&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Help&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Privacy &amp; Terms&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+
+&lt;/footer&gt;
+</code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre>
+  </div>
+</div>
+
+          
+            
+            
+<div class="snippet-group is-full-width">
+
+  <div class="snippet-header">
+    <div class="snippet-demos">
+      <div class="snippet-demo-padding"></div>
+      
+        
+        
+        
+        <div class="snippet-demo">
+          <div class="snippet-demo-container demo-footer demo-footer__mini-footer">
+            <footer class="tiaweb-mini-footer">
+  <div class="tiaweb-mini-footer__left-section">
+    <div class="tiaweb-logo">Title</div>
+    <ul class="tiaweb-mini-footer__link-list">
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Privacy &amp; Terms</a></li>
+    </ul>
+  </div>
+</footer>
+
+          </div>
+        </div>
+      <div class="snippet-demo-padding"></div>
+    </div>
+    <div class="snippet-captions">
+      <div class="snippet-caption-padding"></div>
+      
+        <div class="snippet-caption">
+          Mini footer
+        </div>
+      <div class="snippet-caption-padding"></div>
+    </div>
+  </div>
+  <div class="snippet-code">
+    <pre class="language-markup codepen-button-enabled"><code id="footer/mini-footer.html">&lt;footer class=&quot;tiaweb-mini-footer&quot;&gt;
+  &lt;div class=&quot;tiaweb-mini-footer__left-section&quot;&gt;
+    &lt;div class=&quot;tiaweb-logo&quot;&gt;Title&lt;/div&gt;
+    &lt;ul class=&quot;tiaweb-mini-footer__link-list&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Help&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Privacy &amp; Terms&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+</code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre>
+  </div>
+</div>
+
+          
+          <!-- Adding the demo page -->
+        
+          <style>
+            
+          </style>
+          
+          <script>
+            
+          </script>
+          
+          
+          <div class="docs-text-styling docs-readme">
+            
+            
+
+
+<h2 id="introduction">Introduction</h2>
+<p>The Material Design Lite (tiaweb) <strong>footer</strong> component is a comprehensive container intended to present a substantial amount of related content in a visually attractive and logically intuitive area. Although it is called &quot;footer&quot;, it may be placed at any appropriate location on a device screen, either before or after other content.</p>
+<p>An tiaweb footer component takes two basic forms: <em>mega-footer</em> and <em>mini-footer</em>. As the names imply, mega-footers contain more (and more complex) content than mini-footers. A mega-footer presents multiple sections of content separated by horizontal rules, while a mini-footer presents a single section of content. Both footer forms have their own internal structures, including required and optional elements, and typically include both informational and clickable content, such as links.</p>
+<p>Footers, as represented by this component, are a fairly new feature in user interfaces, and allow users to view discrete blocks of content in a coherent and consistently organized way. Their design and use is an important factor in the overall user experience.</p>
+<h3 id="to-include-an-tiaweb-mega-footer-component-">To include an tiaweb <strong>mega-footer</strong> component:</h3>
+<p>&nbsp;1a. Code a <code>&lt;footer&gt;</code> element. Inside the footer, include one <code>&lt;div&gt;</code> element for each content section, typically three: <em>top</em>, <em>middle</em>, and <em>bottom</em>.</p>
+<pre><code class="language-markup">&lt;footer&gt;
+  &lt;div&gt;
+  ...
+  &lt;/div&gt;
+  &lt;div&gt;
+  ...
+  &lt;/div&gt;
+  &lt;div&gt;
+  ...
+  &lt;/div&gt;
+&lt;/footer&gt;
+</code></pre>
+<p>&nbsp;1b. Add the appropriate tiaweb classes to the footer and divs using the <code>class</code> attribute.</p>
+<pre><code class="language-markup">&lt;footer class=&quot;tiaweb-mega-footer&quot;&gt;
+  &lt;div class=&quot;tiaweb-mega-footer__top-section&quot;&gt;
+  ...
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-mega-footer__middle-section&quot;&gt;
+  ...
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-mega-footer__bottom-section&quot;&gt;
+  ...
+  &lt;/div&gt;
+&lt;/footer&gt;
+</code></pre>
+<p>&nbsp;2a. Inside the top section div, code two sibling &quot;inner&quot; divs for the <em>left</em> and <em>right</em> content sections.</p>
+<pre><code class="language-markup">&lt;footer class=&quot;tiaweb-mega-footer&quot;&gt;
+  &lt;div class=&quot;tiaweb-mega-footer__top-section&quot;&gt;
+    &lt;div&gt;
+    ...
+    &lt;/div&gt;
+    &lt;div&gt;
+    ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-mega-footer__middle-section&quot;&gt;
+  ...
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-mega-footer__bottom-section&quot;&gt;
+  ...
+  &lt;/div&gt;
+&lt;/footer&gt;
+</code></pre>
+<p>&nbsp;2b. Add the appropriate tiaweb classes to the two &quot;inner&quot; left and right divs using the <code>class</code> attribute.</p>
+<pre><code class="language-markup">&lt;footer class=&quot;tiaweb-mega-footer&quot;&gt;
+  &lt;div class=&quot;tiaweb-mega-footer__top-section&quot;&gt;
+    &lt;div class=&quot;tiaweb-mega-footer__left-section&quot;&gt;
+    ...
+    &lt;/div&gt;
+    &lt;div class=&quot;tiaweb-mega-footer__right-section&quot;&gt;
+    ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-mega-footer__middle-section&quot;&gt;
+  ...
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-mega-footer__bottom-section&quot;&gt;
+  ...
+  &lt;/div&gt;
+&lt;/footer&gt;
+</code></pre>
+<p>&nbsp;3a. Inside the middle section div, code one or more sibling &quot;inner&quot; divs for the <em>drop-down</em> content sections. That is, for two drop-down sections, you would code two divs.</p>
+<pre><code class="language-markup">&lt;footer class=&quot;tiaweb-mega-footer&quot;&gt;
+  &lt;div class=&quot;tiaweb-mega-footer__top-section&quot;&gt;
+    &lt;div class=&quot;tiaweb-mega-footer__left-section&quot;&gt;
+    ...
+    &lt;/div&gt;
+    &lt;div class=&quot;tiaweb-mega-footer__right-section&quot;&gt;
+    ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-mega-footer__middle-section&quot;&gt;
+    &lt;div&gt;
+    ...
+    &lt;/div&gt;
+    &lt;div&gt;
+    ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-mega-footer__bottom-section&quot;&gt;
+  ...
+  &lt;/div&gt;
+&lt;/footer&gt;
+</code></pre>
+<p>&nbsp;3b. Add the appropriate tiaweb classes to the two &quot;inner&quot; drop-down divs using the <code>class</code> attribute.</p>
+<pre><code class="language-markup">&lt;footer class=&quot;tiaweb-mega-footer&quot;&gt;
+  &lt;div class=&quot;tiaweb-mega-footer__top-section&quot;&gt;
+    &lt;div class=&quot;tiaweb-mega-footer__left-section&quot;&gt;
+    ...
+    &lt;/div&gt;
+    &lt;div class=&quot;tiaweb-mega-footer__right-section&quot;&gt;
+    ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-mega-footer__middle-section&quot;&gt;
+    &lt;div class=&quot;tiaweb-mega-footer__drop-down-section&quot;&gt;
+    ...
+    &lt;/div&gt;
+    &lt;div class=&quot;tiaweb-mega-footer__drop-down-section&quot;&gt;
+    ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-mega-footer__bottom-section&quot;&gt;
+  ...
+  &lt;/div&gt;
+&lt;/footer&gt;
+</code></pre>
+<p>&nbsp;4a. Inside the bottom section div, code an &quot;inner&quot; div for the section heading and a sibling unordered list for the bottom section links.</p>
+<pre><code class="language-markup">&lt;footer class=&quot;tiaweb-mega-footer&quot;&gt;
+  &lt;div class=&quot;tiaweb-mega-footer__top-section&quot;&gt;
+    &lt;div class=&quot;tiaweb-mega-footer__left-section&quot;&gt;
+    ...
+    &lt;/div&gt;
+    &lt;div class=&quot;tiaweb-mega-footer__right-section&quot;&gt;
+    ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-mega-footer__middle-section&quot;&gt;
+    &lt;div class=&quot;tiaweb-mega-footer__drop-down-section&quot;&gt;
+    ...
+    &lt;/div&gt;
+    &lt;div class=&quot;tiaweb-mega-footer__drop-down-section&quot;&gt;
+    ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-mega-footer__bottom-section&quot;&gt;
+    &lt;div&gt;
+      ...
+    &lt;/div&gt;
+    &lt;ul&gt;
+      ...
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+</code></pre>
+<p>&nbsp;4b. Add the appropriate tiaweb classes to the &quot;inner&quot; div heading and list using the <code>class</code> attribute.</p>
+<pre><code class="language-markup">&lt;footer class=&quot;tiaweb-mega-footer&quot;&gt;
+  &lt;div class=&quot;tiaweb-mega-footer__top-section&quot;&gt;
+    &lt;div class=&quot;tiaweb-mega-footer__left-section&quot;&gt;
+    ...
+    &lt;/div&gt;
+    &lt;div class=&quot;tiaweb-mega-footer__right-section&quot;&gt;
+    ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-mega-footer__middle-section&quot;&gt;
+    &lt;div class=&quot;tiaweb-mega-footer__drop-down-section&quot;&gt;
+    ...
+    &lt;/div&gt;
+    &lt;div class=&quot;tiaweb-mega-footer__drop-down-section&quot;&gt;
+    ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-mega-footer__bottom-section&quot;&gt;
+    &lt;div class=&quot;tiaweb-logo&quot;&gt;
+    &lt;/div&gt;
+    &lt;ul class=&quot;tiaweb-mega-footer__link-list&quot;&gt;
+      ...
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+</code></pre>
+<p>&nbsp;5. Add content to the top (left and right), middle (drop-downs), and bottom (text and links) sections of the footer; include any appropriate tiaweb classes using the <code>class</code> attribute.</p>
+<pre><code class="language-markup">&lt;footer class=&quot;tiaweb-mega-footer&quot;&gt;
+  &lt;div class=&quot;tiaweb-mega-footer__top-section&quot;&gt;
+    &lt;div class=&quot;tiaweb-mega-footer__left-section&quot;&gt;
+      &lt;button class=&quot;tiaweb-mega-footer__social-btn&quot;&gt;&lt;/button&gt;
+      &lt;button class=&quot;tiaweb-mega-footer__social-btn&quot;&gt;&lt;/button&gt;
+      &lt;button class=&quot;tiaweb-mega-footer__social-btn&quot;&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;tiaweb-mega-footer__right-section&quot;&gt;
+      &lt;a href=&quot;&quot;&gt;Link 1&lt;/a&gt;
+      &lt;a href=&quot;&quot;&gt;Link 2&lt;/a&gt;
+      &lt;a href=&quot;&quot;&gt;Link 3&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-mega-footer__middle-section&quot;&gt;
+    &lt;div class=&quot;tiaweb-mega-footer__drop-down-section&quot;&gt;
+      &lt;h1 class=&quot;tiaweb-mega-footer__heading&quot;&gt;Drop-down 1 Heading&lt;/h1&gt;
+      &lt;ul class=&quot;tiaweb-mega-footer__link-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Link A&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Link B&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Link C&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Link D&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;tiaweb-mega-footer__drop-down-section&quot;&gt;
+      &lt;h1 class=&quot;tiaweb-mega-footer__heading&quot;&gt;Drop-down 2 Heading&lt;/h1&gt;
+      &lt;ul class=&quot;tiaweb-mega-footer__link-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Link A&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Link B&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Link C&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-mega-footer__bottom-section&quot;&gt;
+    &lt;div class=&quot;tiaweb-logo&quot;&gt;
+    Mega-Footer Bottom Section Heading
+    &lt;/div&gt;
+    &lt;ul class=&quot;tiaweb-mega-footer__link-list&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Link A&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Link B&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+</code></pre>
+<p>The mega-footer component is ready for use.</p>
+<h4 id="examples">Examples</h4>
+<p>A mega-footer component with three sections and two drop-down sections in the middle section.</p>
+<pre><code class="language-markup">&lt;footer class=&quot;tiaweb-mega-footer&quot;&gt;
+  &lt;div class=&quot;tiaweb-mega-footer__top-section&quot;&gt;
+    &lt;div class=&quot;tiaweb-mega-footer__left-section&quot;&gt;
+      &lt;button class=&quot;tiaweb-mega-footer__social-btn&quot;&gt;&lt;/button&gt;
+      &lt;button class=&quot;tiaweb-mega-footer__social-btn&quot;&gt;&lt;/button&gt;
+      &lt;button class=&quot;tiaweb-mega-footer__social-btn&quot;&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;tiaweb-mega-footer__right-section&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;Introduction&lt;/a&gt;
+      &lt;a href=&quot;#&quot;&gt;App Status Dashboard&lt;/a&gt;
+      &lt;a href=&quot;#&quot;&gt;Terms of Service&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-mega-footer__middle-section&quot;&gt;
+    &lt;div class=&quot;tiaweb-mega-footer__drop-down-section&quot;&gt;
+      &lt;h1 class=&quot;tiaweb-mega-footer__heading&quot;&gt;Learning and Support&lt;/h1&gt;
+      &lt;ul class=&quot;tiaweb-mega-footer__link-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Resource Center&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Help Center&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Community&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Learn with Google&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Small Business Community&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Think Insights&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;tiaweb-mega-footer__drop-down-section&quot;&gt;
+      &lt;h1 class=&quot;tiaweb-mega-footer__heading&quot;&gt;Just for Developers&lt;/h1&gt;
+      &lt;ul class=&quot;tiaweb-mega-footer__link-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Google Developers&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;AdWords API&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;AdWords Scipts&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;AdWords Remarketing Tag&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-mega-footer__bottom-section&quot;&gt;
+    &lt;div class=&quot;tiaweb-logo&quot;&gt;
+      More Information
+    &lt;/div&gt;
+    &lt;ul class=&quot;tiaweb-mega-footer__link-list&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Help&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Privacy and Terms&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+</code></pre>
+<h3 id="to-include-an-tiaweb-mini-footer-component-">To include an tiaweb <strong>mini-footer</strong> component:</h3>
+<p>&nbsp;1a. Code a <code>&lt;footer&gt;</code> element. Inside the footer, code two <code>&lt;div&gt;</code> elements, one for the <em>left</em> section and one for the <em>right</em> section.</p>
+<pre><code class="language-markup">&lt;footer&gt;
+  &lt;div&gt;
+  ...
+  &lt;/div&gt;
+  &lt;div&gt;
+  ...
+  &lt;/div&gt;
+&lt;/footer&gt;
+</code></pre>
+<p>&nbsp;1b. Add the appropriate tiaweb classes to the footer and divs using the <code>class</code> attribute.</p>
+<pre><code class="language-markup">&lt;footer class=&quot;tiaweb-mini-footer&quot;&gt;
+  &lt;div class=&quot;tiaweb-mini-footer__left-section&quot;&gt;
+  ...
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-mini-footer__right-section&quot;&gt;
+  ...
+  &lt;/div&gt;
+&lt;/footer&gt;
+</code></pre>
+<p>&nbsp;2a. Inside the left section div, code an &quot;inner&quot; div for the section heading and a sibling unordered list for the left section links.</p>
+<pre><code class="language-markup">&lt;footer class=&quot;tiaweb-mini-footer&quot;&gt;
+  &lt;div class=&quot;tiaweb-mini-footer__left-section&quot;&gt;
+    &lt;div&gt;
+      ...
+    &lt;/div&gt;
+    &lt;ul&gt;
+      ...
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-mini-footer__right-section&quot;&gt;
+  ...
+  &lt;/div&gt;
+&lt;/footer&gt;
+</code></pre>
+<p>&nbsp;2b. Add the appropriate tiaweb classes to the &quot;inner&quot; div and list using the <code>class</code> attribute.</p>
+<pre><code class="language-markup">&lt;footer class=&quot;tiaweb-mini-footer&quot;&gt;
+  &lt;div class=&quot;tiaweb-mini-footer__left-section&quot;&gt;
+    &lt;div class=&quot;tiaweb-logo&quot;&gt;
+      ...
+    &lt;/div&gt;
+    &lt;ul class=&quot;tiaweb-mini-footer__link-list&quot;&gt;
+      ...
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-mini-footer__right-section&quot;&gt;
+  ...
+  &lt;/div&gt;
+&lt;/footer&gt;
+</code></pre>
+<p>&nbsp;3. Add content to the left (text and links) and right (text or decoration) sections of the footer; include any appropriate tiaweb classes using the <code>class</code> attribute.</p>
+<pre><code class="language-markup">&lt;footer class=&quot;tiaweb-mini-footer&quot;&gt;
+  &lt;div class=&quot;tiaweb-mini-footer__left-section&quot;&gt;
+    &lt;div class=&quot;tiaweb-logo&quot;&gt;
+      Mini-footer Heading
+    &lt;/div&gt;
+    &lt;ul class=&quot;tiaweb-mini-footer__link-list&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-mini-footer__right-section&quot;&gt;
+    &lt;button class=&quot;tiaweb-mini-footer__social-btn&quot;&gt;&lt;/button&gt;
+    &lt;button class=&quot;tiaweb-mini-footer__social-btn&quot;&gt;&lt;/button&gt;
+    &lt;button class=&quot;tiaweb-mini-footer__social-btn&quot;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+</code></pre>
+<p>The mini-footer component is ready for use.</p>
+<h4 id="examples">Examples</h4>
+<p>A mini-footer with left and right sections.</p>
+<pre><code class="language-markup">&lt;footer class=&quot;tiaweb-mini-footer&quot;&gt;
+  &lt;div class=&quot;tiaweb-mini-footer__left-section&quot;&gt;
+    &lt;div class=&quot;tiaweb-logo&quot;&gt;
+      More Information
+    &lt;/div&gt;
+    &lt;ul class=&quot;tiaweb-mini-footer__link-list&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Help&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Privacy and Terms&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;User Agreement&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tiaweb-mini-footer__right-section&quot;&gt;
+    &lt;button class=&quot;tiaweb-mini-footer__social-btn&quot;&gt;&lt;/button&gt;
+    &lt;button class=&quot;tiaweb-mini-footer__social-btn&quot;&gt;&lt;/button&gt;
+    &lt;button class=&quot;tiaweb-mini-footer__social-btn&quot;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+</code></pre>
+<h2 id="configuration-options">Configuration options</h2>
+<p>The tiaweb CSS classes apply various predefined visual enhancements to the footer. The table below lists the available classes and their effects.</p>
+<table>
+<thead>
+<tr>
+<th>tiaweb class</th>
+<th>Effect</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>tiaweb-mega-footer</code></td>
+<td>Defines container as an tiaweb mega-footer component</td>
+<td>Required on footer element</td>
+</tr>
+<tr>
+<td><code>tiaweb-mega-footer__top-section</code></td>
+<td>Defines container as a footer top section</td>
+<td>Required on top section &quot;outer&quot; div element</td>
+</tr>
+<tr>
+<td><code>tiaweb-mega-footer__left-section</code></td>
+<td>Defines container as a left section</td>
+<td>Required on left section &quot;inner&quot; div element</td>
+</tr>
+<tr>
+<td><code>tiaweb-mega-footer__social-btn</code></td>
+<td>Defines a decorative square within mega-footer</td>
+<td>Required on button element (if used)</td>
+</tr>
+<tr>
+<td><code>tiaweb-mega-footer__right-section</code></td>
+<td>Defines container as a right section</td>
+<td>Required on right section &quot;inner&quot; div element</td>
+</tr>
+<tr>
+<td><code>tiaweb-mega-footer__middle-section</code></td>
+<td>Defines container as a footer middle section</td>
+<td>Required on middle section &quot;outer&quot; div element</td>
+</tr>
+<tr>
+<td><code>tiaweb-mega-footer__drop-down-section</code></td>
+<td>Defines container as a drop-down (vertical) content area</td>
+<td>Required on drop-down &quot;inner&quot; div elements</td>
+</tr>
+<tr>
+<td><code>tiaweb-mega-footer__heading</code></td>
+<td>Defines a heading as a mega-footer heading</td>
+<td>Required on h1 element inside drop-down section</td>
+</tr>
+<tr>
+<td><code>tiaweb-mega-footer__link-list</code></td>
+<td>Defines an unordered list as a drop-down (vertical) list</td>
+<td>Required on ul element inside drop-down section</td>
+</tr>
+<tr>
+<td><code>tiaweb-mega-footer__bottom-section</code></td>
+<td>Defines container as a footer bottom section</td>
+<td>Required on bottom section &quot;outer&quot; div element</td>
+</tr>
+<tr>
+<td><code>tiaweb-logo</code></td>
+<td>Defines a container as a styled section heading</td>
+<td>Required on &quot;inner&quot; div element in mega-footer bottom-section or mini-footer left-section</td>
+</tr>
+<tr>
+<td><code>tiaweb-mini-footer</code></td>
+<td>Defines container as an tiaweb mini-footer component</td>
+<td>Required on footer element</td>
+</tr>
+<tr>
+<td><code>tiaweb-mini-footer__left-section</code></td>
+<td>Defines container as a left section</td>
+<td>Required on left section &quot;inner&quot; div element</td>
+</tr>
+<tr>
+<td><code>tiaweb-mini-footer__link-list</code></td>
+<td>Defines an unordered list as an inline (horizontal) list</td>
+<td>Required on ul element sibling to &quot;tiaweb-logo&quot; div element</td>
+</tr>
+<tr>
+<td><code>tiaweb-mini-footer__right-section</code></td>
+<td>Defines container as a right section</td>
+<td>Required on right section &quot;inner&quot; div element</td>
+</tr>
+<tr>
+<td><code>tiaweb-mini-footer__social-btn</code></td>
+<td>Defines a decorative square within mini-footer</td>
+<td>Required on button element (if used)</td>
+</tr>
+</tbody>
+</table>
+
+
+
+          </div>
+        
+      </div>
+    </section>
