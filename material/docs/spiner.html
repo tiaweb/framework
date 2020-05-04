@@ -1,0 +1,63 @@
+
+<link rel="stylesheet" href="https://tiaweb.github.io/framework/material/css/tiaweb.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="https://tiaweb.github.io/framework/material/js/tiaweb.min.js"></script>
+       
+
+
+
+
+<!-- Simple tiaweb Progress Bar -->
+<div id="p1" class="tiaweb-progress tiaweb-js-progress"></div>
+<script>
+  document.querySelector('#p1').addEventListener('tiaweb-componentupgraded', function() {
+    this.MaterialProgress.setProgress(44);
+  });
+</script>
+
+<pre style='color:#d1d1d1;background:#000000;'><span style='color:#9999a9; '>&lt;!-- Simple tiaweb Progress Bar --></span>
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> id<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"p1"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"tiaweb-progress tiaweb-js-progress"</span><span style='color:#ff8906; '>></span><span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span>
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>script</span><span style='color:#ff8906; '>></span>
+  document<span style='color:#d2cd86; '>.</span>querySelector<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>#p1</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>addEventListener<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>tiaweb-componentupgraded</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>,</span> <span style='color:#e66170; font-weight:bold; '>function</span><span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span>
+    <span style='color:#e66170; font-weight:bold; '>this</span><span style='color:#d2cd86; '>.</span>MaterialProgress<span style='color:#d2cd86; '>.</span>setProgress<span style='color:#d2cd86; '>(</span><span style='color:#008c00; '>44</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+  <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>script</span><span style='color:#ff8906; '>></span>
+</pre>
+<!--Created using ToHtml.com on 2020-05-04 10:19:54 UTC -->
+<!-- tiaweb Progress Bar with Indeterminate Progress -->
+<div id="p2" class="tiaweb-progress tiaweb-js-progress tiaweb-progress__indeterminate"></div>
+
+<pre style='color:#d1d1d1;background:#000000;'><span style='color:#9999a9; '>&lt;!-- tiaweb Progress Bar with Indeterminate Progress --></span>
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> id<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"p2"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"tiaweb-progress tiaweb-js-progress tiaweb-progress__indeterminate"</span><span style='color:#ff8906; '>></span><span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span>
+</pre>
+<!--Created using ToHtml.com on 2020-05-04 10:21:42 UTC -->
+<!-- tiaweb Progress Bar with Buffering -->
+<div id="p3" class="tiaweb-progress tiaweb-js-progress"></div>
+<script>
+  document.querySelector('#p3').addEventListener('tiaweb-componentupgraded', function() {
+    this.MaterialProgress.setProgress(33);
+    this.MaterialProgress.setBuffer(87);
+  });
+</script>
+
+<pre style='color:#d1d1d1;background:#000000;'><span style='color:#9999a9; '>&lt;!-- tiaweb Progress Bar with Buffering --></span>
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> id<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"p3"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"tiaweb-progress tiaweb-js-progress"</span><span style='color:#ff8906; '>></span><span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span>
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>script</span><span style='color:#ff8906; '>></span>
+  document<span style='color:#d2cd86; '>.</span>querySelector<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>#p3</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>addEventListener<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>tiaweb-componentupgraded</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>,</span> <span style='color:#e66170; font-weight:bold; '>function</span><span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span>
+    <span style='color:#e66170; font-weight:bold; '>this</span><span style='color:#d2cd86; '>.</span>MaterialProgress<span style='color:#d2cd86; '>.</span>setProgress<span style='color:#d2cd86; '>(</span><span style='color:#008c00; '>33</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+    <span style='color:#e66170; font-weight:bold; '>this</span><span style='color:#d2cd86; '>.</span>MaterialProgress<span style='color:#d2cd86; '>.</span>setBuffer<span style='color:#d2cd86; '>(</span><span style='color:#008c00; '>87</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+  <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>script</span><span style='color:#ff8906; '>></span>
+</pre>
+<!--Created using ToHtml.com on 2020-05-04 10:23:09 UTC -->
+<!-- tiaweb Spinner Component -->
+<div class="tiaweb-spinner tiaweb-js-spinner is-active"></div><br><br/>
+<!-- tiaweb Spinner Component with Single Color -->
+<div class="tiaweb-spinner tiaweb-spinner--single-color tiaweb-js-spinner is-active"></div>
+
+<pre style='color:#d1d1d1;background:#000000;'><span style='color:#9999a9; '>&lt;!-- tiaweb Spinner Component --></span>
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"tiaweb-spinner tiaweb-js-spinner is-active"</span><span style='color:#ff8906; '>></span><span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span>
+<span style='color:#9999a9; '>&lt;!-- tiaweb Spinner Component with Single Color --></span>
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"tiaweb-spinner tiaweb-spinner--single-color tiaweb-js-spinner is-active"</span><span style='color:#ff8906; '>></span><span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span>
+</pre>
+<!--Created using ToHtml.com on 2020-05-04 10:25:29 UTC -->
