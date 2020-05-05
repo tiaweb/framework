@@ -99,3 +99,128 @@ padding : 0 2px;
 <!--Created using ToHtml.com on 2020-05-05 12:32:16 UTC -->
 
 </div><br/><br/>
+
+tes
+
+
+<style>
+
+/* 
+Generic Styling, for Desktops/Laptops 
+*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Zebra striping */
+tr:nth-of-type(odd) {
+    background: #eee;
+}
+
+th {
+    background: #333;
+    color: white;
+    font-weight: bold;
+}
+
+td,
+th {
+    padding: 6px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+    /* Force table to not be like tables anymore */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+    }
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    /*
+	Label the data
+	*/
+    td:nth-of-type(1):before {
+        content: "Tiaweb";
+    }
+
+    </style><table><h2 id="configuration-options"style="color: rgba(0, 0, 0, 0.54); font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; line-height: 32px; margin: 24px 0px 30px; padding: 48px 0px 0px; text-transform: uppercase;"><br /></h2><h3 style="color: rgba(0, 0, 0, 0.54); font-family: roboto, helvetica, arial, sans-serif; font-size: 16px; font-weight: 500; line-height: 40px; margin: 24px 0px; padding: 0px; text-transform: uppercase;"><div class="docs-text-styling docs-readme"style="background-color: #fafafa; color: #757575; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px; margin: 0px auto; max-width: 640px; text-transform: none; width: 640px;"><p style="font-size: 13px; letter-spacing: 0px; line-height: 24px; margin: 16px 0px; max-width: 640px; padding: 0px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kelas-kelas tiaweb CSS menerapkan berbagai peningkatan visual dan perilaku yang telah ditentukan untuk tata letak.&nbsp;
+    </font><font style="vertical-align: inherit;">Tabel di bawah mencantumkan kelas yang tersedia dan efeknya.</font></font></p><table><thead><tr><th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kelas tiaweb</font></font></th><th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Efek</font></font></th><th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Catatan</font></font></th></tr></thead><tbody><tr><td><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout</code></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Menentukan wadah sebagai komponen tiaweb</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Diperlukan pada elemen div luar</font></font></td></tr><tr><td><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-js-layout</code></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Menetapkan perilaku tiaweb dasar untuk tata letak</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Diperlukan pada elemen div luar</font></font></td></tr><tr><td><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout__header</code></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Menentukan wadah sebagai komponen tiaweb</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Diperlukan pada elemen tajuk</font></font></td></tr><tr><td><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout-icon</code></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Digunakan untuk menambahkan ikon aplikasi.&nbsp;
+    </font><font style="vertical-align: inherit;">Akan disembunyikan oleh ikon menu jika keduanya terlihat.</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Berlanjut ke elemen ikon opsional</font></font></td></tr><tr><td><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout__header-row</code></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Menentukan wadah sebagai baris tajuk tiaweb</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Diperlukan pada div konten tajuk</font></font></td></tr><tr><td><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout__title</code></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Menentukan judul teks tata letak</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Diperlukan pada rentang judul tata letak</font></font></td></tr><tr><td><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout-spacer</code></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Digunakan untuk menyelaraskan elemen di dalam tajuk atau laci,
+    dengan memperbesar untuk mengisi ruang yang tersisa.&nbsp;
+    </font><font style="vertical-align: inherit;">Biasa digunakan untuk menyelaraskan elemen ke kanan.</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Berlanjut ke div opsional judul tata letak berikut</font></font></td></tr><tr><td><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-navigation</code></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Menentukan wadah sebagai grup navigasi tiaweb</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Diperlukan pada elemen nav</font></font></td></tr><tr><td><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-navigation__link</code></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Menentukan jangkar sebagai tautan navigasi tiaweb</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Diperlukan pada header dan / atau elemen anchor laci</font></font></td></tr><tr><td><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout__drawer</code></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Menentukan wadah sebagai laci tata letak tiaweb</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Diperlukan pada elemen laci laci</font></font></td></tr><tr><td><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout__content</code></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Menentukan wadah sebagai konten tata letak tiaweb</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Diperlukan pada elemen utama</font></font></td></tr><tr><td><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout__header--scroll</code></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Membuat gulir tajuk dengan konten</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pilihan;
+    &nbsp;
+    </font><font style="vertical-align: inherit;">melanjutkan elemen tajuk</font></font></td></tr><tr><td><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout--fixed-drawer</code></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Membuat laci selalu terlihat dan terbuka di layar yang lebih besar</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pilihan;
+    &nbsp;
+    </font><font style="vertical-align: inherit;">melanjutkan elemen div luar (bukan laci elemen)</font></font></td></tr><tr><td><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout--fixed-header</code></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Membuat tajuk selalu terlihat,
+    bahkan di layar kecil</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pilihan;
+    &nbsp;
+    </font><font style="vertical-align: inherit;">melanjutkan elemen div luar</font></font></td></tr><tr><td><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout--no-drawer-button</code></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tidak menampilkan tombol laci</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pilihan;
+    &nbsp;
+    </font><font style="vertical-align: inherit;">berjalan pada&nbsp;
+    </font></font><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">elemen</font></font></td></tr><tr><td><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout--no-desktop-drawer-button</code></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tidak menampilkan tombol laci dalam mode desktop</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pilihan;
+    &nbsp;
+    </font><font style="vertical-align: inherit;">berjalan pada&nbsp;
+    </font></font><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">elemen</font></font></td></tr><tr><td><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout--large-screen-only</code></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Menyembunyikan elemen di layar yang lebih kecil</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pilihan;
+    &nbsp;
+    </font><font style="vertical-align: inherit;">melanjutkan keturunan apa pun dari</font></font><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout</code></td></tr><tr><td><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout--small-screen-only</code></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Menyembunyikan elemen di layar yang lebih besar</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pilihan;
+    &nbsp;
+    </font><font style="vertical-align: inherit;">melanjutkan keturunan apa pun dari</font></font><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout</code></td></tr><tr><td><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout__header--waterfall</code></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mengizinkan efek "air terjun"dengan beberapa baris tajuk</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pilihan;
+    &nbsp;
+    </font><font style="vertical-align: inherit;">melanjutkan elemen tajuk</font></font></td></tr><tr><td><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout__header--waterfall-hide-top</code></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Menyembunyikan bagian atas daripada baris bawah pada tajuk air terjun</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pilihan;
+    &nbsp;
+    </font><font style="vertical-align: inherit;">melanjutkan elemen tajuk.&nbsp;
+    </font><font style="vertical-align: inherit;">Membutuhkan</font></font><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout__header--waterfall</code></td></tr><tr><td><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout__header--transparent</code></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Membuat tajuk transparan (menggambar di atas latar belakang tata letak)</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pilihan;
+    &nbsp;
+    </font><font style="vertical-align: inherit;">melanjutkan elemen tajuk</font></font></td></tr><tr><td><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout__header--seamed</code></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Menggunakan header tanpa bayangan</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pilihan;
+    &nbsp;
+    </font><font style="vertical-align: inherit;">melanjutkan elemen tajuk</font></font></td></tr><tr><td><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout__tab-bar</code></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Menentukan wadah sebagai bilah tab tiaweb</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Diperlukan pada elemen div di dalam tajuk (tata letak tab)</font></font></td></tr><tr><td><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout__tab</code></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Menentukan jangkar sebagai tautan tab tiaweb</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Diperlukan pada elemen jangkar tab bar</font></font></td></tr><tr><td><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">is-active</code></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Menentukan tab sebagai tab aktif default</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pilihan;
+    &nbsp;
+    </font><font style="vertical-align: inherit;">berjalan pada elemen jangkar tab bar dan elemen bagian tab terkait</font></font></td></tr><tr><td><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout__tab-panel</code></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Menentukan wadah sebagai panel konten tab</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Diperlukan pada elemen bagian tab</font></font></td></tr><tr><td><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout__tab-manual-switch</code></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Menonaktifkan penggantian tab saat mengklik pemisah tab.&nbsp;
+    </font><font style="vertical-align: inherit;">Berguna untuk menonaktifkan perilaku default dan mengatur pendengar acara Anda sendiri.</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pilihan;
+    &nbsp;
+    </font><font style="vertical-align: inherit;">melanjutkan elemen bilah tab</font></font></td></tr><tr><td><code style="background-color: rgba(0, 0, 0, 0.06); border-radius: 3px; display: inline-block; font-size: 11.9px; white-space: pre-wrap;">tiaweb-layout--fixed-tabs</code></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Menggunakan tab tetap sebagai ganti tab yang dapat digulir standar</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pilihan;
+    &nbsp;
+    </font><font style="vertical-align: inherit;">melanjutkan elemen div luar (bukan div di dalam header)</font></font></td></tr></tbody></table></div><span class="docs-text-styling"style="background-color: #fafafa; color: #757575; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px; text-transform: none;"></span></h3><h1 class="tiaweb-components__classname"id="layout-section/grid"style="color: rgba(0, 0, 0, 0.54); font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; letter-spacing: -0.02em; line-height: 1.35; margin: 0.67em 0px; padding: 0px; text-transform: uppercase;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">KISI</font></font></h1><table>
