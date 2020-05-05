@@ -127,7 +127,7 @@ https://t.me/tiaweb">Komunitas</a>
   <div class="col-sm-8">
 		<div class="card">
   <div class="card-body">
-	  <tia></tia>
+	<iframe src="https://tiaweb.github.io/framework/material/docs/tab" style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="700px" width="500px" allowfullscreen></iframe>
   </div>
 </div>
 	<br/>
@@ -267,13 +267,7 @@ fetch("https://tiaweb.github.io/framework/material/docs/menu.html")
   .then(data => {
     document.querySelector("menu").innerHTML = data;
   });
-fetch("https://tiaweb.github.io/framework/material/docs/tab.html")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector("tia").innerHTML = data;
-  });
+
 	
 	</script>
 	    
