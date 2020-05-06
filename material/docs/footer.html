@@ -1,3 +1,199 @@
+
+
+<style>
+  pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: left;
+}
+</style>
+<b>Footer</b><hr/>
+
+
 Komponen <b>footer tiaweb</b> datang dalam dua bentuk utama: <b>mega-footer</b> dan <b>mini-footer</b>&nbsp;<div><b>mega-footer</b> berisi konten yang lebih kompleks daripada <b>mini-footer</b>.</div><div><b>Mega-footer</b> dapat mewakili beberapa bagian konten yang dipisahkan oleh aturan <b>horizontal</b>, sedangkan<b> mini-footer</b> menyajikan satu bagian konten.&nbsp;</div><div><br /></div><div><b>Footer</b> biasanya berisi konten informasi dan dapat diklik, seperti tautan.
 
 <b>tiaweb</b> menyediakan berbagai kelas<b> CSS</b> untuk menerapkan berbagai peningkatan <b>visual</b> dan perilaku yang telah ditentukan untuk <b>mega-footer</b> dan <b>mini-footer</b>.&nbsp;</div>
+
+<ul class="list">
+<li><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-layout</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - Mengidentifikasi div sebagai komponen tiaweb.</font></font></p></li>
+<li><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-js-layout</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - Menambahkan perilaku dasar tiaweb ke div luar.</font></font></p></li>
+<li><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-layout - fixed-header</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - Membuat header selalu terlihat, bahkan di layar kecil.</font></font></p></li>
+<li><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-layout__header-row</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - Mengidentifikasi wadah sebagai baris tajuk tiaweb.</font></font></p></li>
+<li><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-layout-title</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - Mengidentifikasi teks judul tata letak.</font></font></p></li>
+<li><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-layout__content</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - Mengidentifikasi div sebagai konten tata letak tiaweb.</font></font></p></li>
+<li><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-mega-footer</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - Mengidentifikasi wadah sebagai komponen mega-footer tiaweb.</font></font></p></li>
+<li><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-mega-footer__top-section</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - Mengidentifikasi wadah sebagai bagian atas footer.</font></font></p></li>
+<li><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-mega-footer__left-section</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - Mengidentifikasi wadah sebagai bagian kiri.</font></font></p></li>
+<li><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-mega-footer__social-btn</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - Mengidentifikasi kotak dekoratif dalam mini-footer.</font></font></p></li>
+<li><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-mega-footer__right-section</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - Mengidentifikasi wadah sebagai bagian kanan.</font></font></p></li>
+<li><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-mega-footer__middle-section</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - Mengidentifikasi wadah sebagai bagian tengah footer.</font></font></p></li>
+<li><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-mega-footer__drop-down-section</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - Mengidentifikasi wadah sebagai area konten drop-down (vertikal).</font></font></p></li>
+<li><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-mega-footer__heading</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - Mengidentifikasi heading sebagai heading mega-footer.</font></font></p></li>
+<li><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-mega-footer__link-list</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - Mengidentifikasi daftar tidak berurutan sebagai daftar inline (horizontal).</font></font></p></li>
+<li><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-mega-footer__bottom-section</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - Mengidentifikasi wadah sebagai bagian bawah footer.</font></font></p></li>
+<li><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-logo</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - Mengidentifikasi wadah sebagai judul bagian gaya.</font></font></p></li>
+</ul><b>Demo megafooter</b>
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="Iframe example" src="https://tiaweb.github.io/framework/material/docs/code/footer/1.html?height=265&theme-id=light&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  </iframe>
+  
+  <pre style='color:#d1d1d1;background:#000000;'><span style='color:#d2cd86; '>&lt;</span>footer class <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-mega-footer</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+               <span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-mega-footer__top-section</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+                  <span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-mega-footer__left-section</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+                     <span style='color:#d2cd86; '>&lt;</span>button class <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-mega-footer__social-btn</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#008c00; '>1</span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>button<span style='color:#d2cd86; '>></span>
+                     <span style='color:#d2cd86; '>&lt;</span>button class <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-mega-footer__social-btn</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#008c00; '>2</span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>button<span style='color:#d2cd86; '>></span>
+                     <span style='color:#d2cd86; '>&lt;</span>button class <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-mega-footer__social-btn</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#008c00; '>3</span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>button<span style='color:#d2cd86; '>></span>
+                  <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+                  
+                  <span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-mega-footer__right-section</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+                     <span style='color:#d2cd86; '>&lt;</span>a href <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Link <span style='color:#008c00; '>1</span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span>
+                     <span style='color:#d2cd86; '>&lt;</span>a href <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Link <span style='color:#008c00; '>2</span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span>
+                     <span style='color:#d2cd86; '>&lt;</span>a href <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Link <span style='color:#008c00; '>3</span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span>
+                  <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+               <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+               
+               <span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-mega-footer__middle-section</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+                  <span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-mega-footer__drop-down-section</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+                     <span style='color:#d2cd86; '>&lt;</span>h1 class <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-mega-footer__heading</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Heading <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>h1<span style='color:#d2cd86; '>></span>
+                     <span style='color:#d2cd86; '>&lt;</span>ul class <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-mega-footer__link-list</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+                        <span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>a href <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Link A<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+                        <span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>a href <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Link B<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>      
+                     <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>ul<span style='color:#d2cd86; '>></span>
+                  <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>  
+               
+                  <span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-mega-footer__drop-down-section</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+                     <span style='color:#d2cd86; '>&lt;</span>h1 class <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-mega-footer__heading</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Heading <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>h1<span style='color:#d2cd86; '>></span>
+                     <span style='color:#d2cd86; '>&lt;</span>ul class <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-mega-footer__link-list</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+                        <span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>a href <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Link C<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+                        <span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>a href <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Link D<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>      
+                     <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>ul<span style='color:#d2cd86; '>></span>
+                  <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>  	
+               <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+            
+               <span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-mega-footer__bottom-section</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+                  <span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-logo</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+                     Bottom Section
+                  <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+                  <span style='color:#d2cd86; '>&lt;</span>ul class <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-mega-footer__link-list</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+                     <span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>a href <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Link A<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+                     <span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>a href <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Link B<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+                  <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>ul<span style='color:#d2cd86; '>></span>
+               <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+            
+            <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>footer<span style='color:#d2cd86; '>></span>
+</pre>
+<!--Created using ToHtml.com on 2020-05-06 07:33:18 UTC -->
+
+<b>Demo footer mini</b>
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="Iframe example" src="https://tiaweb.github.io/framework/material/docs/code/footer/2.html?height=265&theme-id=light&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  </iframe>
+
+<pre style='color:#d1d1d1;background:#000000;'> <span style='color:#d2cd86; '>&lt;</span>footer class <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-mini-footer</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+               <span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-mini-footer__left-section</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+                  <span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-logo</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+                     Copyright Information
+                  <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+                  <span style='color:#d2cd86; '>&lt;</span>ul class <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-mini-footer__link-list</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+                     <span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>a href <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>#</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Help<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+                     <span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>a href <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>#</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Privacy and Terms<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+                     <span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>a href <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>#</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>User Agreement<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+                  <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>ul<span style='color:#d2cd86; '>></span>
+               <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+               
+               <span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-mini-footer__right-section</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+                  <span style='color:#d2cd86; '>&lt;</span>button class <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-mini-footer__social-btn</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#008c00; '>1</span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>button<span style='color:#d2cd86; '>></span>
+                  <span style='color:#d2cd86; '>&lt;</span>button class <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-mini-footer__social-btn</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#008c00; '>2</span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>button<span style='color:#d2cd86; '>></span>
+                  <span style='color:#d2cd86; '>&lt;</span>button class <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-mini-footer__social-btn</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#008c00; '>3</span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>button<span style='color:#d2cd86; '>></span>
+               <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+            
+            <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>footer<span style='color:#d2cd86; '>></span>
+</pre>
+<!--Created using ToHtml.com on 2020-05-06 07:40:51 UTC -->
+<div class="table-responsive-sm">
+  <table class="table">
+  <tbody><tr>
+<th style="text-align:center;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">No.</font></font></th>
+<th style="text-align:center;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nama Kelas &amp; Deskripsi</font></font></th>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></td>
+<td><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-mega-footer</font></font></b></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mengidentifikasi wadah sebagai komponen mega-footer tiaweb. </font><font style="vertical-align: inherit;">Diperlukan untuk elemen footer.</font></font></p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></td>
+<td><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-mega-footer__top-section</font></font></b></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mengidentifikasi wadah sebagai bagian atas footer. </font><font style="vertical-align: inherit;">Diperlukan untuk elemen div bagian "luar" bagian atas.</font></font></p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></td>
+<td><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-mega-footer__left-section</font></font></b></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mengidentifikasi wadah sebagai bagian kiri. </font><font style="vertical-align: inherit;">Diperlukan untuk elemen div bagian "dalam" bagian kiri.</font></font></p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4</font></font></td>
+<td><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-mega-footer__social-btn</font></font></b></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mengidentifikasi kotak dekoratif dalam mega-footer. </font><font style="vertical-align: inherit;">Diperlukan untuk elemen tombol (jika digunakan).</font></font></p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5</font></font></td>
+<td><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-mega-footer__right-section</font></font></b></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mengidentifikasi wadah sebagai bagian kanan. </font><font style="vertical-align: inherit;">Diperlukan untuk elemen bagian "dalam" bagian kanan.</font></font></p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6</font></font></td>
+<td><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-mega-footer__middle-section</font></font></b></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mengidentifikasi wadah sebagai bagian tengah footer. </font><font style="vertical-align: inherit;">Diperlukan untuk elemen bagian "luar" bagian tengah.</font></font></p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7</font></font></td>
+<td><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-mega-footer__drop-down-section</font></font></b></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mengidentifikasi wadah sebagai area konten drop-down (vertikal). </font><font style="vertical-align: inherit;">Diperlukan untuk elemen div "dalam" drop-down.</font></font></p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8</font></font></td>
+<td><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-mega-footer__heading</font></font></b></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mengidentifikasi heading sebagai heading mega-footer. </font><font style="vertical-align: inherit;">Diperlukan untuk elemen h1 di dalam bagian tarik-turun.</font></font></p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9</font></font></td>
+<td><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-mega-footer__link-list</font></font></b></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mengidentifikasi daftar tidak berurutan sebagai daftar drop-down (vertikal). </font><font style="vertical-align: inherit;">Diperlukan untuk elemen ul di dalam bagian tarik-turun.</font></font></p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10</font></font></td>
+<td><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-mega-footer__bottom-section</font></font></b></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mengidentifikasi wadah sebagai bagian bawah footer. </font><font style="vertical-align: inherit;">Diperlukan untuk elemen div bagian "luar" bagian bawah.</font></font></p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">11</font></font></td>
+<td><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-logo</font></font></b></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mengidentifikasi wadah sebagai judul bagian gaya. </font><font style="vertical-align: inherit;">Diperlukan untuk elemen div "bagian dalam" di bagian bawah mega-footer atau mini-footer.</font></font></p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">12</font></font></td>
+<td><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-mini-footer</font></font></b></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mengidentifikasi wadah sebagai komponen footer mini tiaweb. </font><font style="vertical-align: inherit;">Diperlukan untuk elemen footer.</font></font></p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">13</font></font></td>
+<td><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-mini-footer__left-section</font></font></b></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mengidentifikasi wadah sebagai bagian kiri. </font><font style="vertical-align: inherit;">Diperlukan untuk elemen div bagian "dalam" bagian kiri.</font></font></p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">14</font></font></td>
+<td><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-mini-footer__link-list</font></font></b></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mengidentifikasi daftar tidak berurutan sebagai daftar sebaris (horizontal). </font><font style="vertical-align: inherit;">Diperlukan untuk saudara elemen ul untuk elemen div "tiaweb-logo".</font></font></p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">15</font></font></td>
+<td><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-mini-footer__right-section</font></font></b></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mengidentifikasi wadah sebagai bagian kanan. </font><font style="vertical-align: inherit;">Diperlukan untuk elemen bagian "dalam" bagian kanan.</font></font></p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">16</font></font></td>
+<td><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-mini-footer__social-btn</font></font></b></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mengidentifikasi kotak dekoratif dalam mini-footer. </font><font style="vertical-align: inherit;">Diperlukan untuk elemen tombol (jika digunakan).</font></font></p></td>
+</tr>
+</tbody></table></div>
