@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://tiaweb.github.io/framework/material/css/tiaweb.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="https://tiaweb.github.io/framework/material/js/tiaweb.min.js"></script>
+ 
+     <style>
+.cinta {
+color : #5f8086;
+background-color : #f1f7f8;
+border : 2px dotted;
+margin-top : 4px;
+padding : 0 2px;
+}
+  pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: left;
+}
+</style>  
+</head>
+<body>
+<b>Tooltips</b><hr/>
+<b>Tiaweb</b> menyediakan berbagai class&nbsp; <b>CSS </b>untuk menerapkan berbagai peningkatan visual dan perilaku yang telah ditentukan dan menampilkan berbagai jenis <b>tooltips</b><br/></br/>
+
+<!-- Simple Tooltip -->
+<div id="tt1" class="icon material-icons">add</div>
+<div class="tiaweb-tooltip" data-tiaweb-for="tt1">
+Follow
+</div>
+<!-- Large Tooltip -->
+<div id="tt2" class="icon material-icons">print</div>
+<div class="tiaweb-tooltip tiaweb-tooltip--large" for="tt2">
+Print
+</div>
+
+<pre style='color:#d1d1d1;background:#000000;'><span style='color:#9999a9; '>&lt;!-- Simple Tooltip --></span>
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> id<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"tt1"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"icon material-icons"</span><span style='color:#ff8906; '>></span>add<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span>
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"tiaweb-tooltip"</span> data-tiaweb-for<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"tt1"</span><span style='color:#ff8906; '>></span>
+Follow
+<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span>
+<span style='color:#9999a9; '>&lt;!-- Large Tooltip --></span>
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> id<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"tt2"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"icon material-icons"</span><span style='color:#ff8906; '>></span>print<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span>
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"tiaweb-tooltip tiaweb-tooltip--large"</span> for<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"tt2"</span><span style='color:#ff8906; '>></span>
+Print
+<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span>
+</pre>
+<!--Created using ToHtml.com on 2020-05-07 05:21:59 UTC -->
+<br/>
+<!-- Rich Tooltip -->
+<div id="tt3" class="icon material-icons">cloud_upload</div>
+<div class="tiaweb-tooltip" data-tiaweb-for="tt3">
+Upload <strong>file.zip</strong>
+</div>
+<!-- Multiline Tooltip -->
+<div id="tt4" class="icon material-icons">share</div>
+<div class="tiaweb-tooltip" for="tt4">
+Share your content<br>via social media
+</div><br/>
+<pre style='color:#d1d1d1;background:#000000;'><span style='color:#9999a9; '>&lt;!-- Rich Tooltip --></span>
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> id<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"tt3"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"icon material-icons"</span><span style='color:#ff8906; '>></span>cloud_upload<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span>
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"tiaweb-tooltip"</span> data-tiaweb-for<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"tt3"</span><span style='color:#ff8906; '>></span>
+Upload <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>strong</span><span style='color:#ff8906; '>></span>file<span style='color:#00a800; '>.</span>zip<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>strong</span><span style='color:#ff8906; '>></span>
+<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span>
+<span style='color:#9999a9; '>&lt;!-- Multiline Tooltip --></span>
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> id<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"tt4"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"icon material-icons"</span><span style='color:#ff8906; '>></span>share<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span>
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"tiaweb-tooltip"</span> for<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"tt4"</span><span style='color:#ff8906; '>></span>
+Share your content<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>br</span><span style='color:#ff8906; '>></span>via social media
+<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span>
+</pre>
+<!--Created using ToHtml.com on 2020-05-07 05:23:36 UTC -->
+<div class="table-responsive-sm">
+<table class="table table-bordered"> 
+<thead class="thead-dark">
+<tbody><tr>
+<th style="text-align:center;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">No.</font></font></th>
+<th style="text-align:center;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nama Kelas &amp; Deskripsi</font></font></th>
+</tr></thead>
+<tr>
+<td style="text-align:center;vertical-align:middle;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></td>
+<td><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-tooltip</font></font></b></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mengidentifikasi wadah sebagai tooltip tiaweb dan diperlukan pada elemen wadah tooltip.</font></font></p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></td>
+<td><p><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tiaweb-tooltip - besar</font></font></b></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mengatur efek font besar dan opsional; </font><font style="vertical-align: inherit;">melanjutkan elemen tooltip kontainer.</font></font></p></td>
+</tr>
+</tbody></table></div>
