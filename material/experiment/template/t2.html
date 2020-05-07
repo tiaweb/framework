@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <title>Tiaweb T2 </title>
+    <!-- Material Design Lite -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://tiaweb.github.io/framework/material/css/tiaweb.min.css"/>
+ <link rel="stylesheet" href="https://tiaweb.github.io/framework/icons/material-icons.css" />
+ <script src="https://tiaweb.github.io/framework/material/js/tiaweb.min.js"></script>
+  </head>
+   <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 65px;
+      z-index: 900;
+    }
+    </style>
+  <style>
+    body{background:#eee;}
+    
+  </style>
+  <body>
+<!-- On large displays, the drawer is open, while the header is visibile even on
+    small displays -->
+<div class="tiaweb-layout tiaweb-js-layout tiaweb-layout--fixed-drawer
+            tiaweb-layout--fixed-header">
+              
+  <header class="tiaweb-layout__header">
+    
+    <div class="tiaweb-layout__header-row">
+       <span class="mdl-layout-title">Tiaweb</span>
+     
+      <div class="tiaweb-layout-spacer"></div>
+      
+      <div class="tiaweb-textfield tiaweb-js-textfield tiaweb-textfield--expandable
+                  tiaweb-textfield--floating-label tiaweb-textfield--align-right">
+              <!-- search icon -->      
+        <label class="tiaweb-button tiaweb-js-button tiaweb-button--icon"
+               for="fixed-header-drawer-exp">
+                 
+          <i class="material-icons">search</i>
+        </label>
+           <!-- expandable input field -->         
+        <div class="tiaweb-textfield__expandable-holder">
+          <input class="tiaweb-textfield__input" type="text" name="header"
+                 id="fixed-header-drawer-exp" />
+        </div>
+                    
+      </div>
+    </div>
+  </header>
+              
+  <div class="tiaweb-layout__drawer">
+    <span class="tiaweb-layout-title">Planets</span>
+    <nav class="tiaweb-navigation">
+      <a class="tiaweb-navigation__link" href="">Mars</a>
+      <a class="tiaweb-navigation__link" href="">Jupiter</a>
+      <a class="tiaweb-navigation__link" href="">Earth</a>
+      <a class="tiaweb-navigation__link" href="">Saturn</a>
+    </nav>
+  </div>
+  <main class="tiaweb-layout__content">
+    <div class="page-content"><!-- Page contents should be here--></div>
+  </main>
+</div>
+<a href="#" target="_blank" id="view-source" class="tiaweb-button tiaweb-js-button tiaweb-button--fab tiaweb-button--raised tiaweb-js-ripple-effect tiaweb-color--accent tiaweb-color-text--white" data-upgraded=",MaterialButton,MaterialRipple"><i class="material-icons">email</i><span class="tiaweb-button__ripple-container"><span class="tiaweb-ripple"></span></span></a>
+</body>
+</html>
+
+
+
+
