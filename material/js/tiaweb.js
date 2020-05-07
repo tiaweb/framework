@@ -1,33 +1,10 @@
-(function() {
-  'use strict';
-  
-  $('.tiaweb-navigation__toggle .tiaweb-navigation__link').on('click',function(){
-    if($(this).parent().attr('class') !== undefined ){
-      $(this).toggleClass('is_slide');
-      $(this).parent().children('.tiaweb-navigation__dropdown').slideToggle();
-    }
-  });
+var close = document.getElementsByClassName("closebtn");
+var i;
 
-   $('.tiaweb-close').on('click',function(){
-      $(this).parent().remove();
-   });
-   
-   $("[data-toggle]").map(function(key) {
-    var toggle = $(this).attr('data-toggle');
-      $(toggle).toggleClass('hide_sb_right');
-      $('[data-toggle="'+toggle+'"]').click(function(){
-        $(toggle).toggleClass("show_sb_right hide_sb_right");
-      });
-  }).get();
-
-   var all = $("[data-target]").map(function(key) {
-    var target = $(this).attr('data-target');
-      $('[data-target="'+target+'"]').click(function(){
-        $(target).show();
-        $('.dialog-close').click(function(){
-          $(target).hide();
-        });
-      });
-  }).get();
-
- }());
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = "0";
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
