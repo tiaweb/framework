@@ -1,14 +1,8 @@
 <b>Tab</b><hr/>
 
-Komponen tab) adalah komponen antarmuka pengguna yang membantu menampilkan beberapa layar dalam satu ruang secara eksklusif.
-<br/>
-<b>Tiaweb</b> menyediakan berbagai kelas CSS untuk menerapkan berbagai peningkatan visual dan perilaku yang telah ditentukan untuk tab.<br/>
-<br/>
-<b>Contoh</b><br /><br /><div>
-Contoh berikut akan membantu Anda memahami penggunaan Class tiaweb-tab untuk menata konten pada berbagai tab.
-<br /><br /><div>
-Class tiaweb yang diberikan di bawah ini akan digunakan dalam contoh ini&nbsp;</div><div><br />
-<b>&nbsp; &nbsp; &nbsp; tiaweb-layout</b> - Mengidentifikasi div sebagai komponen tiaweb.</div><div>&nbsp; &nbsp;&nbsp;</div><div>&nbsp; &nbsp; &nbsp;&nbsp;<b>tiaweb-js-layout</b> - Menambahkan perilaku dasar tiaweb ke div luar.&nbsp;</div><div>&nbsp;</div><div>&nbsp; &nbsp; &nbsp;&nbsp;<b>tiaweb-layout - fixed-header </b>- Membuat header selalu terlihat, bahkan di layar kecil.</div><div><br /></div><div>&nbsp; &nbsp; &nbsp;&nbsp;<b>tiaweb-layout__header-row</b> - Mengidentifikasi wadah sebagai baris tajuk tiaweb.&nbsp;</div><div><br /></div><div>&nbsp; &nbsp; &nbsp;&nbsp;<b>tiaweb-layout-title </b>- Mengidentifikasi teks judul tata letak.&nbsp;</div><div><br /></div><div>&nbsp; &nbsp; &nbsp;<b>tiaweb-layout__content </b>- Mengidentifikasi div sebagai konten tata letak tiaweb</div><div>&nbsp;</div><div>&nbsp; &nbsp;.&nbsp;<b>tiaweb-tabs</b> - Mengidentifikasi wadah tab sebagai komponen tiaweb.&nbsp;</div><div>&nbsp;</div><div>&nbsp; &nbsp; &nbsp;<b>tiaweb-js-tabs</b> - Menetapkan perilaku dasar tiaweb ke wadah tab.&nbsp;</div><div><br /></div><div>&nbsp; &nbsp; &nbsp;<b>tiaweb-tabs__tab-bar</b> - Mengidentifikasi wadah sebagai bar tautan tab tiaweb.</div><div><br /></div><div>&nbsp; &nbsp; &nbsp;<b>tiaweb-tabs__tab</b> - Mengidentifikasi jangkar (tautan) sebagai aktivator tab tiaweb.</div><div><br /></div><div>&nbsp; &nbsp; &nbsp;<b>is-active </b>- Mengidentifikasi tab sebagai tab tampilan default.</div><div><br /></div><div>&nbsp; &nbsp; &nbsp;<b>tiaweb-tabs__panel</b> - Mengidentifikasi wadah sebagai konten tab.</div></div>
+Komponen <b>Tab </b>adalah komponen antarmuka pengguna yang membantu menampilkan beberapa <b>layar</b> dalam satu ruang secara <b>eksklusif</b>.
+<br />
+
 
 <iframe height="265" style="width: 100%;" scrolling="no" title="Iframe example" src="https://tiaweb.github.io/framework/material/docs/code/tab.html?height=265&theme-id=light&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   </iframe>
@@ -32,8 +26,98 @@ Class tiaweb yang diberikan di bawah ini akan digunakan dalam contoh ini&nbsp;</
                <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
             <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
 </pre>
-<!--Created using ToHtml.com on 2020-05-06 06:28:28 UTC -->
+<br/>1. Kode elemen <span style='color:#ff8906; '>&lt;</span><span style='color:#f6c1d0; '>div</span><span style='color:#ff8906; '>></span>
+ ini adalah div "luar", yang dimaksudkan untuk memuat semua tab dan kontennya.
 
+<pre style='color:#d1d1d1;background:#000000;'><span style='color:#ff8906; '>&lt;</span><span style='color:#f6c1d0; '>div</span><span style='color:#ff8906; '>></span>
+<span style='color:#fb8400; '>&lt;/</span><span style='color:#f6c1d0; '>div</span><span style='color:#fb8400; '>></span>
+</pre>
+<!--Created using ToHtml.com on 2020-05-08 11:44:15 UTC -->
+2. Di dalam div "luar", kode satu div "dalam" untuk tab itu sendiri, dan satu untuk konten setiap tab, semua saudara. Artinya, untuk tiga tab konten, Anda akan mengkodekan empat div "dalam".<br/>
+<pre style='color:#d1d1d1;background:#000000;'><span style='color:#ff8906; '>&lt;</span><span style='color:#f6c1d0; '>div</span><span style='color:#ff8906; '>></span>
+  <span style='color:#ff8906; '>&lt;</span><span style='color:#f6c1d0; '>div</span><span style='color:#ff8906; '>></span>
+  ...
+  <span style='color:#fb8400; '>&lt;/</span><span style='color:#f6c1d0; '>div</span><span style='color:#fb8400; '>></span>
+  <span style='color:#ff8906; '>&lt;</span><span style='color:#f6c1d0; '>div</span><span style='color:#ff8906; '>></span>
+  ...
+  <span style='color:#fb8400; '>&lt;/</span><span style='color:#f6c1d0; '>div</span><span style='color:#fb8400; '>></span>
+  <span style='color:#ff8906; '>&lt;</span><span style='color:#f6c1d0; '>div</span><span style='color:#ff8906; '>></span>
+  ...
+  <span style='color:#fb8400; '>&lt;/</span><span style='color:#f6c1d0; '>div</span><span style='color:#fb8400; '>></span>
+  <span style='color:#ff8906; '>&lt;</span><span style='color:#f6c1d0; '>div</span><span style='color:#ff8906; '>></span>
+  ...
+  <span style='color:#fb8400; '>&lt;/</span><span style='color:#f6c1d0; '>div</span><span style='color:#fb8400; '>></span>
+<span style='color:#fb8400; '>&lt;/</span><span style='color:#f6c1d0; '>div</span><span style='color:#fb8400; '>></span>
+</pre>
+<!--Created using ToHtml.com on 2020-05-08 11:46:24 UTC -->
+3. Di dalam div "dalam" pertama (tab), beri kode satu tag <span style='color:#ff8906; '>&lt;</span><span style='color:#f6c1d0; '>a</span><span style='color:#ff8906; '>></span>
+ (tautan) jangkar untuk setiap tab. Sertakan atribut href dengan nilai untuk mencocokkan nilai atribut id tab, dan beberapa teks tautan singkat. Pada div "batin" yang tersisa (konten), kode id atribut yang nilainya cocok dengan href tautan
+<!--Created using ToHtml.com on 2020-05-06 06:28:28 UTC -->
+<pre style='color:#d1d1d1;background:#000000;'><span style='color:#ff8906; '>&lt;</span><span style='color:#f6c1d0; '>div</span><span style='color:#ff8906; '>></span>
+  <span style='color:#ff8906; '>&lt;</span><span style='color:#f6c1d0; '>div</span><span style='color:#ff8906; '>></span>
+    <span style='color:#ff8906; '>&lt;</span><span style='color:#f6c1d0; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>#tab1</span><span style='color:#02d045; '>"</span><span style='color:#ff8906; '>></span>Tab One<span style='color:#fb8400; '>&lt;/</span><span style='color:#f6c1d0; '>a</span><span style='color:#fb8400; '>></span>
+    <span style='color:#ff8906; '>&lt;</span><span style='color:#f6c1d0; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>#tab2</span><span style='color:#02d045; '>"</span><span style='color:#ff8906; '>></span>Tab Two<span style='color:#fb8400; '>&lt;/</span><span style='color:#f6c1d0; '>a</span><span style='color:#fb8400; '>></span>
+    <span style='color:#ff8906; '>&lt;</span><span style='color:#f6c1d0; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>#tab3</span><span style='color:#02d045; '>"</span><span style='color:#ff8906; '>></span>Tab Three<span style='color:#fb8400; '>&lt;/</span><span style='color:#f6c1d0; '>a</span><span style='color:#fb8400; '>></span>
+  <span style='color:#fb8400; '>&lt;/</span><span style='color:#f6c1d0; '>div</span><span style='color:#fb8400; '>></span>
+  <span style='color:#ff8906; '>&lt;</span><span style='color:#f6c1d0; '>div</span> id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tab1</span><span style='color:#02d045; '>"</span><span style='color:#ff8906; '>></span>
+  ...
+  <span style='color:#fb8400; '>&lt;/</span><span style='color:#f6c1d0; '>div</span><span style='color:#fb8400; '>></span>
+  <span style='color:#ff8906; '>&lt;</span><span style='color:#f6c1d0; '>div</span> id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tab2</span><span style='color:#02d045; '>"</span><span style='color:#ff8906; '>></span>
+  ...
+  <span style='color:#fb8400; '>&lt;/</span><span style='color:#f6c1d0; '>div</span><span style='color:#fb8400; '>></span>
+  <span style='color:#ff8906; '>&lt;</span><span style='color:#f6c1d0; '>div</span> id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tab3</span><span style='color:#02d045; '>"</span><span style='color:#ff8906; '>></span>
+  ...
+  <span style='color:#fb8400; '>&lt;/</span><span style='color:#f6c1d0; '>div</span><span style='color:#fb8400; '>></span>
+<span style='color:#fb8400; '>&lt;/</span><span style='color:#f6c1d0; '>div</span><span style='color:#fb8400; '>></span>
+</pre>
+4. Di dalam div "inner" yang tersisa, kode konten yang ingin Anda tampilkan di setiap panel; gunakan tag HTML standar untuk menyusun konten sesuai keinginan.
+<pre style='color:#d1d1d1;background:#000000;'><span style='color:#ff8906; '>&lt;</span><span style='color:#f6c1d0; '>div</span><span style='color:#ff8906; '>></span>
+  <span style='color:#ff8906; '>&lt;</span><span style='color:#f6c1d0; '>div</span><span style='color:#ff8906; '>></span>
+    <span style='color:#ff8906; '>&lt;</span><span style='color:#f6c1d0; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>#tab1</span><span style='color:#02d045; '>"</span><span style='color:#ff8906; '>></span>Tab One<span style='color:#fb8400; '>&lt;/</span><span style='color:#f6c1d0; '>a</span><span style='color:#fb8400; '>></span>
+    <span style='color:#ff8906; '>&lt;</span><span style='color:#f6c1d0; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>#tab2</span><span style='color:#02d045; '>"</span><span style='color:#ff8906; '>></span>Tab Two<span style='color:#fb8400; '>&lt;/</span><span style='color:#f6c1d0; '>a</span><span style='color:#fb8400; '>></span>
+    <span style='color:#ff8906; '>&lt;</span><span style='color:#f6c1d0; '>a</span> href<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>#tab3</span><span style='color:#02d045; '>"</span><span style='color:#ff8906; '>></span>Tab Three<span style='color:#fb8400; '>&lt;/</span><span style='color:#f6c1d0; '>a</span><span style='color:#fb8400; '>></span>
+  <span style='color:#fb8400; '>&lt;/</span><span style='color:#f6c1d0; '>div</span><span style='color:#fb8400; '>></span>
+  <span style='color:#ff8906; '>&lt;</span><span style='color:#f6c1d0; '>div</span> id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tab1</span><span style='color:#02d045; '>"</span><span style='color:#ff8906; '>></span>
+    <span style='color:#ff8906; '>&lt;</span><span style='color:#f6c1d0; '>p</span><span style='color:#ff8906; '>></span>First tab's content.<span style='color:#fb8400; '>&lt;/</span><span style='color:#f6c1d0; '>p</span><span style='color:#fb8400; '>></span>
+  <span style='color:#fb8400; '>&lt;/</span><span style='color:#f6c1d0; '>div</span><span style='color:#fb8400; '>></span>
+  <span style='color:#ff8906; '>&lt;</span><span style='color:#f6c1d0; '>div</span> id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tab2</span><span style='color:#02d045; '>"</span><span style='color:#ff8906; '>></span>
+    <span style='color:#ff8906; '>&lt;</span><span style='color:#f6c1d0; '>p</span><span style='color:#ff8906; '>></span>Second tab's content.<span style='color:#fb8400; '>&lt;/</span><span style='color:#f6c1d0; '>p</span><span style='color:#fb8400; '>></span>
+  <span style='color:#fb8400; '>&lt;/</span><span style='color:#f6c1d0; '>div</span><span style='color:#fb8400; '>></span>
+  <span style='color:#ff8906; '>&lt;</span><span style='color:#f6c1d0; '>div</span> id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tab3</span><span style='color:#02d045; '>"</span><span style='color:#ff8906; '>></span>
+    <span style='color:#ff8906; '>&lt;</span><span style='color:#f6c1d0; '>p</span><span style='color:#ff8906; '>></span>Third tab's content.<span style='color:#fb8400; '>&lt;/</span><span style='color:#f6c1d0; '>p</span><span style='color:#fb8400; '>></span>
+  <span style='color:#fb8400; '>&lt;/</span><span style='color:#f6c1d0; '>div</span><span style='color:#fb8400; '>></span>
+<span style='color:#fb8400; '>&lt;/</span><span style='color:#f6c1d0; '>div</span><span style='color:#fb8400; '>></span>
+</pre>
+<!--Created using ToHtml.com on 2020-05-08 11:50:40 UTC -->
+5. Tambahkan satu atau lebih kelas tiaweb, dipisahkan oleh spasi, ke div "luar" dan "dalam" menggunakan atribut kelas; pastikan untuk menyertakan kelas is-active pada tab yang ingin Anda tampilkan secara default.
+<pre style='color:#d1d1d1;background:#000000;'><span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-tabs tiaweb-js-tabs</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+  <span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-tabs__tab-bar</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+    <span style='color:#d2cd86; '>&lt;</span>a href<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>#tab1</span><span style='color:#02d045; '>"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-tabs__tab</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Tab One<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span>
+    <span style='color:#d2cd86; '>&lt;</span>a href<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>#tab2</span><span style='color:#02d045; '>"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-tabs__tab</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Tab Two<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span>
+    <span style='color:#d2cd86; '>&lt;</span>a href<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>#tab3</span><span style='color:#02d045; '>"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-tabs__tab</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Tab Three<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span>
+  <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+  <span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-tabs__panel is-active</span><span style='color:#02d045; '>"</span> id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tab1</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+    <span style='color:#d2cd86; '>&lt;</span>p<span style='color:#d2cd86; '>></span>First tab's content<span style='color:#d2cd86; '>.</span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+  <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+  <span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-tabs__panel</span><span style='color:#02d045; '>"</span> id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tab2</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+    <span style='color:#d2cd86; '>&lt;</span>p<span style='color:#d2cd86; '>></span>Second tab's content<span style='color:#d2cd86; '>.</span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+  <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+  <span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tiaweb-tabs__panel</span><span style='color:#02d045; '>"</span> id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>tab3</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+    <span style='color:#d2cd86; '>&lt;</span>p<span style='color:#d2cd86; '>></span>Third tab's content<span style='color:#d2cd86; '>.</span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+  <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+</pre>
+<!--Created using ToHtml.com on 2020-05-08 11:53:07 UTC -->
+<!--Created using ToHtml.com on 2020-05-08 11:48:54 UTC -->
+
+<br/>
+<b>Contoh</b><br /><br/>
+Berikut akan membantu Anda memahami penggunaan Class tiaweb-tab untuk menata konten pada berbagai tab.
+<br /><br /><div>
+Class tiaweb yang diberikan di bawah ini akan digunakan dalam contoh ini&nbsp;</div><div><br />
+<b>&nbsp; tiaweb-layout</b> - Mengidentifikasi div sebagai komponen tiaweb.</div><div>&nbsp; &nbsp;&nbsp;</div><div>&nbsp;&nbsp;<b>tiaweb-js-layout</b> - Menambahkan perilaku dasar tiaweb ke div luar.&nbsp;</div><div>&nbsp;</div><div>&nbsp;&nbsp;<b>tiaweb-layout - fixed-header </b>- Membuat header selalu terlihat, bahkan di layar kecil.</div><div><br /></div><div>&nbsp; <b>tiaweb-layout__header-row</b> - Mengidentifikasi wadah sebagai baris tajuk tiaweb.&nbsp;</div><div><br /></div><div>&nbsp; <b>tiaweb-layout-title </b>- Mengidentifikasi teks judul tata letak.&nbsp;</div><div><br /></div><div>&nbsp; <b>tiaweb-layout__content </b>- Mengidentifikasi div sebagai konten tata letak tiaweb</div><div>&nbsp;</div><div>&nbsp;&nbsp;<b>tiaweb-tabs</b> - Mengidentifikasi wadah tab sebagai komponen tiaweb.&nbsp;</div><div>&nbsp;</div><div>&nbsp;&nbsp;<b>tiaweb-js-tabs</b> - Menetapkan perilaku dasar tiaweb ke wadah tab.&nbsp;</div><div><br /></div><div>&nbsp;&nbsp;<b>tiaweb-tabs__tab-bar</b> - Mengidentifikasi wadah sebagai bar tautan tab tiaweb.</div><div><br /></div><div>&nbsp; <b>tiaweb-tabs__tab</b> - Mengidentifikasi jangkar (tautan) sebagai aktivator tab tiaweb.</div><div><br /></div><div>&nbsp;&nbsp;<b>is-active </b>- Mengidentifikasi tab sebagai tab tampilan default.</div><div><br /></div><div>&nbsp;&nbsp;<b>tiaweb-tabs__panel</b> - Mengidentifikasi wadah sebagai konten tab.</div>
+
+<br/><b>PILIHAN KONFIGURASI</b><br/><br/>
 <div class="table-responsive-sm">
   <table class="table">
   <thead class="thead-dark">
