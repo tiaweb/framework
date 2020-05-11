@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- TIAWEB CSS -->
+    <link rel="stylesheet" href="https://tiaweb.gitlab.io/material/css/tiaweb.css">
+    <link rel="stylesheet" href="https://tiaweb.gitlab.io/material/css/material-icons.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+<!-- Image card -->
+<style>
+.demo-card-image.tiaweb-card {
+  width: 256px;
+  height: 256px;
+  background: url('https://tiaweb.github.io/img/alam.jpg') center / cover;
+}
+.demo-card-image > .tiaweb-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.demo-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+</style>
+
+<div class="demo-card-image tiaweb-card tiaweb-shadow--2dp">
+  <div class="tiaweb-card__title tiaweb-card--expand"></div>
+  <div class="tiaweb-card__actions">
+    <span class="demo-card-image__filename">Image.jpg</span>
+  </div>
+</div>
+<br/><br/>
+
+
+<!-- Event card -->
+<style>
+.demo-card-event.tiaweb-card {
+  width: 256px;
+  height: 256px;
+  background: #3E4EB8;
+}
+.demo-card-event > .tiaweb-card__actions {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.demo-card-event > .tiaweb-card__title {
+  align-items: flex-start;
+}
+.demo-card-event > .tiaweb-card__title > h4 {
+  margin-top: 0;
+}
+.demo-card-event > .tiaweb-card__actions {
+  display: flex;
+  box-sizing:border-box;
+  align-items: center;
+}
+.demo-card-event > .tiaweb-card__actions > .material-icons {
+  padding-right: 10px;
+}
+.demo-card-event > .tiaweb-card__title,
+.demo-card-event > .tiaweb-card__actions,
+.demo-card-event > .tiaweb-card__actions > .tiaweb-button {
+  color: #fff;
+}
+</style>
+
+<div class="demo-card-event tiaweb-card tiaweb-shadow--2dp">
+  <div class="tiaweb-card__title tiaweb-card--expand">
+    <h4>
+      Featured event:<br>
+      May 24, 2016<br>
+      7-11pm
+    </h4>
+  </div>
+  <div class="tiaweb-card__actions tiaweb-card--border">
+    <a class="tiaweb-button tiaweb-button--colored tiaweb-js-button tiaweb-js-ripple-effect">
+      Add to Calendar
+    </a>
+    <div class="tiaweb-layout-spacer"></div>
+    <i class="material-icons">event</i>
+  </div>
+</div>
+
+    <!-- Tiaweb JavaScript -->
+     <script src="https://tiaweb.gitlab.io/material/js/tiaweb.js"></script>
+  </body>
+</html>
