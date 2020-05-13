@@ -1,0 +1,91 @@
+<b>Alert</b><hr/>
+
+Pesan peringatan dapat digunakan untuk memberi tahu pengguna tentang sesuatu yang istimewa: bahaya, kesuksesan, informasi atau peringatan.
+<br />
+<br/>
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="Iframe example" src="https://tiaweb.github.io/framework/material/docs/code/alert.html?height=265&theme-id=light&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  </iframe>
+ <div class="cinta"> 
+  <pre>
+&lt;style>
+.tiaweb-alert <span style='color:#b060b0; '>{</span>
+  padding<span style='color:#d2cd86; '>:</span> 20px<span style='color:#b060b0; '>;</span>
+  background<span style='color:#d2cd86; '>-</span>color<span style='color:#d2cd86; '>:</span> <span style='color:#d2cd86; '>#</span>f44336<span style='color:#b060b0; '>;</span>
+  color<span style='color:#d2cd86; '>:</span> white<span style='color:#b060b0; '>;</span>
+  opacity<span style='color:#d2cd86; '>:</span> <span style='color:#008c00; '>1</span><span style='color:#b060b0; '>;</span>
+  transition<span style='color:#d2cd86; '>:</span> opacity <span style='color:#009f00; '>0.</span>6s<span style='color:#b060b0; '>;</span>
+  margin<span style='color:#d2cd86; '>-</span>bottom<span style='color:#d2cd86; '>:</span> 15px<span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+
+.tiaweb-alert.success <span style='color:#b060b0; '>{</span>background<span style='color:#d2cd86; '>-</span>color<span style='color:#d2cd86; '>:</span> <span style='color:#d2cd86; '>#</span>4CAF50<span style='color:#b060b0; '>;</span><span style='color:#b060b0; '>}</span>
+.tiaweb-alert.info <span style='color:#b060b0; '>{</span>background<span style='color:#d2cd86; '>-</span>color<span style='color:#d2cd86; '>:</span> <span style='color:#d2cd86; '>#</span>2196F3<span style='color:#b060b0; '>;</span><span style='color:#b060b0; '>}</span>
+.tiaweb-alert.warning <span style='color:#b060b0; '>{</span>background<span style='color:#d2cd86; '>-</span>color<span style='color:#d2cd86; '>:</span> <span style='color:#d2cd86; '>#</span>ff9800<span style='color:#b060b0; '>;</span><span style='color:#b060b0; '>}</span>
+
+.closebtn <span style='color:#b060b0; '>{</span>
+  margin<span style='color:#d2cd86; '>-</span>left<span style='color:#d2cd86; '>:</span> 15px<span style='color:#b060b0; '>;</span>
+  color<span style='color:#d2cd86; '>:</span> white<span style='color:#b060b0; '>;</span>
+  font<span style='color:#d2cd86; '>-</span>weight<span style='color:#d2cd86; '>:</span> bold<span style='color:#b060b0; '>;</span>
+  <span style='color:#bb7977; '>float</span><span style='color:#d2cd86; '>:</span> right<span style='color:#b060b0; '>;</span>
+  font<span style='color:#d2cd86; '>-</span>size<span style='color:#d2cd86; '>:</span> 22px<span style='color:#b060b0; '>;</span>
+  line<span style='color:#d2cd86; '>-</span>height<span style='color:#d2cd86; '>:</span> 20px<span style='color:#b060b0; '>;</span>
+  cursor<span style='color:#d2cd86; '>:</span> pointer<span style='color:#b060b0; '>;</span>
+  transition<span style='color:#d2cd86; '>:</span> <span style='color:#009f00; '>0.</span>3s<span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+
+.closebtn:hover <span style='color:#b060b0; '>{</span>
+  color<span style='color:#d2cd86; '>:</span> black<span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+&lt;/style>
+
+
+
+&lt;div class="tiaweb-alert">
+  &lt;span class="closebtn">&amp;times<span style='color:#d2cd86; '>;</span>&lt;/span>  
+  &lt;strong>Danger!&lt;/strong> Indicates a dangerous or potentially negative action.
+&lt;/div>
+
+&lt;div class="tiaweb-alert success">
+  &lt;span class="closebtn">&amp;times<span style='color:#d2cd86; '>;</span>&lt;/span>  
+  &lt;strong>Success!&lt;/strong> Indicates a successful or positive action.
+&lt;/div>
+
+&lt;div class="tiaweb-alert info">
+  &lt;span class="closebtn">&amp;times<span style='color:#d2cd86; '>;</span>&lt;/span>  
+  &lt;strong>Info!&lt;/strong> Indicates a neutral informative change or action.
+&lt;/div>
+
+&lt;div class="tiaweb-alert warning">
+  &lt;span class="closebtn">&amp;times<span style='color:#d2cd86; '>;</span>&lt;/span>  
+  &lt;strong>Warning!&lt;/strong> Indicates a warning that might need attention.
+&lt;/div>
+
+&lt;script>
+var close = document.getElementsByClassName("closebtn")<span style='color:#d2cd86; '>;</span>
+var i<span style='color:#d2cd86; '>;</span>
+
+for (i = 0<span style='color:#d2cd86; '>;</span> i &lt; close.length<span style='color:#d2cd86; '>;</span> i++) <span style='color:#b060b0; '>{</span>
+  close<span style='color:#d2cd86; '>[</span>i<span style='color:#d2cd86; '>]</span><span style='color:#d2cd86; '>.</span>onclick <span style='color:#d2cd86; '>=</span> function<span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>{</span>
+    var div <span style='color:#d2cd86; '>=</span> <span style='color:#e66170; font-weight:bold; '>this</span><span style='color:#d2cd86; '>.</span>parentElement<span style='color:#b060b0; '>;</span>
+    div<span style='color:#d2cd86; '>.</span>style<span style='color:#d2cd86; '>.</span>opacity <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"0"</span><span style='color:#b060b0; '>;</span>
+    setTimeout<span style='color:#d2cd86; '>(</span>function<span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>{</span> div<span style='color:#d2cd86; '>.</span>style<span style='color:#d2cd86; '>.</span>display <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"none"</span><span style='color:#b060b0; '>;</span> <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span> <span style='color:#008c00; '>600</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+  <span style='color:#b060b0; '>}</span>
+<span style='color:#b060b0; '>}</span>
+&lt;/script>
+
+
+</pre></div>
+<style>
+.cinta {
+color : #5f8086;
+background-color : #f1f7f8;
+border : 2px dotted;
+margin-top : 4px;
+padding : 0 2px;
+}
+  pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: left;
+}
+</style>
