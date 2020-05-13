@@ -33,6 +33,7 @@
 	
 	<!-- Favicon  -->
     <link rel="icon" href="https://tiaweb.github.io/images/favicon.png">
+	<link rel="shortcut icon" href="https://tiaweb.github.io/images/favicon.ico">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164531041-1"></script>
 <script>
@@ -230,7 +231,7 @@ a2a_config.locale = "id";
     <div class="copyright">
         <div class="container">
             <div class="row">
-		    <div class="col-lg-12"><footer></footer>
+		    <div class="col-lg-12"><footerku></footerku>
                     <p class="p-small">Copyright © <a href="https://tiaweb.github.io">Tiaweb</a> - 2020</p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
@@ -274,12 +275,12 @@ fetch("https://tiaweb.github.io/framework/material/docs/checkbox.html")
   .then(data => {
     document.querySelector("tia").innerHTML = data;
   });
-	fetch("https://tiaweb.github.io/framework/footer.html")
+	fetch("https://tiaweb.github.io/footer.html")
   .then(response => {
     return response.text()
   })
   .then(data => {
-    document.querySelector("footer").innerHTML = data;
+    document.querySelector("footerku").innerHTML = data;
   });
 	</script>
 	    
