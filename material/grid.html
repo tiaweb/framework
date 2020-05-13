@@ -8,20 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Tiaweb dibuat untuk mempelajari HTML dan CSS  sederhana untuk semua orang, pemula, desainer dan pengembang..">
+    <meta name="description" content="Components Grid - Tiaweb material  adalah kerangka kerja HTML, CSS, dan JS paling populer  responsif  dan modern.">
     <meta name="author" content="Tiaweb">
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
 	<meta property="og:site_name" content="Tiaweb" /> <!-- website name -->
 	<meta property="og:site" content="https://tiaweb.github.io/framework/material" /> <!-- website link -->
-	<meta property="og:title" content="Framewor material Tiaweb"/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="Tiaweb dibuat untuk mempelajari HTML dan CSS  sederhana untuk semua orang, pemula, desainer dan pengembang." /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="https://tiaweb.github.io/img/html.jpg"/> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="https://tiaweb.github.io/framework/material" /> <!-- where do you want your post to link to -->
+	<meta property="og:title" content="Grid Components Material Tiaweb"/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="Components Grid - Tiaweb material  adalah kerangka kerja HTML, CSS, dan JS paling populer  responsif  dan modern." /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="https://tiaweb.github.io/framework/img/tiawebmaterial.jpg"/> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="https://tiaweb.github.io/framework/material/grid" /> <!-- where do you want your post to link to -->
 	<meta property="og:type" content="article" />
 
     <!-- Webpage Title -->
-    <title>Framewor material Tiaweb</title>
+    <title>Grid Components Material Tiaweb</title>
     
        <!-- Styles -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700&amp;display=swap" rel="stylesheet">
@@ -204,7 +204,7 @@ Kami membuat Tiaweb mempunyai Visi dan Misi <a href="https://tiaweb.github.io/te
                     <div class="footer-col fourth">
 
                         <!-- AddToAny BEGIN -->
-<div class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="https://tiaweb.github.io/framework/material" data-a2a-title="Tiaweb">
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="https://tiaweb.github.io/framework/material/grid" data-a2a-title="Tiaweb">
 <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
 <a class="a2a_button_facebook"></a>
 <a class="a2a_button_twitter"></a>
@@ -231,6 +231,7 @@ a2a_config.locale = "id";
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
+			<footer></footer>
                     <p class="p-small">Copyright © <a href="https://tiaweb.github.io">Tiaweb</a> - 2020</p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
@@ -274,7 +275,13 @@ fetch("https://tiaweb.github.io/framework/material/docs/grid.html")
   .then(data => {
     document.querySelector("tia").innerHTML = data;
   });
-	
+fetch("https://tiaweb.github.io/framework/footer.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("footer").innerHTML = data;
+  });	
 	</script>
 	    
 	</body>
