@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -8,7 +9,57 @@
     <!-- TIAWEB CSS -->
     <link rel="stylesheet" href="https://tiaweb.gitlab.io/material/css/tiaweb.css">
     <link rel="stylesheet" href="https://tiaweb.gitlab.io/material/css/material-icons.css">
+
 <style>
+  
+.tiaweb-card__media {
+	margin: 0;
+}
+.tiaweb-card__media > img {
+	max-width: 100%;
+}
+.tiaweb-card__actions {
+	display: flex;
+	box-sizing:border-box;
+	align-items: center;
+}
+.tiaweb-card__actions > .tiaweb-button--icon {
+	margin-right: 3px;
+	margin-left: 3px;
+}
+
+  </style>
+<style>
+header.custom-header {
+  background: #fff;
+}
+.tiaweb-layout__header-row span.tiaweb-layout-title {
+  color: #000;
+  text-transform: uppercase;
+}
+.custom-header .material-icons {
+  color: #000;
+}
+.custom-header a.tiaweb-navigation__link {
+  color: #000000;
+  font-weight: 700;
+  font-size: 14px;
+}
+.custom-header a.tiaweb-navigation__link:hover {
+  color: #0000FF;
+}
+.tiaweb-layout__drawer span.tiaweb-layout-title {
+  background: #111;
+  color: #ffb648;
+}
+.tiaweb-layout__drawer a.tiaweb-navigation__link {
+  color: #eee;
+  font-weight: 700;
+  font-size: 14px;
+}
+.tiaweb-layout__drawer a.tiaweb-navigation__link:hover {
+  color: #000;
+}
 body{
   background-color: #efeff4;
 }
@@ -18,9 +69,11 @@ body{
   color: black;
   font-size: 18px;
   background-color: #fff;
+  
 }
 
 .tiaweb-layout__content .p2{
+
   padding: 20px;
   color: black;
   font-size: 18px;
@@ -54,11 +107,19 @@ body{
   </head>
   <body>
     <div class="tiaweb-layout tiaweb-js-layout tiaweb-layout--fixed-header">
-  <header class="tiaweb-layout__header">
+  <header class="custom-header tiaweb-layout__header">
     
     <div class="tiaweb-layout__header-row">
                         
 <div class="tiaweb-layout-spacer"><span class = "tiaweb-layout-title">Tiaweb</span> </div>
+
+          <!-- Navigation. We hide it in small screens. -->
+          <nav class="tiaweb-navigation tiaweb-layout--large-screen-only">
+            <a class="tiaweb-navigation__link" href="">About</a>
+            <a class="tiaweb-navigation__link" href="">Blog</a>
+            <a class="tiaweb-navigation__link" href="">Contack</a>
+            <a class="tiaweb-navigation__link" href="">Menu</a>
+          </nav>
 
       
     </div>
@@ -71,15 +132,102 @@ body{
     </nav>
   </div>
   <main class="tiaweb-layout__content">
-      <p class = 'p1'>Reef sails square-rigged careen Privateer gun bilged on her anchor Jolly Roger haul wind lad boatswain. Scallywag fire in the hole tender Admiral of the Black league loaded to the gunwalls dance the hempen jig bowsprit man-of-war scuttle. Bilge ho crimp gabion pressgang Pieces of Eight blow the man down salmagundi broadside Jack Ketch.</p>
-            <p class = 'p2'>Galleon Privateer boatswain loot sutler Davy Jones' Locker schooner fathom lass bowsprit. Parrel Shiver me timbers walk the plank Corsair gangway weigh anchor gally maroon Sea Legs Sink me. Splice the main brace loaded to the gunwalls Gold Road Barbary Coast avast killick yard bilge water bucko Shiver me timbers.</p>
-                  <p class = 'p3'>Skysail nipper lugger Pieces of Eight avast yawl list warp ballast flogging. Salmagundi swab chase long boat Cat o'nine tails Sink me stern carouser clap of thunder broadside. Run a rig broadside cackle fruit Barbary Coast gun jib dead men tell no tales gangway prow scuttle.</p>
-                  <p class = 'p4'>Nelsons folly lad black jack barque yo-ho-ho schooner jury mast fire ship starboard Spanish Main. Gangplank hempen halter topgallant hang the jib reef strike colors ahoy Yellow Jack line fore. Strike colors yard salmagundi main sheet topsail Blimey gun splice the main brace carouser reef sails.</p>
-                  <p class = 'p5'>Maroon walk the plank skysail deadlights list scurvy chandler trysail yawl doubloon. Nipperkin mutiny tackle starboard spirits scourge of the seven seas Chain Shot galleon overhaul topgallant. Me topgallant hempen halter bucko lugger nipperkin Nelsons folly run a shot across the bow mizzen yard.</p>
-      <p class = 'p4'>Nelsons folly lad black jack barque yo-ho-ho schooner jury mast fire ship starboard Spanish Main. Gangplank hempen halter topgallant hang the jib reef strike colors ahoy Yellow Jack line fore. Strike colors yard salmagundi main sheet topsail Blimey gun splice the main brace carouser reef sails.</p>
-           <p class = 'p3'>Skysail nipper lugger Pieces of Eight avast yawl list warp ballast flogging. Salmagundi swab chase long boat Cat o'nine tails Sink me stern carouser clap of thunder broadside. Run a rig broadside cackle fruit Barbary Coast gun jib dead men tell no tales gangway prow scuttle.</p>
-            <p class = 'p2'>Galleon Privateer boatswain loot sutler Davy Jones' Locker schooner fathom lass bowsprit. Parrel Shiver me timbers walk the plank Corsair gangway weigh anchor gally maroon Sea Legs Sink me. Splice the main brace loaded to the gunwalls Gold Road Barbary Coast avast killick yard bilge water bucko Shiver me timbers.</p>
-      <p class = 'p1'>Reef sails square-rigged careen Privateer gun bilged on her anchor Jolly Roger haul wind lad boatswain. Scallywag fire in the hole tender Admiral of the Black league loaded to the gunwalls dance the hempen jig bowsprit man-of-war scuttle. Bilge ho crimp gabion pressgang Pieces of Eight blow the man down salmagundi broadside Jack Ketch.</p>      
+      
+      
+      <div class="tiaweb-grid">
+            <div class="tiaweb-cell tiaweb-cell--4-col graybox">
+            
+            <div class="p1">
+		
+			<figure class="tiaweb-card__media">
+					<img src="https://tiaweb.github.io/img/alam.jpg" alt="" />
+				</figure>
+                
+                <div class="tiaweb-card__title">
+					<h1 class="tiaweb-card__title-text">Learning Web Design</h1>
+				</div>
+				<div class="tiaweb-card__supporting-text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam accusamus, consectetur.</p>
+				</div>
+                
+                <div class="tiaweb-card__actions tiaweb-card--border">
+    <a class="tiaweb-button tiaweb-button--colored tiaweb-js-button tiaweb-js-ripple-effect">Read More</a>
+    <div class="tiaweb-layout-spacer"></div>
+    	<button class="tiaweb-button tiaweb-button--icon tiaweb-button--colored"><i class="material-icons">favorite</i></button>
+					<button id="share-post-1" class="tiaweb-button tiaweb-button--icon tiaweb-button--colored"><i class="material-icons">share</i></button>
+				<ul class="tiaweb-menu tiaweb-menu--top-right tiaweb-js-menu" for="share-post-1">
+  <li class="tiaweb-menu__item">Facebook</li>
+  <li class="tiaweb-menu__item">Twitter</li>
+  <li class="tiaweb-menu__item">Pinterest</li>
+</ul>
+	  </div>
+                </div>
+				</div>
+            
+            
+            
+            <div class="tiaweb-cell tiaweb-cell--8-col graybox"><div class='p1'>
+            <div class="tiaweb-card__supporting-text">
+            <b>Learning</b><hr/>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum..</div>
+            
+                          <div class="tiaweb-card__actions tiaweb-card--border">
+    <a class="tiaweb-button tiaweb-button--colored tiaweb-js-button tiaweb-js-ripple-effect">Read More</a>
+    <div class="tiaweb-layout-spacer"></div>
+    	<button class="tiaweb-button tiaweb-button--icon tiaweb-button--colored"><i class="material-icons">favorite</i></button>
+					<button id="share-post-1" class="tiaweb-button tiaweb-button--icon tiaweb-button--colored"><i class="material-icons">share</i></button>
+				<ul class="tiaweb-menu tiaweb-menu--top-right tiaweb-js-menu" for="share-post-1">
+  <li class="tiaweb-menu__item">Facebook</li>
+  <li class="tiaweb-menu__item">Twitter</li>
+  <li class="tiaweb-menu__item">Pinterest</li>
+</ul></div>
+	  </div>
+            <br/>
+            <div class='p1'>
+            <div class="tiaweb-card__supporting-text">
+            <b>Learning</b><hr/>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum..</div>
+            
+                          <div class="tiaweb-card__actions tiaweb-card--border">
+    <a class="tiaweb-button tiaweb-button--colored tiaweb-js-button tiaweb-js-ripple-effect">Read More</a>
+    <div class="tiaweb-layout-spacer"></div>
+    	<button class="tiaweb-button tiaweb-button--icon tiaweb-button--colored"><i class="material-icons">favorite</i></button>
+					<button id="share-post-1" class="tiaweb-button tiaweb-button--icon tiaweb-button--colored"><i class="material-icons">share</i></button>
+				<ul class="tiaweb-menu tiaweb-menu--top-right tiaweb-js-menu" for="share-post-1">
+  <li class="tiaweb-menu__item">Facebook</li>
+  <li class="tiaweb-menu__item">Twitter</li>
+  <li class="tiaweb-menu__item">Pinterest</li>
+</ul></div>
+	  </div><br/>
+            <div class='p1'>
+            <div class="tiaweb-card__supporting-text">
+            <b>Learning</b><hr/>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum..</div>
+            
+                          <div class="tiaweb-card__actions tiaweb-card--border">
+    <a class="tiaweb-button tiaweb-button--colored tiaweb-js-button tiaweb-js-ripple-effect">Read More</a>
+    <div class="tiaweb-layout-spacer"></div>
+    	<button class="tiaweb-button tiaweb-button--icon tiaweb-button--colored"><i class="material-icons">favorite</i></button>
+					<button id="share-post-1" class="tiaweb-button tiaweb-button--icon tiaweb-button--colored"><i class="material-icons">share</i></button>
+				<ul class="tiaweb-menu tiaweb-menu--top-right tiaweb-js-menu" for="share-post-1">
+  <li class="tiaweb-menu__item">Facebook</li>
+  <li class="tiaweb-menu__item">Twitter</li>
+  <li class="tiaweb-menu__item">Pinterest</li>
+</ul></div>
+	  </div>
+      </div>
+            
+         </div>
+      
+          <footer class="demo-footer tiaweb-mini-footer">
+      <div class="tiaweb-mini-footer--left-section">
+        <ul class="tiaweb-mini-footer--link-list">
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Privacy and Terms</a></li>
+          <li><a href="#">User Agreement</a></li>
+        </ul>
+      </div>
+    </footer>     
       
   </main>
 </div>
